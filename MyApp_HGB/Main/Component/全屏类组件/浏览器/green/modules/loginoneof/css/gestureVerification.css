@@ -1,0 +1,49 @@
+
+#page-gestureVerification_tpl  .logo {
+	display: block;
+	margin: 3.3rem auto 3.525rem;
+	width: 80px;
+	height: 80px;
+}
+#loginpage .title{
+	text-align: center;
+    top: 6.8rem;
+    margin: 0px;
+    color: #fff;
+    font-size: 18px;
+}
+#loginpage{   
+	background: url(../imgs/bgg.png);
+	background-size:100% 100%;
+}
+.gesturelist{
+	width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.gesturelist li a{
+	width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    background: #fff;
+    display: block;
+}
+.gesturelist li{
+	float: left;
+    width: 33.33%;
+    height:7rem;
+    display: flex;
+    justify-content: center;
+}
+.div-custom-gesturebox{
+	height: 58%;
+}
+.div-custom-fingerprint{
+	text-align: center;
+    display: block;
+    background: url(../imgs/zw.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 32px;
+    height: 35px;
+    margin: auto;
+}

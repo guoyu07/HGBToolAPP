@@ -1,0 +1,115 @@
+#page-selectMerchant_tpl .div-custom-merchant:first-child{
+	margin-top: -3px;
+}
+#page-selectMerchant_tpl .div-custom-merchant{
+    height: 87px;
+    position: relative;
+    box-sizing:border-box;
+    margin-bottom: 5px;
+    padding-right: .7rem;
+    border-bottom: 1px solid #F0f0f0;
+    margin-left: .7rem;
+    padding-top: .7rem;
+}
+#page-selectMerchant_tpl .div-custom-selectMerimg img{
+   /* background: url(../imgs/yonghu.svg) no-repeat 0rem 0;
+    background-size: 100% 100%;*/
+    width: 43px;
+    margin-top: .5rem;
+    height: 43px;
+    float: left;
+}
+
+.pull-to-refresh-layer{
+	height: 1rem;
+}
+#page-selectMerchant_tpl .content{
+	background: #fff;
+    margin-top: 4.5rem;
+}
+#page-selectMerchant_tpl .div-custom-rightSelectbox{
+	float: right;
+    width: 85%;
+}
+#page-selectMerchant_tpl{
+	background: #eaeaea !important;
+}
+#page-selectMerchant_tpl .div-custom-selectTop{
+	font-size: 17px;
+    color: #000000;
+}
+#page-selectMerchant_tpl .div-custom-selectBottom{
+	font-size: 14px;
+    color: #999;
+}
+#page-selectMerchant_tpl .div-custom-selectBottom .div-custom-number{
+	font-size: 13px;
+    right: 1rem;
+    position: absolute;
+    color: #444;
+    display: inline-block;
+}
+#page-selectMerchant_tpl .search-inputs{
+	position: relative;
+}
+#page-selectMerchant_tpl .search-inputs input{
+    border-radius: 4px;
+    height:1.2rem;
+    line-height: 30px;
+    padding-left: 1rem;
+    box-shadow: 0;
+    border: none;
+    position: absolute;
+    top: 2.3rem;
+    width: 78%;
+    padding-left: 1.6rem;
+    left: .3rem;
+}
+#page-selectMerchant_tpl .pull-to-refresh-layer{
+	height: 0rem;
+}
+#page-selectMerchant_tpl .pull-to-refresh-content.refreshing  .preloader{
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    visibility: hidden;*/
+}
+#page-selectMerchant_tpl .pull-to-refresh-content {
+       padding-top: 0.3rem;
+       top:0;
+}
+#page-selectMerchant_tpl .pull-to-refresh-layer .pull-to-refresh-arrow{
+	margin-top: -1.5rem;
+}
+#page-selectMerchant_tpl .icon-custom-searchicon img{
+	width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 2.8rem; 
+}
+#page-selectMerchant_tpl .icon-custom-searchicon {
+    left: 0rem;
+}
+#page-selectMerchant_tpl  .div-custom-footer_search{
+	font-size: 14px;
+	 padding-top: 2rem;
+    text-align: center;
+    color: #999999; 
+}
+#page-selectMerchant_tpl .div-custom-selectTop{
+    font-size: 17px;
+    color: #000000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+   
+}
+#page-selectMerchant_tpl .div-custom-isBd {
+    font-size: 13px;
+    color: #FC4E5A;
+    float: right;
+    display: inline-block;
+
+}

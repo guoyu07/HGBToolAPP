@@ -1,0 +1,252 @@
+#page-records_tpl #transaction_header .header{
+    background: url(../imgs/arrow.png) no-repeat center left;
+    background-size: 11px 20px;
+}
+#page-records_tpl .content{
+	
+}
+#page-records_tpl #transaction_header .header h3{
+	text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+#page-records_tpl .list-block.transaction {
+    margin:2.5rem 0 0 .1rem !important;
+}
+#page-records_tpl .tranctionists{
+	background: transparent !important;
+}
+#page-records_tpl .transaction .tranctionists::before {
+    height: 0px !important;
+}
+#page-records_tpl .tranctionists  li .item-content {
+    padding-left: 0px !important;
+}
+#page-records_tpl .tranctionists li .item-media img {
+    width: 60px;
+    height: 60px;
+}
+#page-records_tpl .div-custom-oboxlist{
+    background: #fff;
+    height: 73px;
+    margin-top: 1rem;
+    border-top:1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-records_tpl .list-block.transaction  .item-link .item-inner{
+	background: none;
+}
+#page-records_tpl .tranctionists li .item-title-row {
+    padding-top: 1rem;
+}
+#page-records_tpl .tranctionists li .item-subtitle {
+    color: #FFF;
+    font-size: 16px;
+}
+#page-records_tpl .tranctionists li .item-text {
+    color: #FFF;
+    font-size: 13px;
+}
+#page-records_tpl .img-custom-transimg{
+	width: 43px;
+    height: 43px;
+}
+#page-records_tpl .transaction .tranctionists::before {
+    height: 0px !important;
+}
+#page-records_tpl .div-custom-transbox{
+    line-height: 5.6rem;
+    display: inline-block;
+}
+#page-records_tpl .span-custom-toptexts{
+	float: left;
+    color: #000;
+    font-size: 19px;
+}
+.div-custom-transtop .special{
+    float: right;
+    display: inline-block;
+}
+#page-records_tpl .div-custom-transbottoms{
+	font-size:14px;
+    color: #999999;
+    float: left;
+    display: inline-block;
+}
+#page-records_tpl .div-custom-transtop{
+	font-size: 17px;
+    color: #000000;
+    float: left;
+}
+#page-records_tpl .span-custom-bottomtext{
+    float: right;
+    display: inline-block;
+    padding-left: 9.5rem;
+    font-size: 13px;
+    color: #FC4E5A;
+}
+#page-records_tpl .div-custom-transationbox{
+    padding-right: .8rem;   
+    height: 80px;
+   /* border-bottom: 1px solid #F0f0f0 !important;*/
+    margin-left: .8rem;
+}
+/*.div-custom-transationbox:last-child{
+	border-bottom: none !important;
+}*/
+
+#page-records_tpl .list-block ul{
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+}
+#page-records_tpl .list-block .item-inner{
+    background-color: #FFFFFF;
+}
+#page-records_tpl .bg-transparent{
+    background-color: transparent !important;
+}
+#page-records_tpl .item-container .item-title{
+    color: #999999 !important;
+    font-size: 14px;
+}
+#page-records_tpl .item-container .item-after{
+    color: #333333 !important;
+    font-size: 14px;
+}
+#page-records_tpl .detail-msg .list-block .item-content{
+        justify-content: center;
+}
+#icon_friend img{
+   
+    padding-right: 2rem;
+    height: 25px;
+}
+#page-records_tpl  .span-custom-jia{
+    display: block;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+#page-records_tpl  .span-custom-shopsNames{
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin-left: -1.3rem;
+    color: #444444;
+    background: url(../imgs/55.svg) no-repeat 13rem .3rem;
+    background-size: 11px 12px;
+ }
+#page-records_tpl  .span-custom-recordSucessy{
+    display: block;
+    padding-right: .8rem;
+    font-size: 15px;
+    color: #FF6634;
+    text-align: center;
+}
+#page-records_tpl  .detail-msg .list-block .item-inner{
+    width: auto;
+}
+#page-records_tpl  .detail-msg .list-block{
+    margin: 0.75rem 0px 0px;
+}
+#page-records_tpl .detail-msg .list-block .item-content:after{
+    height: 0px;
+}
+#page-records_tpl .detail-msg .name{
+    font-size: 0.8rem;
+    color: #444444;
+}
+#page-records_tpl .detail-msg .money{
+    font-size: 1.25rem;
+}
+#page-records_tpl .detail-msg .state{
+    color: #FF6634;
+    font-size: 0.75rem;
+}
+#page-records_tpl .item-container{
+    margin: 0;
+}
+
+#page-records_tpl .check{
+    font-size: 0.8rem;
+    color: #000000;
+}
+#page-records_tpl .div-custom-mouthboxs{
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-records_tpl .div-custom-mouthboxss{
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-records_tpl .div-custom-transationbox{
+    padding: 0 .8rem 0 .4rem;
+    height: 48px;
+    font-size: 14px;
+    color: #888888;
+    /*border-bottom: 1px solid #f0f0f0;*/
+    line-height: 48px;
+    margin-left: .4rem;
+}  
+#page-records_tpl .div-custom-transationbox .div-custom-transationbox.bckimg{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    float: right;
+}
+#page-records_tpl .div-custom-shopTpl{
+    margin-top: 1rem;
+    padding: 0 .8rem 0 .4rem;
+    background: #fff;
+    border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+#page-records_tpl .div-custom-shopBoxDetails{
+    border-bottom: 1px solid #f0f0f0;
+    margin-left: .4rem;
+    height: 70px;
+    padding-top: .5rem;
+}
+#page-records_tpl .div-custom-mouthboxs .div-custom-transationbox:last-child,
+#page-records_tpl .div-custom-shopBoxDetails:last-child{
+    border:none;
+}
+#page-records_tpl .div-custom-shopTpls.big{
+    height: 50px;
+    margin-top: 6rem;
+    display: block;
+    line-height: 50px;
+    padding-left: .8rem;
+    font-size: 16px;
+    color: #000000;
+    background: url(../imgs/55.svg) no-repeat 17.3rem .7rem;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 #F0F0F0;
+    background-size: 15px 22px;
+}
+#page-records_tpl .div-custom-transationboxs.specialy{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #888888;
+}
+#page-records_tpl .div-custom-transationboxs.specialy span{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    float: right;
+}
+#page-records_tpl .div-custom-transationbox.bckimg{
+    padding: 0 .8rem 0 .4rem;
+    height: 48px;
+    font-size: 14px;
+    color: #888888;
+    /*border-bottom: 1px solid #f0f0f0;*/
+    line-height: 48px;
+    margin-left: .4rem;
+    background: url(../imgs/55.svg) no-repeat 17.2rem .8rem;
+    background-size: .5rem;
+}  
+#page-records_tpl .div-custom-transationbox.bckimg span{
+    padding-right: 1rem;
+} 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="72" height="72"></rect>
+    </defs>
+    <g id="M_好友" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M_1.5添加好友" transform="translate(-20.000000, -391.000000)">
+            <rect id="Rectangle-2-Copy-2" fill="#FAFAFA" x="0" y="0" width="750" height="1334"></rect>
+            <g id="Group-5" transform="translate(0.000000, 370.000000)">
+                <g id="Group-4" fill="#FFFFFF">
+                    <rect id="Rectangle-3-Copy" x="0" y="0" width="750" height="110"></rect>
+                </g>
+                <g id="Group-3" transform="translate(20.000000, 17.000000)">
+                    <g id="Group-6" transform="translate(0.000000, 4.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Rectangle-9" fill="#9B89BA" xlink:href="#path-1"></use>
+                        <path d="M19.2353472,19.2353472 L31.5294383,19.2353472 L31.5294383,17 L19.2353472,17 C18.0007528,17 17,18.0006997 17,19.2353472 L17,31.5293322 L19.2353472,31.5293322 L19.2353472,19.2353472 Z M19.2353472,40.4706148 L17,40.4706148 L17,52.7647059 C17,53.9993003 18.0006997,54.9999469 19.2353472,54.9999469 L31.5294383,54.9999469 L31.5294383,52.7647059 L19.2353472,52.7647059 L19.2353472,40.4706148 Z M52.764759,17 L40.4705617,17 L40.4705617,19.2353472 L52.764759,19.2353472 L52.764759,31.5293322 L55,31.5293322 L55,19.2353472 C55,18.0006997 53.9991941,17 52.764759,17 Z M52.764759,52.764759 L40.4705617,52.764759 L40.4705617,55 L52.764759,55 C53.9992472,55 55,53.9993533 55,52.764759 L55,40.4706148 L52.764759,40.4706148 L52.764759,52.764759 Z M53.8824326,34.8823529 L18.1175674,34.8823529 C17.5003233,34.8823529 17,35.3827824 17,36.0000265 C17,36.6172176 17.5002703,37.117594 18.1175674,37.117594 L53.8824326,37.117594 C54.4996236,37.117594 55,36.6172707 55,36.0000265 C55,35.3827293 54.4996236,34.8823529 53.8824326,34.8823529 L53.8824326,34.8823529 Z" id="扫描" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

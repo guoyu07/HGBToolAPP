@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>商户扫用户-积分付款-现金付款</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/shopsUser.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-shopsUser_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+            <h1 class="title" data-type="h1">付款</h1>
+            <!-- <a class="button button-link pull-right" href="#" id="shop_records" data-type="button">付款记录</a> -->
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content" id="content-page_cash">           	         
+	         <div class="top">
+                 <span data-type="span" class="span-custom-tx friend"><img src="{{image_}}" /></span>
+	               <span data-type="span" class="span-custom-tx">
+                       <span data-type="span" class="span-custom-inter">{{name_}}</span>
+                      <span data-type="span" class="span-custom-phonenumber">{{code_}}</span>
+	               </span>   
+	             <!--朋友现金转账--> 
+	             <div data-type="div" class="div-custom-cashs">
+	                  <span data-type="span" class="span-custom-yue">
+	                  	{{integral_text_last}}<b>{{obj.integral_display}}</b>{{integral_text_fast}}
+	                  </span> 
+	                  <span v-if="obj.integral_bool" data-type="span" class="span-custom-cashmoney">
+	                    <span data-type="span" class="span-custom-amount">
+	                     <input type="number" placeholder="{{obj.integral}}" data-type="input" data-validate="" id="money_shops_user" v-model.number="obj.integral" v-on:focus="onIntegralFocus" v-on:input="onIntegralChange" class="" pattern="[0-9]*"> 
+	                     <span data-type="span" class="span-custom-yuan"  >分</span>
+	                    </span>
+	                  </span> 
+	                  <span v-if="obj.amount_bool" data-type="span" class="span-custom-cash_in_cash">
+	                    抵<b>{{obj.amount_display}}</b>元现金
+	                  </span>  
+	                   <span v-if="obj.amount_still_bool" data-type="span" class="span-custom-still_cash">
+	                    仍需<b>{{obj.amount_still_display}}</b>元现金
+	                  </span>
+                       
+                       <span  data-type="span" class="span-custom-still_cash" >
+                           
+                           {{go_cashaccount_page_text}}
+                       </span>
+                       
+                       <span v-on:click="go_cashaccount_page" data-type="span" class="span-custom-still_cash" >
+                           {{go_cashaccount_page_msg}}
+                       </span>
+	             </div>
+	          </div>
+             <!--朋友现金转账--> 
+	         <div data-type="div" class="div-custom-open_cash">
+	                <span class="span-custom-open_surebtn" v-on:click="onContinuePay" v-if="isShow" >继续</span> 
+	                <!--
+	                <div data-type="div" class="div-custom-install">
+	                   <span class="span-custom-open_zh">现金账户<span  class="span-custom-install">更换</span></span> 
+	                </div>
+	                -->
+	            </div>
+        </div>
+             
+    </div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/common.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/shopsUserEventBinds.js"></script>
+</html>

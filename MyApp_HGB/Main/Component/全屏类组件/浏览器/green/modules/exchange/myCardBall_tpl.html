@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>我的卡包</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/myCardBall.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-myCardBall_tpl" class="page page-current">
+        <!-- 标题栏 -->
+         <header class="bar bar-nav" data-type="header" id="header-custom-searchheader">
+                    <a class="button button-link pull-left back" href="#" data-type="a"> <span class="icon icon-left" data-type="icon"></span> </a>
+                    <h1 class='title' >商户列表</h1>
+                            
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="" class="activityAllPage"> 
+                          <!-- 下拉刷新 -START -->
+                          <!--
+                          <div class="content pull-to-refresh-content" data-type="content" data-ptr-distance="100" >
+                                <div class="pull-to-refresh-layer">
+                                      <div class="preloader"></div>
+                                      <div class="pull-to-refresh-arrow"></div>
+                                </div>
+                          </div>   
+                             -->
+                        <div class="allList specialt" data-type="div"  >             
+                               <div class="list" id='div_activity_list' data-type="div" v-on:click="onShops(li.id_)" v-for="li in tenantsList.list" >
+                                <div class="leftimg" ><img src="{{li.image_}}" data-type="img" id="img_1" class="">
+                                </div>
+                                <div class="right">
+                                    
+                                    <div>
+                                        <div data-type="div" id="" class="special">{{li.name_}}</div>
+                                       
+                                    </div>
+                                    <div>
+                                        <span data-type="span" id="span_6" class="activity_time">电话：{{li.mobile_phone_}}
+                                           
+                                        <span data-type="span" id="" class="floatBox">编号：{{li.code_}}</span>
+                                        </span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                      
+                       <div class="infinite-scroll-preloader" v-if="data.tenantsList.down_bool">
+                        <div class="preloader"></div>
+                       </div>
+                       
+                    </div>
+
+              
+        </div>
+</div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+
+
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/common.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+<script src="../../js/public/common.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/myCardBallEventBinds.js"></script>
+</html>

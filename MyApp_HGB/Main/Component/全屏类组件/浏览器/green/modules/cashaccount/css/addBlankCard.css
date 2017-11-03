@@ -1,0 +1,100 @@
+
+#page-addBlankCard_tpl .list-custom-addblankCard li:last-child {
+	margin-left: 0;
+    text-indent: .8rem;
+}
+#page-addBlankCard_tpl .div-custom-card{
+    padding-left: .8rem;
+    height: 38px;
+    font-size: 28px;
+    line-height:38px;
+    font-size: 14px;
+    color: #999999;
+}
+#page-addBlankCard_tpl #modifyinfo li .item-inner{
+	padding-right: 2rem;
+}
+#page-addBlankCard_tpl #row-custom-addcard{
+	padding: 0;
+}
+#page-addBlankCard_tpl  label.label-checkbox span.icon-form-check {
+    border: 1px solid #ccc;
+}
+#page-addBlankCard_tpl #modifyinfo  li #span-custom-shopinforSpecial{
+	font-size: 15px;
+    color: #436BF2;
+    right: 4.5m;
+    line-height:2.1rem;
+    position: absolute;
+}
+#page-addBlankCard_tpl #modifyinfo #input_verifyCode{
+	margin-top: -1px;
+    padding-left: 0rem;
+}
+#page-addBlankCard_tpl #modifyinfo li,
+#page-pay_password_tpl #modifyinfo li{
+	height: 48px;
+	line-height: 48px;
+}
+#page-addBlankCard_tpl #modifyinfo #div-custom-special{	
+    margin: 0px;
+    position: relative;
+}
+#page-addBlankCard_tpl  #a_modify_password{
+	font-size: 16px;
+	color: #999;
+}
+#page-addBlankCard_tpl #modifyinfo:after, #modifyinfo:before{
+	background-color: #f0f0f0;
+}
+#page-addBlankCard_tpl #input_mobilenumber{
+	padding-left: 1rem;
+}
+#page-addBlankCard_tpl #modifyinfo li a,
+#page-pay_password_tpl #modifyinfo li a{
+	display: inline-block;
+    color: #444;
+    font-size: 16px;
+}
+#div_box{
+	padding-left: .7rem;
+    line-height: 2rem;
+}
+.a-custom-text{
+	font-size: 14px;
+    color: #108EE9;
+}
+.backimg{
+	background: url(../imgs/jg.svg) no-repeat 16.3rem .7rem;
+    background-size: 20px 20px;
+}
+#page-addBlankCard_tpl #modifyinfo li #nomal{
+	display: inline-block;
+    color: #999;
+    padding-left: .9rem;
+    font-size: 14px;
+}
+#page-addBlankCard_tpl label.label-checkbox input[type=checkbox]:checked+span.icon-form-check{
+    background-color: #FA681E;
+    border:none;
+}
+#goubox{
+    width:15px;
+    height:15px;
+	border-radius: 3px;
+	
+}
+#page-addBlankCard_tpl #div-custom-special_form{
+	display: inline-block;
+    color: #999;
+    padding-left: .9rem;
+    font-size: 14px;
+}
+#page-addBlankCard_tpl .verifyy{
+	margin-left: 0;
+    color: #444;
+    font-size: 16px;
+}
+#page-addBlankCard_tpl .list-block.div-custom-listBlock{
+	margin: 0;
+}

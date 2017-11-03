@@ -1,0 +1,11 @@
+#page-cashWithoutBound_tpl .div-custom-cardBox .span-custom-righttext{
+    display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.6rem;
+    background: url(../imgs/55.svg) no-repeat 4rem 1.2rem;
+    background-size: 9px 18px;
+}

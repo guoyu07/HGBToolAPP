@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>首页</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">	
+		<link rel="stylesheet" href="../../css/libs/sm.css">
+	    <link rel="stylesheet" href="../../css/theme/theme.css">
+		<link rel="stylesheet" href="../../css/appPublicStyle.css">
+     	<link rel="stylesheet" href="css/home.css"/>
+	</head>
+	<body>
+		
+	
+		<div class="page-group" >
+			<!-- 单个page ,默认被展示-->
+			<div class="page page-current div-custom-wrap" id="page-home_tpl">
+                <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+                <div class="box_home" v-on:click="onHidden">
+                    <div id="hiddenDiv" data-type="div">
+                        <a href="javascript:void(0);" class="u-guideTop z-move"></a>
+                        <div id="hiddenSpan">现金账户需要先设置支付密码哦！</div>
+                    </div>
+                    
+                </div>
+                
+				   <div class="bar-tab buttons-tab footer " id="footer" data-type="div"  id="oneTab">
+						<a href="#tab1" class="tab-link  button active" data-type="button">
+							  <span class="icon icon-custom-home active" data-type="icon" id="icon_14"></span>
+							  <span class="tab-label span-custom-specialy" data-type="span" id="span_13">首页</span> 
+						</>
+						<a href="#tab2" class="tab-link button" data-type="button" class=" tab-item"  id="twoTab">
+							  <span class="icon icon-custom-activity " data-type="icon" id="icon_20"></span>
+							  <span class="tab-label span-custom-specialy" data-type="span" id="span_19">商户活动</span>
+						</a>
+						<a href="#" class=" button" data-type="button" id="div_QRCode">
+							  <span class="icon icon-custom-saoyisao" data-type="icon" id="icon_20"></span>
+						</a>
+						<a href="#tab3" class="tab-link button" data-type="button" class=" tab-item"  id="threeTab">
+							  <span class="icon icon-custom-friend" data-type="icon" id="icon_15"></span>
+							  <span class="tab-label span-custom-specialy" data-type="span" id="span_14">好友</span>
+						</a>
+						<a href="#tab4" class="tab-link button" data-type="button" class=" tab-item"  id="fourTab">
+							 <span class="icon icon-custom-me" data-type="icon" id="icon_16"></span>
+							 <span class="tab-label span-custom-specialy" data-type="span" id="span_15">我的</span>
+						</a>
+			 	    </div>
+					<div class="tabs" data-type="tabs">
+						<div id="tab1" class="tab active" data-type="div">
+						  <header  id="special_header" class="bar bar-nav" data-type="header" style="padding-left: 0px !important;padding-right: 13px;">
+							<span class="icon  icon-custom-searchicon" data-type="icon" id="icon_1"><img src="imgs/search.png"/ class="searchIcon"></span>
+							<input type="text" placeholder="6月6积分日" data-type="input" data-validate="" id="input_keyword" class="" v-model="key_val" v-on:focus="onIn" style="margin-top:.3rem;">
+							<span class="icon  icon-add pull-right icon-rights" data-type="icon" id="add_img"></span>
+							<a class="icon pull-right" data-type="button" id="icon-custom-message"><img src="imgs/zhong.png"/></a>
+				           </header>
+						   
+						   <div class="div" data-type="content" id="homeCont">
+                               <div class="maskBox">
+                                   <!--点击加号显示出白色框-->
+                                  <!--  <div id="hidden_Div" data-type="div"></div> -->
+                                   <div data-type="div" class="right-container">
+                                       <div class="right-alert" data-type="div">
+                                           <span data-type="span" class="arrows"></span>
+                                           <div class="list-block" data-type="div" id="div_1">
+                                               <ul data-type="list" id="list_1">
+                                                   <li data-type="itemContent" id="AddFriends">
+                                                       <a href="#" class="item-content" data-type="a" id="a_1">
+                                                           <div class="item-media" data-type="div" id="div_2">
+                                                               <span class="icon one" data-type="icon" id="icon_1">
+                                                                   <img src="imgs/100.svg"  data-type="img"/>
+                                                               </span>
+                                                           </div>
+                                                           <div class="item-inner" data-type="div" id="">
+                                                               <div class="item-title" data-type="div" id="div_4" id="" v-on:click="adduser" >添加好友</div>
+                                                           </div>
+                                                       </a>
+                                                   </li>
+                                                   <li data-type="itemContent" id="saoyisao">
+                                                       <a href="#" class="item-content" data-type="a" id="a_1">
+                                                           <div class="item-media" data-type="div" id="div_2">
+                                                               <span class="icon two" data-type="icon" id="icon_1">
+                                                                   <img src="imgs/102.svg"  data-type="img"/>
+                                                               </span>
+                                                           </div>
+                                                           <div class="item-inner" data-type="div" id="">
+                                                               <div class="item-title" data-type="div" id="div_QRCode_1">扫一扫</div>
+                                                           </div>
+                                                       </a>
+                                                   </li>
+                                                   <li data-type="itemContent" id="shouMoney">
+                                                       <a href="#" class="item-content" data-type="a" id="a_1">
+                                                           <div class="item-media" data-type="div" id="div_2">
+                                                               <span class="icon three" data-type="icon" id="icon_1">
+                                                                   <img src="imgs/101.svg"  data-type="img"/>
+                                                               </span>
+                                                           </div>
+                                                           <div class="item-inner" data-type="div" id="">
+                                                               <div class="item-title" data-type="div" id="div_4" id="">收钱</div>
+                                                           </div>
+                                                       </a>
+                                                   </li>
+                                                   
+                                               </ul>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+									<!--这里是内容区-->
+								<!-- Slider -->
+								
+								<div class="swiper_img"   style="height:12.2rem;">
+                                    <div class="slideimg" data-type="div" id="div_6" v-if="homeBannerList.list.length <=0" style="border:0;padding-top:5rem;text-align:center;">
+                                        暂无数据...
+                                    </div>
+                                    <div class="swiper-container sliderbox sliderimg" data-type="slider" id="slider_1" >
+                                        <div class="swiper-wrapper" data-type="div" id="div_6" >
+                                            <div class="swiper-slide" data-type="swiperSlide" id="swiperSlide_1" v-for="li in homeBannerList.list">
+                                                <img src="{{li.image_}}" alt="" data-type="img" id="img_2" class="" style="height:10rem;">
+                                                    </div>
+                                        </div>
+                                        <div class="swiper-pagination" data-type="div" id="div_4"></div>
+                                    </div>
+                                    
+								</div>
+							     <div class="div-custom-home-box" data-type="div" id="">
+									<div data-type="div" id="div_first" class="div-custom-cont">
+										<div data-type="div" id="paymoney" class="div-custom-list_content"><img src="imgs/fuqian.svg" data-type="img" id="" class="img-custom-header-img"/>
+											<div data-type="div" id="" class="div-custom-header-div">付钱</div>
+										</div>
+										<div data-type="div" id="exchange" class="div-custom-list_content" v-on:click="onExchange"><img src="imgs/jfdh.svg" data-type="img" id="" class="img-custom-header-img"/>
+											<div data-type="div" id="" class="div-custom-header-div">积分兑换</div>
+										</div>
+										<div data-type="div" id="intergralwallet" class="div-custom-list_content"><img src="imgs/jfqb.svg" data-type="img" id="" class="img-custom-header-img"/>
+											<div data-type="div" id="" class="div-custom-header-div">积分钱包</div>
+										</div>
+										<div data-type="div" id="cash" class="div-custom-list_content"><img src="imgs/lqzh.svg" data-type="img" id="" class="img-custom-header-img"/>
+											<div data-type="div" id="" class="div-custom-header-div">零钱账户</div>
+										</div>
+								    </div>
+									<div data-type="div" id="div_2" class="div-custom-cont home">
+											<div data-type="div" id="transferaccounts" class="div-custom-list_content"><img src="imgs/zz.svg" data-type="img" id="" class="img-custom-two-img"/>
+												<div data-type="div" id="" class="div-custom-home-two">转账</div>
+											</div>
+											<div data-type="div" id="transactionrecord" class="div-custom-list_content"><img src="imgs/jyjl.svg" data-type="img" id="img_1"  class="img-custom-two-img"/>
+												<div data-type="div" id="" class="div-custom-home-two">交易记录</div>
+											</div>
+											<div data-type="div" id="cardprotector" class="div-custom-list_content"><img src="imgs/kb.svg" data-type="img" id=""  class="img-custom-two-img"/>
+												<div data-type="div" id="div_5" class="div-custom-home-two">卡包</div>
+											</div>
+											<div data-type="div" id="div_1" class="div-custom-list_content"><img src="imgs/qb.svg" data-type="img" id=""  class="img-custom-two-img"/>
+												<div data-type="div" id="div_5" class="div-custom-home-two">全部</div>
+											</div>
+									</div>
+								</div>
+								<div class="listbox" id="homeList" data-type="div">
+								   <div class="div" data-type="div">最新消息<span v-on:click="messagemore">更多 &nbsp;<img src="imgs/3.png"/></span></div>
+								   <div class="homedata" data-type="div" v-if="messagelist.length <= 0">
+										<div class="list" style="text-align: center;" >
+											暂无最新消息
+										</div>
+								   </div>
+								   <div class="homedata" data-type="div" v-if="messagelist.length > 0">
+										
+								        <div class="list" v-for="li in messagelist"  v-on:click="onMessageList(li)">
+											<div data-type="div" class="box" id="div_7">
+												<img src="{{li.image_}}" data-type="img" id="" class=""/>
+											</div>
+											<div class="homeList_right">
+											    <div data-type="div" id="topspan">
+											         <div data-type="div" id="span_23" class="span-custom-special">{{li.createtime_}}</div>{{li.title_}}
+											         </div>
+											    <div data-type="div" id="bottomspan">{{li.content_}}</div>
+											</div>
+										</div>
+										<!-- <div class="list">
+											<div data-type="div" class="box" id="div_7">
+												<img src="imgs/Group.png" data-type="img" id="img_6" class=""/>
+											</div>
+											<div class="homeList_right">
+											    <div data-type="div" id="topspan">
+											         <div data-type="div" id="span_23" class="span-custom-special">早上8:30</div>向好友转账积分提醒
+											         </div>
+											    <div data-type="div" id="bottomspan">向好友转账积分提醒</div>
+											</div>
+										</div> -->
+									</div>
+								</div>
+					       </div>
+						</div>
+						<div id="tab2" class="tab" data-type="div">
+						    <header class="bar bar-nav" data-type="header" id="header_tab2"  style="padding-right: .5rem;">
+										<a v-if="city!=''" class="button button-link pull-left button-custom-left city_btn" href="#" data-type="button" id="city_val" style="width: 50px;margin-left: 0;">{{city}}</a>
+                                        <a v-if="city==''" class="button button-link pull-left button-custom-left city_btn" href="#" data-type="button" id="city_val" style="margin-left:-.7rem;width:0;">{{city}}</a>
+										<a class="button button-link pull-left button-custom-left city_btn" href="#" data-type="button" class="span-custom-topimg" ><img src="imgs/Rectangle.png" /></a>
+										<span class="span-custom-tab2box" data-type="span">
+										  <span class="icon  icon-custom-searchicon" data-type="icon" id="icon_1"><img src="imgs/search.png"/ class="searchIcon"></span>
+                                          <input type="text" placeholder="6月6积分日" data-type="input" data-validate="" id="tab2_input" class="" v-model="keyVal" v-on:focus="onTabTwo" style="color:#fff;margin-top:.1rem;" v-if="city!=''">
+                                          <input type="text" placeholder="6月6积分日" data-type="input" data-validate="" id="tab2_input" class="" v-model="keyVal" v-on:focus="onTabTwo" style="margin-top:.1rem;width:14rem;color:#fff;"v-if="city==''" >
+										</span>
+										<!-- <a class="icon pull-right icon-r" data-type="button" id="icon-custom-plus"><img src="imgs/plus.png" id="icon-add" /></a> -->
+										<span class="icon  icon-add pull-right icon-rs" data-type="icon" id="add_img" style="font-size:1.5rem;"></span>
+							</header>
+							
+							     <div class="activityCont" data-type="content">
+                                     <div class="masks">
+                                         <!--点击加号显示出白色框-->
+                                        <!--  <div id="hidden_Div" data-type="div"></div> -->
+                                         <div data-type="div" class="right-container two">
+                                             <div class="right-alert two" data-type="div">
+                                                 <span data-type="span" class="arrows"></span>
+                                                 <div class="list-block" data-type="div" id="div_1">
+                                                     <ul data-type="list" id="list_1">
+                                                         <li data-type="itemContent" id="Add_Friends">
+                                                             <a href="#" class="item-content" data-type="a" id="a_1">
+                                                                 <div class="item-media" data-type="div" id="div_2">
+                                                                     <span class="icon one" data-type="icon" id="icon_1">
+                                                                         <img src="imgs/100.svg"  data-type="img"/>
+                                                                     </span>
+                                                                 </div>
+                                                                 <div class="item-inner" data-type="div" id="">
+                                                                     <div class="item-title" data-type="div" id="div_4" id="">添加好友</div>
+                                                                 </div>
+                                                             </a>
+                                                         </li>
+                                                         <li data-type="itemContent" id="saoyi_sao">
+                                                             <a href="#" class="item-content" data-type="a" id="a_1">
+                                                                 <div class="item-media" data-type="div" id="div_2">
+                                                                     <span class="icon two" data-type="icon" id="icon_1">
+                                                                         <img src="imgs/102.svg"  data-type="img"/>
+                                                                     </span>
+                                                                 </div>
+                                                                 <div class="item-inner" data-type="div" id="">
+                                                                     <div class="item-title" data-type="div" id="">扫一扫</div>
+                                                                 </div>
+                                                             </a>
+                                                         </li>
+                                                         <li data-type="itemContent" id="getMoney">
+                                                             <a href="#" class="item-content" data-type="a" id="a_1">
+                                                                 <div class="item-media" data-type="div" id="div_2">
+                                                                     <span class="icon three" data-type="icon" id="icon_1">
+                                                                         <img src="imgs/101.svg"  data-type="img"/>
+                                                                     </span>
+                                                                 </div>
+                                                                 <div class="item-inner" data-type="div" id="">
+                                                                     <div class="item-title" data-type="div" id="div_4" id="">收钱</div>
+                                                                 </div>
+                                                             </a>
+                                                         </li>
+                                                         
+                                                     </ul>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="content pull-to-refresh-content infinite-scroll infinite-scroll-bottom" data-type="content" data-ptr-distance="55"   id="content_activity_list" style="top:0;">			
+								   	<!-- 默认的下拉刷新层 -->
+										 <!--  <div class="pull-to-refresh-layer">
+												<div class="preloader"></div>
+												<div class="pull-to-refresh-arrow"></div>
+										  </div> -->
+									      <div data-type="div" id="div_7" class="activelist">
+												<div class="list" id='div_activity_list' data-type="div" v-for="li in tenant.list"  v-on:click="onHome(li.id_)" >
+													<div class="leftimg"><img src="{{li.icon_}}" data-type="img" id="img_1" class="">
+													</div>
+													<div class="right">
+														<div>
+															<div data-type="div" id="" class="special">{{li.name_}}</div>
+															<div data-type="div" id="" class="activicont">{{li.desc_}}</div>
+														</div>
+														<div>
+															<span data-type="span" id="span_6" class="activity_time">{{li.start_time}}{{li.end_time}}</span>
+														</div>
+													</div>
+													<div data-type="div" id="" class="floatBox" v-on:click="onUserName(li.id_)">{{li.user_name_}}</div>
+													<div class="clear"></div>
+												</div>
+												<div v-if="tenant.list.length< =0" style="text-align: center;padding-top: 3rem;">
+													暂无数据...
+												</div>
+											</div>
+								 	 <!-- 加载提示符 -->
+							     	 <div v-if="data.tenant.down_bool" class="infinite-scroll-preloader">
+							          <div class="preloader"></div>
+							     	 </div>  
+			                        </div>					    
+						    </div>
+						</div>
+						<div id="tab3" class="tab" data-type="div" >
+							<header class="bar bar-nav" data-type="header" style="padding-right: .5rem;">
+								<h1 class="title" data-type="h1">朋友</h1>
+								<a class="button button-link pull-right icon-right" href="#" data-type="a">
+                                    <span class="icon icon-add " data-type="icon" style="font-size:1.5rem;"></span>
+								</a>
+							</header>
+							
+                            <div class="contentlist" data-type="content" style="padding-top:2.2rem;">
+                                <div class="mask_box" style="">
+                                    <!--点击加号显示出白色框-->
+                                   <!--  <div id="hideBox" data-type="div"></div> -->
+                                    <div data-type="div" class="right-container">
+                                        <div class="right-alert" data-type="div">
+                                            <span data-type="span" class="arrows"></span>
+                                            <div class="list-block" data-type="div" id="div_1">
+                                                <ul data-type="list" id="list_1">
+                                                    <li data-type="itemContent" id="add_Friends">
+                                                        <a href="#" class="item-content" data-type="a" id="a_1">
+                                                            <div class="item-media" data-type="div" id="div_2">
+                                                                <span class="icon one" data-type="icon" id="icon_1">
+                                                                    <img src="imgs/100.svg"  data-type="img"/>
+                                                                </span>
+                                                            </div>
+                                                            <div class="item-inner" data-type="div" id="">
+                                                                <div class="item-title" data-type="div" id="div_4" id="">添加好友</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li data-type="itemContent" id="sao_yisao">
+                                                        <a href="#" class="item-content" data-type="a" id="a_1">
+                                                            <div class="item-media" data-type="div" id="div_2">
+                                                                <span class="icon two" data-type="icon" id="icon_1">
+                                                                    <img src="imgs/102.svg"  data-type="img"/>
+                                                                </span>
+                                                            </div>
+                                                            <div class="item-inner" data-type="div" id="">
+                                                                <div class="item-title" data-type="div">扫一扫</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li data-type="itemContent" id="shou_Money">
+                                                        <a href="#" class="item-content" data-type="a" id="a_1">
+                                                            <div class="item-media" data-type="div" id="div_2">
+                                                                <span class="icon three" data-type="icon" id="icon_1">
+                                                                    <img src="imgs/101.svg"  data-type="img"/>
+                                                                </span>
+                                                            </div>
+                                                            <div class="item-inner" data-type="div" id="">
+                                                                <div class="item-title" data-type="div" id="div_4" id="">收钱</div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+					    		<div class="searchbar row" data-type="row">
+								  
+								    <div class="search-input col-95" data-type="col">
+								        <input type="search" placeholder="搜索" id="result_input" v-model="value" v-on:input="onsearch_user_input">
+								        <!-- <span class="searchSelects" v-on:click="onSearch">搜索</span> -->
+								        <span class="icon  icon-custom-searchicons" data-type="icon" id="icon_1"><img src="imgs/s.svg" class="searchIcon"></span>
+								    </div>
+								</div>
+					    		
+									<!-- list start-->
+									<div class="list-block media-list o" data-type="div">
+									   <div data-type="div" class="div-custom-friendlist" v-if="friendsList.isNewFriend">
+									       <div data-type="div" class="div-custom-friendLeft" v-on:click="onFriends"><span data-type="span" class="span-custom-friendRight">{{friendsList.newFriendCount}}</span>新的朋友</div> 
+									       
+									   </div>
+									  <ul class="friendlist" data-type="list"> 
+										<li class="sort_list" data-type="itemContent" id="itemContent_1" v-for="li in friendsList.list" v-on:click="onFriendInfo(li.friends_id_)">
+													<a href="#" class="item-content" data-type="a" id="a_1">
+														<div class="" data-type="div" id="div_2">
+														   <div class="friendName">
+														        <div class="list-custom-friends" data-type="div">
+							                                            <div data-type="div" class="box" id="div_7">
+							                                                <img src="{{li.friends_image_}}" data-type="img" id="" class=""/>
+							                                            </div>
+							                                            <div class="homeLists_right">
+							                                                <span data-type="span" id="topspans" class="item-title">{{li.friends_name_}}</span>
+							                                                <span data-type="span" id="bottomspans">{{li.friends_phone_}}</span>
+							                                            </div>
+							                                    </div>
+														   </div>
+														 </div>
+												</a>
+									     </li>
+								
+								
+						          	</ul>
+						          	 <div data-type="div" v-if="friendsList.list.length <=0" style="border:0;padding-top:5rem;text-align:center;">
+                                        暂无好友...
+                                    </div>
+							<div class="letters-nav" data-type="div" id="div_13">
+								<ul style="background:none;">
+								    <li>*</li>
+									<li>A</li>
+									<li>B</li>
+									<li>C</li>
+									<li>D</li>
+									<li>E</li>
+									<li>F</li>
+									<li>G</li>
+									<li>H</li>
+									<li>I</li>
+									<li>J</li>
+									<li>K</li>
+									<li>L</li>
+									<li>M</li>
+									<li>N</li>
+									<li>O</li>
+									<li>P</li>
+									<li>Q</li>
+									<li>R</li>
+									<li>S</li>
+									<li>T</li>
+									<li>U</li>
+									<li>V</li>
+									<li>W</li>
+									<li>X</li>
+									<li>Y</li>
+									<li>Z</li>
+									
+								</ul>
+							</div>
+							<!--当前按下的字母特效展示-->
+							<div class="letter" data-type="div" id="div_14"></div>
+						</div>
+									<!-- list end--> 
+					</div>
+									    
+						</div>
+						<div id="tab4" class="tab" data-type="div">
+							 <div class="div-custom-my content" data-type="content">
+							  <div class="div-custom" data-type="div" id="my_header">
+								  <div class="header" data-type="div" id="">
+									<h3 data-type="h3">我的</h3>
+								  </div>   
+								  <div class="list-block mymessage">
+								    <ul class="mylist">
+								      <li>
+								        <a href="#" class="item-link item-content">
+								          <div class="item-media" id="homeImg"><img src="imgs/2.png"></div>
+								          <div class="item-inner">
+								            <div class="item-title-row">
+								              <div class="item-subtitle">{{myInfo.nick_name_}}</div>
+								              <div class="item-text">{{myInfo.phone_}}</div>
+								            </div>
+								          </div>
+								        </a>
+								      </li>
+								    </ul>
+								  </div>
+							  </div>
+							  <div class="myCont" data-type="content">
+							        <div class="list-block mymessages">
+									    <ul class="mycont_list">
+									      <li class="item-content item-link" id="bill">
+									        <div class="item-media"><i class="icon icon-custom-imgone"></i></div>
+									        <div class="item-inner">
+									          <div class="item-title">账单</div>
+									        </div>
+									      </li>
+									       <li class="item-content item-link" v-on:click="gobalance">
+									        <div class="item-media"><i class="icon icon-custom-imgtwo"></i></div>
+									        <div class="item-inner">
+									          <div class="item-title">积分钱包余额</div>
+                                              <div class="item-after" id="money_balance" >{{balance.chainsql_balance_}}</div>
+									        </div>
+									      </li>
+									       <li class="item-content item-link" v-on:click="gocash">
+									        <div class="item-media"><i class="icon icon-custom-imgtwoRes"></i></div>
+									        <div class="item-inner">
+									          <div class="item-title">现金账户余额</div>
+									          <div class="item-after" id="money_balance" >{{cash.balance_}}</div>
+									        </div>
+									      </li>
+									       <li class="item-content item-link" id="bankcard_page" v-on:click="onBlankCard">
+									        <div class="item-media"><i class="icon icon-custom-imgthree"></i></div>
+									        <div class="item-inner">
+									          <div class="item-title">银行卡</div>
+									        </div>
+									      </li>
+									       <li class="item-content item-link specialis" id="myCode">
+									        <div class="item-media"><i class="icon icon-custom-imgfour"></i></div>
+									        <div class="item-inner">
+									          <div class="item-title">我的二维码</div>
+									        </div>
+									      </li>
+									       <li class="item-content item-link" id="myMessage">
+									        <div class="item-media"><i class="icon icon-custom-imgfive"></i></div>
+									        <div class="item-inner special">
+									          <div class="item-title">我的消息</div>
+									          <div class="item-after" id="ring">1</div><!--{{friendsList.newFriendCount}}-->
+									        </div>
+									      </li>
+									      
+									      
+									    </ul>
+									      <ul class="mycont_list specialis" style="margin-top: 10px;" id="setting">
+									       <li class="item-content item-link">
+									        <div class="item-media"><i class="icon icon-custom-imgsix"></i></div>
+									        <div class="item-inner special">
+									          <div class="item-title">设置</div>
+									        </div>
+									      </li>
+									      </ul>
+									  </div>
+							  </div>
+							</div>
+						</div>
+					 </div>
+			   </div>
+		</div>
+   
+	</body>
+	<!--sui框架js-->
+    <script src="../../js/libs/zepto.js"></script>
+	<script src="../../js/libs/sm.js"></script>
+	<script src="../../js/libs/template.js"></script>
+	<script src="../../js/libs/echarts.js"></script>
+	<!--agreeSDK插件定义js-->
+	
+	<script src="../../js/public/agreeSDK.js"></script>
+	<script src="../../js/public/common.js"></script>
+	<script src="../../js/public/appPublicAction.js"></script>
+	<script src="js/homeEventBinds.js"></script>
+	<script type="text/javascript">
+	    $(function(){
+		        $('.buttons-tab .tab-link.button').on('click', function(e){
+		        	$("#footer").find(".icon").removeClass("active");
+		        	$(this).find('.icon').addClass('active');
+		        });
+		    	
+	  	})
+		
+	</script>
+	</html>

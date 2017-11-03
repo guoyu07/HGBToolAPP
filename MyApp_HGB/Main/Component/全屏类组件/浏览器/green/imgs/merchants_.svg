@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>merchants_</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="B_首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="B_1.1首页-切图" transform="translate(-202.000000, -1245.000000)">
+            <g id="merchants" transform="translate(201.000000, 1244.000000)">
+                <rect id="Rectangle-6" x="0" y="0" width="48" height="48"></rect>
+                <path d="M10.3370188,3.81404294 C10.7952206,2.81217469 12.0651072,2 13.1593295,2 L34.8406705,2 C35.9411878,2 37.2040308,2.81053798 37.6629812,3.81404294 L46,22.043113 C46,22.043113 46.0432254,28 40.5011504,28 C34.9590753,28 35.0310814,22.043113 35.0310814,22.043113 C35.0310814,22.043113 34.9399448,28 29.5,28 C24.0600552,28 24.0316718,22.043113 24.0316718,22.043113 C24.0316718,22.043113 23.9939965,28 18.5184386,28 C13.0428808,28 13.0724217,22.043113 13.0724217,22.043113 C13.0724217,22.043113 12.9953815,28 7.51873737,28 C2.04209325,28 2,22.043113 2,22.043113 L10.3370188,3.81404294 Z" id="Combined-Shape" stroke="#A0A0A0" stroke-width="2" stroke-linejoin="bevel"></path>
+                <path d="M6,31 L42,31 L42,40.9966691 C42,44.3122172 39.3235601,47 35.9946773,47 L11.0056458,47 C8.24110394,47 6,44.7584215 6,42.0033142 L6,31 Z M8,31 L8,41.0068977 C8,43.2126701 9.79276724,45 12.0042577,45 L35.9957423,45 C38.2109725,45 40,43.2122272 40,41.0068977 L40,31 L8,31 Z" id="Combined-Shape" fill="#A0A0A0" fill-rule="evenodd"></path>
+            </g>
+        </g>
+    </g>
+</svg>

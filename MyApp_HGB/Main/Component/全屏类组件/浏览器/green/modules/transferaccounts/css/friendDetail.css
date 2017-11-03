@@ -1,0 +1,152 @@
+
+#page-friendDetail_tpl .list-block ul{
+    padding-top: 1.6rem;
+    padding-bottom: 1rem;
+}
+#page-friendDetail_tpl .list-block .item-inner{
+	background-color: #FFFFFF;
+}
+#page-friendDetail_tpl .bg-transparent{
+	background-color: transparent !important;
+}
+#page-friendDetail_tpl .item-container .item-title{
+	color: #999999 !important;
+	font-size: 14px;
+}
+#page-friendDetail_tpl .item-container .item-after{
+	color: #333333 !important;
+	font-size: 14px;
+}
+#page-friendDetail_tpl .detail-msg .list-block .item-content{
+	    justify-content: center;
+}
+#icon_friend img{
+   
+    padding-right: 2rem;
+    height: 25px;
+}
+#page-friendDetail_tpl  .span-custom-jia{
+    display: block;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+}
+#page-friendDetail_tpl  .span-custom-shopsNames{
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    margin-left: -1.3rem;
+    color: #444444;
+    background: url(../imgs/55.svg) no-repeat 13rem .3rem;
+    background-size: 11px 12px;
+ }
+#page-friendDetail_tpl  .span-custom-recordSucessy{
+    display: block;
+    padding-right: .8rem;
+    font-size: 15px;
+    color: #FF6634;
+    text-align: center;
+}
+#page-friendDetail_tpl  .detail-msg .list-block .item-inner{
+	width: auto;
+}
+#page-friendDetail_tpl  .detail-msg .list-block{
+	margin: 0.75rem 0px 0px;
+}
+#page-friendDetail_tpl .detail-msg .list-block .item-content:after{
+	height: 0px;
+}
+#page-friendDetail_tpl .detail-msg .name{
+	font-size: 0.8rem;
+	color: #444444;
+}
+#page-friendDetail_tpl .detail-msg .money{
+	font-size: 1.25rem;
+}
+#page-friendDetail_tpl .detail-msg .state{
+	color: #FF6634;
+	font-size: 0.75rem;
+}
+#page-friendDetail_tpl .item-container{
+	margin: 0;
+}
+
+#page-friendDetail_tpl .check{
+	font-size: 0.8rem;
+	color: #000000;
+}
+#page-friendDetail_tpl .div-custom-mouthboxs{
+	background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-friendDetail_tpl .div-custom-transationbox{
+    padding: 0 .8rem 0 .4rem;
+    height: 48px;
+    font-size: 14px;
+    color: #888888;
+    /*border-bottom: 1px solid #f0f0f0;*/
+    line-height: 48px;
+    margin-left: .4rem;
+}  
+#page-friendDetail_tpl .div-custom-transationbox span{
+	display: inline-block;
+	font-size: 14px;
+    color: #333;
+	float: right;
+}
+#page-friendDetail_tpl .div-custom-shopTpl{
+	margin-top: 1rem;
+    padding: 0 .8rem 0 .4rem;
+	background: #fff;
+	border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+#page-friendDetail_tpl .div-custom-shopBoxDetails{
+	border-bottom: 1px solid #f0f0f0;
+    margin-left: .4rem;
+    height: 70px;
+    padding-top: .5rem;
+}
+#page-friendDetail_tpl .div-custom-mouthboxs .div-custom-transationbox:last-child,
+#page-friendDetail_tpl .div-custom-shopBoxDetails:last-child{
+	border:none;
+}
+#page-friendDetail_tpl .div-custom-shopTpls.big{
+	height: 50px;
+    margin-top: 6rem;
+    display: block;
+    line-height: 50px;
+    padding-left: .8rem;
+    font-size: 16px;
+    color: #000000;
+    background: url(../imgs/55.svg) no-repeat 17.3rem .7rem;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 #F0F0F0;
+    background-size: 15px 22px;
+}
+#page-friendDetail_tpl .div-custom-transationboxs.specialy{
+	display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #888888;
+}
+#page-friendDetail_tpl .div-custom-transationboxs.specialy span{
+	display: inline-block;
+    font-size: 14px;
+    color: #333;
+    float: right;
+}
+#page-friendDetail_tpl .div-custom-transationbox.bckimg{
+    padding: 0 .8rem 0 .4rem;
+    height: 48px;
+    font-size: 14px;
+    color: #888888;
+    /*border-bottom: 1px solid #f0f0f0;*/
+    line-height: 48px;
+    margin-left: .4rem;
+    background: url(../imgs/55.svg) no-repeat 17.2rem .8rem;
+    background-size: .5rem;
+}  
+#page-friendDetail_tpl .div-custom-transationbox.bckimg span{
+    padding-right: 1rem;
+} 

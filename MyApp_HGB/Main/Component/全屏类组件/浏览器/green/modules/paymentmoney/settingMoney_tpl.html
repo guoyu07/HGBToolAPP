@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<title>设置金额</title>
+		<link rel="stylesheet" href="../../css/libs/sm.css">
+		<link rel="stylesheet" href="../../css/theme/theme.css">
+		<link rel="stylesheet" href="../../css/appPublicStyle.css">
+		<link rel="stylesheet" href="css/settingMoney.css" />
+	</head>
+	<body>
+		<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+		<div class="page-group">
+			<!-- 单个page ,默认被展示-->
+			<div id="page-settingMoney_tpl" class="page page-current">
+				<!-- 标题栏 -->
+				<header class="bar bar-nav" data-type="header">
+					<a class="button button-link pull-left back" href="#" data-type="a">
+						<span class="icon icon-left" data-type="icon"></span>
+					</a>
+					<h1 class="title " data-type="h1">设置积分数量</h1>
+				</header>
+				<!-- 这里是页面内容区 -->
+				<div class="content content-backcolor" data-type="content" id="content-custom-settingmoney">
+		              <div data-type="div" class="div-custom-settingmoney">
+		                  <span data-type="span" class="span-custom-settingmoneyCont"> 
+		                      <span data-type="span" class="span-custom-settingmoney_je">积分数量</span>
+		                       <span data-type="span" class="span-custom-put_money"></span>
+                               <input type="text" placeholder="" data-type="input" pattern="[0-9]*" data-validate="" id="moneys" class="" v-model="integral" ref="integral" >
+		                  </span>  
+                          <div data-type="div" class="div-custom-open_cash" v-on:click="submit">
+                            <span class="span-custom-open_suresbtn">确定</span>
+                          </div>
+		             </div>
+				            
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<!--sui框架js-->
+	<script src="../../js/libs/zepto.js"></script>
+	<!--打包时-->
+	<script src="../../js/libs/sm.js"></script>
+	<!--agreeSDK插件定义js-->
+	<script src="../../js/public/agreeSDK.js"></script>
+	<!--公有方法-->
+	<script src="../../js/public/appPublicAction.js"></script>
+	<script src="js/settingMoneyEventBinds.js"></script>
+</html>

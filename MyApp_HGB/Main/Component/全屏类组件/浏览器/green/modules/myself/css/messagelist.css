@@ -1,0 +1,81 @@
+
+#page-messagelist_tpl .div-custom-merchant{
+	height: 55px;
+    border-bottom: 1px solid #F0f0f0;
+    margin-left: 1rem;
+    margin-bottom: 8px;
+}
+#page-messagelist_tpl .span-custom-selectMerimg{
+	display: inline-block;
+}
+#page-messagelist_tpl .span-custom-selectMerimg img{
+	width: 36px;
+    height: 36px;
+}
+#page-messagelist_tpl .content{
+	background: #fff;
+    margin-top: 0.3rem;
+}
+#page-messagelist_tpl .span-custom-rightSelectbox{
+	display: inline-block;
+    padding-left: .3rem;
+    width: 85%;
+}
+#page-messagelist_tpl{
+	background: #eaeaea !important;
+}
+#page-messagelist_tpl .div-custom-selectTop{
+	font-size: 17px;
+    color: #000000;
+}
+#page-messagelist_tpl .div-custom-selectBottom{
+	font-size: 14px;
+    color: #999;
+}
+#page-messagelist_tpl .div-custom-selectBottom span{
+	font-size: 13px;
+    padding-left: 4rem;
+    color: #444;
+    float: right;
+}
+#page-messagelist_tpl .search-inputs{
+	position: relative;
+}
+#page-messagelist_tpl .search-inputs input{
+    border-radius: 4px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 1.5rem;
+    box-shadow: 0;
+    border: none;
+    position: absolute;
+    top: 2.3rem;
+    width: 88%;
+    left: .3rem;
+}
+#page-messagelist_tpl .pull-to-refresh-layer .pull-to-refresh-arrow{
+	margin-top: -1.5rem;
+}
+#page-messagelist_tpl .icon-custom-searchicon img{
+	width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 2.9rem; 
+}
+#page-messagelist_tpl .icon-custom-searchicon {
+    left: -.3rem;
+}
+#page-messagelist_tpl  .div-custom-footer_search{
+	font-size: 14px;
+	 padding-top: 2rem;
+    text-align: center;
+    color: #999999; 
+}
+#page-messagelist_tpl  .span-custom-number{
+    font-size: 13px;
+    line-height: 1.3rem;
+    display: inline-block;
+    padding-left: 4rem;
+    color: #444;
+    float: right;
+}

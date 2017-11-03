@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>搜索所有信息</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/activityAll.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-activityAll_tpl" class="page page-current">
+        <!-- 标题栏 -->
+         <header class="bar bar-nav" data-type="header" id="header-custom-searchheader">
+                    <a class="button button-link pull-left back" href="#" data-type="a"> <span class="icon icon-left" data-type="icon"></span> </a>
+                    <a class="button button-link pull-left merchantInput activityAllInput" href="#" data-type="a" id="a-custom-input"><input type="text" placeholder='' id="native-search" value="" style="width:14.5rem;" data-type="input"/></a>
+                    <a class="button button-link pull-left" data-type="a" id="a-custom-right" v-on:click="onInput" style="display: inline-block;
+                        float: right;">搜索</a>
+                            
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="" class="activityAllPage"> 
+            <div class="buttons-tab">
+                <a href="#tab1" data-type="button" class="tab-link active button tentActivity">商户活动</a>
+                <a href="#tab2" data-type="button" class="tab-link button tenants" v-on:click="tabTenants">商户</a>
+                <a href="#tab3" data-type="button" class="tab-link button friends"   v-on:click="tabFriends">好友</a>
+            </div>
+            <div class="tabs">
+                    <div id="tab1" data-type="" class="tab active ">
+                      <div class="list-block">
+                          <!-- 下拉刷新 -START -->
+                         <!-- <div class="content pull-to-refresh-content" data-type="content" data-ptr-distance="100" >
+                                 <div class="pull-to-refresh-layer">
+                                      <div class="preloader"></div>
+                                      <div class="pull-to-refresh-arrow"></div>
+                                </div>
+                          </div>   -->
+                          <div class="allList" data-type="div" v-if="tenantActivityList.list.length <= 0">
+                            <div class="list" style="text-align: center;" >
+                              暂无活动
+                            </div>
+                          </div>   
+                          <div class="allList " data-type="div">
+                              <!-- 循环列表 START -->
+                               <div class="list" id='div_activity_list' data-type="div" v-for="li in tenantActivityList.list" v-on:click = "onClicks(li.id_)" >
+                                  <div class="leftimg"><img src="{{li.icon_}}" data-type="img" id="img_1" class="">
+                                  </div>
+                                  <div class="right">
+                                      <div>
+                                          <div data-type="div" id="" class="special">{{li.name_}}</div>
+                                          <div data-type="div" id="" class="activicont">{{li.desc_}}</div>
+                                      </div>
+                                      <div>
+                                          <span data-type="span" id="span_6" class="activity_time">活动时间：{{li.start_time_}}{{li.end_time_}}</span>
+                                      </div>
+                                      <div data-type="div" id="" class="floatBox">{{li.user_name_}}</div>
+                                  </div>
+                                  <div class="clear"></div>
+                              </div>
+                              <!-- 循环列表 END -->
+                          </div> 
+                      </div>
+                      <div class="infinite-scroll-preloader" v-if="data.tenantActivityList.down_bool">
+                        <div class="preloader"></div>
+                      </div> 
+                    
+                     <!-- 下拉刷新 -END -->
+                   </div>
+
+                    <div id="tab2"  class="tab infinite-scroll">
+
+                      <div class="list-block">
+                          <!-- 下拉刷新 -START -->
+                         <!--  <div class="content pull-to-refresh-content" data-type="content" data-ptr-distance="100" >
+                                <div class="pull-to-refresh-layer">
+                                      <div class="preloader"></div>
+                                      <div class="pull-to-refresh-arrow"></div>
+                                </div>
+                          </div>  -->  
+                        <div class="allList" data-type="div" v-if="tenantsList.list.length <= 0">
+                            <div class="list" style="text-align: center;" >
+                              暂无商户
+                            </div>
+                        </div>       
+                        <div class="allList specialt" data-type="div">             
+                               <div class="list" id='div_activity_list' data-type="div" v-for="li in tenantsList.list" v-on:click = "onShops(li.id_)">
+                                <div class="leftimg"><img src="{{li.image_}}" data-type="img" id="img_1" class="">
+                                </div>
+                                <div class="right">
+                                    <div>
+                                        <div data-type="div" id="" class="special">{{li.name_}}</div>
+                                        <div data-type="div" id="" class="activicont">地址：{{li.city_}}</div>
+                                    </div>
+                                    <div>
+                                        <span data-type="span" id="span_6" class="activity_time">电话：{{li.bus_telephone_}}</span>
+                                    </div>
+                                    <div data-type="div" id="" class="floatBox">{{li.code_}}</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                      
+                       <div class="infinite-scroll-preloader" v-if="data.tenantsList.down_bool">
+                        <div class="preloader"></div>
+                       </div> 
+                     
+                      </div>
+                    </div>
+                    <!-- 下拉刷新 -END --> 
+                    <div id="tab3" class="tab infinite-scroll">
+                    <!-- 下拉刷新 -START -->
+                         <div class="list-block">
+                          <!-- 下拉刷新 -START -->
+                             <!--  <div class="content pull-to-refresh-content" data-type="content" data-ptr-distance="100" >
+                                  <div class="pull-to-refresh-layer">
+                                      <div class="preloader"></div>
+                                      <div class="pull-to-refresh-arrow"></div>
+                                  </div>
+                               </div>  --> 
+                              <div class="list_friends" data-type="div" v-if="friendsList.list.length <= 0">
+                                  <div class="list" style="text-align: center;" >
+                                    暂无好友
+                                  </div>
+                              </div>
+                               <div class="list_friends">
+                                 <div class="list" id='div_activity_list' data-type="div" v-for="li in friendsList.list" v-on:click="onFriends(li.friends_id_)">
+                                  <div class="leftimg"><img src="{{li.friends_image_}}" data-type="img" id="img_1" class="">
+                                  </div>
+                                  <div class="right">
+                                      <div>
+                                          <div data-type="div" id="" class="special">{{li.friends_name_}}</div>
+                                          <div data-type="div" id="" class="activicont">{{li.friends_phone_}}</div>
+                                      </div>
+                                  </div>
+                                  <div class="clear"></div>
+                                 </div>
+                               </div> 
+                              
+                        </div>
+                     
+                        <div class="infinite-scroll-preloader" v-if="data.friendsList.down_bool" >
+                          <div class="preloader"></div>
+                        </div>  
+                    
+                   </div> 
+                    <!-- 下拉刷新 -END -->
+                   </div>
+            </div>
+        </div>
+</div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+
+
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/common.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/activityAllEventBinds.js"></script>
+</html>

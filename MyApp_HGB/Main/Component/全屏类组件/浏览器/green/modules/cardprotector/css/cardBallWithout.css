@@ -1,0 +1,20 @@
+
+#page-cardBallWithout_tpl  .div-custom-cardBox .span-custom-righttext{
+	display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.7rem;
+    background: url(../imgs/55.svg) no-repeat 3.3rem 1.2rem;
+    background-size: 9px 18px;
+}
+
+#page-cardBallWithout_tpl .div-custom-shopslist .div-custom-rightcont{
+    width: 85%;	
+}
+#page-cardBallWithout_tpl .div-custom-shopslist .div-custom-leftcont img{
+    width:48px;
+    height:48px ;
+}

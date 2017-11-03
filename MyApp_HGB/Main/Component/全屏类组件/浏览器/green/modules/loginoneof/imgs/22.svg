@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="690px" height="86px" viewBox="0 0 690 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 26 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="43.7379078%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FC4E5A" offset="0%"></stop>
+            <stop stop-color="#FD9F56" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="D_扫一扫" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D_切图" transform="translate(-30.000000, -265.000000)" fill="url(#linearGradient-1)">
+            <rect id="Rectangle-26-Copy-2" x="30" y="265" width="690" height="86" rx="10"></rect>
+        </g>
+    </g>
+</svg>

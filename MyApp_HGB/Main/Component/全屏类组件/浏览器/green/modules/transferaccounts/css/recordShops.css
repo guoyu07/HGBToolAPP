@@ -1,0 +1,115 @@
+
+#page-recordShops_tpl .list-block{
+	margin: 0 !important;
+}
+#page-recordShops_tpl  .action{
+	font-size: 0.85rem;
+}
+#page-recordShops_tpl .downDes{
+	min-height: 0rem !important;
+    height: 0.6rem !important;
+    padding-bottom: 1rem !important;
+    padding-top: 0.4rem !important;
+    color: #999999 !important;
+    font-size: 0.7rem !important;
+}
+
+#page-recordShops_tpl .topItemDes{
+	padding-bottom: 0 !important;
+    min-height: 0 !important;
+    font-size: 0.85rem;
+}
+
+#page-recordShops_tpl .day{
+	font-size: 0.75rem;
+}
+#page-recordShops_tpl .dayContainer{
+	background-color: #fafafa;
+}
+
+#page-recordShops_tpl .money-minus{
+	font-size: 0.95rem;
+	color: #000000 !important;
+}
+#page-recordShops_tpl .money-plus{
+	font-size: 0.95rem;
+	color: #FD9F56 !important;
+}
+
+#page-recordShops_tpl .state-success{
+	font-size: 0.65rem;
+	color: #FC4E5A !important;
+}
+#page-recordShops_tpl .div-custom-mouthboxs{
+	margin-left: 1rem;
+    border-bottom:1px solid #f0f0f0;
+}
+#page-recordShops_tpl .div-custom-transationbox{
+    padding:.2rem .8rem 1.1rem 0;
+    height: 28px;
+}
+#page-recordShops_tpl .div-custom-record_shops_header{
+	border-top:1px solid #f0f0f0;
+	background: #fff;
+	border-bottom:1px solid #f0f0f0;
+}
+#page-recordShops_tpl .div-custom-transationbox.specialColor{
+    font-size: 14px;
+    color: #999;
+}
+#page-recordShops_tpl .div-custom-shopDetails{
+	padding-top: .2rem;
+}
+#page-recordShops_tpl .div-custom-transationbox span{
+	display: inline-block;
+	float: right;
+}
+#page-recordShops_tpl .div-custom-shopTpl{
+	margin-top: 1rem;
+    padding: 0 .8rem 0 .4rem;
+	background: #fff;
+	border-top:1px solid #f0f0f0;
+    border-bottom:1px solid #f0f0f0;
+}
+#page-recordShops_tpl .div-custom-shopBoxDetails{
+	border-bottom: 1px solid #f0f0f0;
+    margin-left: .4rem;
+}
+#page-recordShops_tpl  .div-custom-transationboxs.specialy{
+	display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #888888;
+    line-height: 1.7rem;
+}
+#page-recordShops_tpl  .div-custom-transationboxs.specialy span{
+	display: inline-block;
+    font-size: 14px;
+    color: #333;
+    float: right;
+}
+#page-recordShops_tpl .span-custom-year{
+    color: #4b4b4b;
+    font-size:15px; 
+}
+#page-recordShops_tpl .span-custom-year,
+#page-recordShops_tpl .span-custom-recordList{
+	 display: block;
+	 padding-left: 1rem;
+}
+
+#page-recordShops_tpl .span-custom-recordList{
+    color: #999;
+    font-size:14px; 
+}
+#page-recordShops_tpl .span-custom-topGray{
+	font-size: 19px;
+    color: #000000;
+}
+#page-recordShops_tpl .span-custom-bottomGray{
+	font-size: 13px;
+    color: #FC4E5A;
+}
+#page-recordShops_tpl .div-custom-mouthboxs:last-child{
+	border-bottom: none;
+}

@@ -1,0 +1,64 @@
+#page-collectMoney_tpl{
+    background-image: url(../imgs/33.png) !important;
+    background-size: 100% auto !important;
+}
+#page-collectMoney_tpl .bar-nav {
+    background: none !important;
+}
+#page-collectMoney_tpl .bar:after{
+	height: 0px;
+}
+.div-custom-collectionbox{
+	padding: 18px 0 0 15px;
+	height: 390px;
+	width: 90%;
+	box-sizing:border-box;
+    margin: auto;
+	background: #FFF;
+	border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+#page-collection{
+	padding: 36px 20px 0 20px;
+}
+.span-custom-topcont,.span-custom-topcode,.span-custom-toptext{
+	display: block;
+}
+.span-custom-topcont{
+	background: url(../imgs/44.svg) no-repeat center left;
+	background-size: 20px 20px;
+	padding-left: 1.3rem;
+    font-size: 14px;
+    color: #444444;
+}
+.span-custom-topcode,.span-custom-toptext{
+	text-align: center;
+	font-size: 16px;
+    color: #444444;
+}
+.span-custom-toptext{
+	padding-top:28px;
+}
+.span-custom-topcode img{
+	display: inline-block;
+    text-align: center;
+    height: 170px;
+    margin-top: 14px;
+}
+.collection span{
+    display: inline-block;
+    text-align: center;
+}
+.collection{
+    display:block;
+	text-align: center;
+}
+.span-custom-collect_je{
+    padding-right: .7rem;
+    height: 16px;
+    line-height: 16px;
+	border-right: 1px solid #999;
+}
+.span-custom-record{
+	padding-left: .5rem;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>选择朋友</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link rel="stylesheet" href="css/friendslist.css"/>
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-friendslist_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+		    <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+    		<h1 class="title" data-type="h1">选择朋友</h1>
+		</header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content">
+    		<div class="searchbar row" data-type="row">
+			    <div class="search-input col-95" data-type="col">
+                    <input type="text" placeholder='搜索' id="result_input" v-on:input="onInput" v-model="seaval" >
+			        <span class="icon  icon-custom-searchicon" data-type="icon" id="icon_1"><img src="imgs/s.svg" class="searchIcon" v-model="searchFriends"></span>
+			    </div>
+			</div>
+            <!-- list start-->
+			<div class="list-block media-list mobileContact" data-type="div">
+				 <ul class="friendlist" data-type="list" id="items_1">
+				          
+					       <li class="sort_list" data-type="itemContent" id="itemContent_1" v-for="li in friends.list" v-on:click="onSelect(li)">
+								<a href="#" class="item-content" data-type="a" id="a_1">
+									<div class="" data-type="div" id="div_2">
+									   <div class="friendName">
+									        <div class="list-custom-friends" data-type="div">
+		                                            <div data-type="div" class="box" id="div_7">
+		                                                <img src="{{li.friends_image_}}" data-type="img" id="img_6" class=""/>
+		                                            </div>
+		                                            <div class="homeLists_right">
+		                                                <span data-type="span" id="topspans" class="item-title">{{li.friends_name_}}</span>
+		                                                <span data-type="span" id="bottomspans">{{li.friends_phone_}}</span>
+		                                            </div>
+		                                    </div>
+									   </div>
+									 </div>
+							    </a>
+					       </li>
+					      
+				</ul>
+				 <div class="letters-nav" data-type="div" id="div_13">
+							<ul style="background:none;">
+							    <li>*</li>
+								<li>A</li>
+								<li>B</li>
+								<li>C</li>
+								<li>D</li>
+								<li>E</li>
+								<li>F</li>
+								<li>G</li>
+								<li>H</li>
+								<li>I</li>
+								<li>J</li>
+								<li>K</li>
+								<li>L</li>
+								<li>M</li>
+								<li>N</li>
+								<li>O</li>
+								<li>P</li>
+								<li>Q</li>
+								<li>R</li>
+								<li>S</li>
+								<li>T</li>
+								<li>U</li>
+								<li>V</li>
+								<li>W</li>
+								<li>X</li>
+								<li>Y</li>
+								<li>Z</li>
+								
+							</ul>
+				 </div>
+						<!--当前按下的字母特效展示-->
+			     <div class="letter" data-type="div" id="div_14"></div>
+			</div>
+				
+		</div>
+	</div> 
+</div>
+</body>
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<script src="../../js/libs/template.js"></script>
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="js/friendslistEventBinds.js"></script>
+</html>

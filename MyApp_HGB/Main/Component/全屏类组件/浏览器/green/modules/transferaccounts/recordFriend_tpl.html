@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>交易记录</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/recordFriend.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-recordFriend_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav header" data-type="header" id="transaction_header">
+	            <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+	                <span class="icon icon-left" data-type="icon"></span>
+	            </a>
+	            <h1 class="title" data-type="h1">交易记录</h1>
+	            <div class="list-block transaction">
+				    <ul class="tranctionists">
+				      <li>
+				        <a href="#" class="item-link item-content">
+                            <div class="item-media"><img src="{{image_}}"></div>
+				          <div class="item-inner">
+				            <div class="item-title-row">
+				              <div class="item-subtitle">{{name_}}</div>
+				              <div class="item-text">剩余积分：{{chainsql_balance_}}</div>
+				            </div>
+				          </div>
+				        </a>
+				      </li>
+				    </ul>
+				</div>
+	    </header>	
+       <!-- 这里是页面内容区 -->
+         <div class="content pull-to-refresh-content infinite-scroll infinite-scroll-bottom" data-type="content" data-ptr-distance="55"  data-distance="100">			
+	   	<!-- 默认的下拉刷新层 -->
+			<!--   <div class="pull-to-refresh-layer">
+					<div class="preloader"></div>
+					<div class="pull-to-refresh-arrow"></div>
+			  </div> -->
+			 <div class="list-container">
+		      <div data-type="div" class="div-custom-oboxlist">
+		      	<!-- 月份 -->
+		         <div data-type="div" class="div-custom-obox" v-for="mouth in list">
+		             <span data-type="span" class="span-custom-mouth">{{mouth.key}}月</span>
+		             <div data-type="div" class="div-custom-mouthboxs">
+                         <div data-type="div" id="{{li.id_}}" class="div-custom-transationbox" v-for="li in mouth.list" v-on:click="oninfo(li)">
+						     <!-- 列表详情 -->
+						       <div class="div-custom-transboxs"  data-type="div" >
+						       	   <!-- 订单号 -->
+						           <div class="div-custom-transtop" data-type="div">
+                                       <span v-if="li.pay_type_ == '+'">{{li.pay_name_}}向我支付</span>
+                                       <span v-if="li.pay_type_ == '-'">向{{li.get_name_}}付款</span>
+						           
+						           </div>
+						           <div class="clear"></div>
+						           <div class="div-custom-transbottom" data-type="span">{{li.create_time_}}
+                                       <!-- + -  总金额 -->
+                                    <span data-type="span" class="span-custom-toptext">{{li.pay_type_}}{{li.total_amount_}}</span>
+						           	<!-- 订单类型 -->
+						            <span data-type="span" class="span-custom-bottomtext">{{li.order_type_name}}</span>
+						           </div>				               
+						          
+						       </div>
+						  </div>
+					   </div>
+			    </div>
+			    <div v-if="list.length<=0" style="text-align: center;padding-top:1rem;">
+			    	暂无交易记录....
+			    </div>
+			  </div>
+			 </div>
+			 <div class="infinite-scroll-preloader" v-if="down_bool">
+	          <div class="preloader"></div>
+	     	 </div> 
+	    </div>
+	</div>
+	</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/common.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+
+<script src="../../js/public/appPublicAction.js"></script>
+
+<script src="js/recordFriendEventBinds.js"></script>
+</html>

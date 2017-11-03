@@ -1,0 +1,11 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) '$(PODS_ROOT)/WeexSDK' "${PODS_ROOT}/BaiduMapKit/BaiduMapKit" "${PODS_ROOT}/UMengAnalytics-NO-IDFA/umsdk_IOS_analyics_no-idfa_v4.2.5" "${PODS_ROOT}/WeexSDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BaiduMapKit" "${PODS_ROOT}/Headers/Public/Cordova" "${PODS_ROOT}/Headers/Public/SocketRocket" "${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA" "${PODS_ROOT}/Headers/Public/WeexSDK"
+LIBRARY_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/UMengAnalytics-NO-IDFA/**" "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/Cordova" "$PODS_CONFIGURATION_BUILD_DIR/SocketRocket" $(inherited) "${PODS_ROOT}/BaiduMapKit/BaiduMapKit/thirdlibs"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/BaiduMapKit" -isystem "${PODS_ROOT}/Headers/Public/Cordova" -isystem "${PODS_ROOT}/Headers/Public/SocketRocket" -isystem "${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA" -isystem "${PODS_ROOT}/Headers/Public/WeexSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"Cordova" -l"SocketRocket" -l"crypto" -l"icucore" -l"sqlite3" -l"sqlite3.0" -l"ssl" -l"stdc++" -l"stdc++.6.0.9" -l"z" -framework "AVFoundation" -framework "AVKit" -framework "AssetsLibrary" -framework "BaiduMapAPI_Base" -framework "BaiduMapAPI_Cloud" -framework "BaiduMapAPI_Location" -framework "BaiduMapAPI_Map" -framework "BaiduMapAPI_Radar" -framework "BaiduMapAPI_Search" -framework "BaiduMapAPI_Utils" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreText" -framework "GLKit" -framework "JavaScriptCore" -framework "MediaPlayer" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UMMobClick" -framework "WeexSDK"
+OTHER_LINK_FLAG = $(inherited) -ObjC
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

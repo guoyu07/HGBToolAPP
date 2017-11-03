@@ -1,0 +1,41 @@
+
+.div-custom-friendcont{
+	height: 57px;
+    padding-top: .3rem;
+    margin-left: .8rem;
+    box-sizing: border-box;
+    padding-right: .9rem;
+    border-bottom: 1px solid #f0f0f0;
+    background: url(../imgs/add_saoyisao.svg) no-repeat 0rem .5rem;
+    background-size: 36px 36px;
+}
+.div-custom-friendcont.special{
+	height: 57px;
+    padding-top: .3rem;
+    margin-left: .8rem;
+    box-sizing: border-box;
+    padding-right: .9rem;
+    border-bottom: 1px solid #f0f0f0;
+    background: url(../imgs/add_phonepeople.svg) no-repeat 0rem .5rem;
+    background-size: 36px 36px;
+}
+.addlist{
+	background: #fff;
+}
+.div-custom-r{
+	float: right;
+	width: 87%;
+	background: url(../imgs/55.svg) no-repeat center right;
+    background-size: 9px 24px;
+}
+.div-custom-Limg{
+    float: left;	
+}
+.div-custom-r .div-custom-addtop{
+	color: #000;
+	font-size: 17px;
+}
+.div-custom-r .div-custom-addbottom{
+	color: #999;
+	font-size: 14px;
+}

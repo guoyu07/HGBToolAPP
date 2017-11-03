@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>手势验证</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link rel="stylesheet" href="css/gestureVerification.css"/>
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-gestureVerification_tpl" class="page page-current page-bck">
+		<!-- 这里是页面内容区 -->
+				<div class="content" data-type="content" id="loginpage">
+					<!--占位图-->
+					<div class="div" data-type="div">
+					    <img class="logo" src="imgs/logo.svg" data-type="img"/>
+					</div>
+					<div class="title" data-type="div">
+					请输入登陆手势
+					</div>
+					<div dta-type="div" class="div-custom-gesturebox">
+						<ul class="gesturelist" data-type="list">
+							  <li><a></a></li>
+							  <li><a></a></li>  
+							  <li><a></a></li>  
+							  <li><a></a></li>  
+							  <li><a></a></li>  
+							  <li><a></a></li>  
+							  <li><a></a></li>  
+							  <li><a></a></li>  
+							  <li><a></a></li>    
+					    </ul> 
+					</div>
+					<div data-type="div" class="div-custom-fingerprint"></div>
+					    
+					
+				</div>
+</div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--开发时-->
+<!--<script src="../../js/dev/sm.dev.js"></script>-->
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--公有方法-->
+<script src="../../js/public/appPublicAction.js"></script>
+<!--card页面初始化js事件-->
+<script src="js/gestureVerificationEventBinds.js"></script>
+</html>

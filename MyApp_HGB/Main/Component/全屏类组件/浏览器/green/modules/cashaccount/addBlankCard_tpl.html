@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>添加银行卡-输入银行卡信息</title>
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link rel="stylesheet" href="css/addBlankCard.css">
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div class="page page-current" id="page-addBlankCard_tpl">
+        <header class="bar bar-nav" data-type="header" id="header_1">
+             <a class="button button-link pull-left back" href="#" data-type="a">
+						<span class="icon icon-left" data-type="icon"></span>
+			 </a>
+            <h1 class="title h1-custom-title" data-type="h1" id="h1_1">添加银行卡</h1>
+        </header>
+        <div class="content" data-type="content">
+			<form id="form_1" data-type="form">
+                <div class="list-block div-custom-listBlock" data-type="div"
+                     id="div_7">
+                      <div class="div-custom-card" data-type="div">                          
+                                                                      输入卡片设置
+                              
+                        </div>
+                    <ul data-type="list" id="modifyinfo">
+                         <li class="backimg">
+			                   <a href="#" id="a_modify_password">
+			                                                                               持卡人
+			                   </a>
+			                      
+			                     <div class="div-custom-input" data-type="div" id="nomal">
+	                                <input type="text" name="" placeholder="请输入正确姓名"
+	                                       class="input input-right" id="input_cord"  data-validate="idcard" v-model="myInfo.name_" v-if="isDis == '3'"/>
+
+	                                 <input type="text" name="" placeholder="请输入正确姓名"
+	                                       class="input input-right" id="input_cord"  data-validate="idcard" v-model="myInfo.name_" v-if="isDis == '1'" readonly="true" />
+	                                  <input type="text" name="" placeholder="请输入正确姓名"
+	                                       class="input input-right" id="input_cord"  data-validate="idcard" v-model="myInfo.name_" v-if="isDis == '2'" readonly="true" />
+			                     </div>  
+			                   
+			                      
+			              </li>
+			               
+			               <li>
+			                   <a href="#">
+			                                                                               身份证
+			                   </a>
+			                     
+			                    <div class="div-custom-input" data-type="div" id="nomal">
+	                                <input type="text" name="" placeholder="请输入身份证号"
+	                                       class="input input-right" id="input_cord" data-validate="idcard" v-model="myInfo.id_no_" v-if="isDis == '3'"/>
+	                                <input type="text" name="" placeholder="请输入身份证号"
+	                                       class="input input-right" id="input_cord" data-validate="idcard" v-model="myInfo.id_no_" v-if="isDis == '1'" readonly="true" />
+	                                  <input type="text" name="" placeholder="请输入身份证号"
+	                                       class="input input-right" id="input_cord" data-validate="idcard" v-model="myInfo.id_no_" v-if="isDis == '2'" readonly="true" />
+
+			                     </div> 
+			                         
+			                      
+			              </li>
+			               <li>
+			                   <a href="#">
+			                                                                               银行卡
+			                   </a>
+			                    <div class="div-custom-input" data-type="div" id="div-custom-special_form">
+	                                <input type="number" name="" placeholder="请输入请要绑定的卡号"
+                                    class="input input-right" id="input_card" data-validate="bankcard" v-on:input="checkcard" v-model="myInfo.bank_cardno_"  v-if="isDis == '3'" />
+                                     <input type="number" name="" placeholder="请输入请要绑定的卡号"
+                                    class="input input-right" id="input_card" data-validate="bankcard" v-on:input="checkcard" v-model="myInfo.bank_cardno_"  v-if="isDis == '1'" />
+                                     <input type="number" name="" placeholder="请输入请要绑定的卡号"
+                                    class="input input-right" id="input_card" data-validate="bankcard" v-on:input="checkcard" v-model="myInfo.bank_cardno_" v-if="isDis == '2'" readonly="true"/>
+			                     </div>             
+			                      
+			              </li>
+			               <li>
+			                   <a href="#">
+			                                                                               发卡行
+			                   </a>
+			                    <div class="div-custom-input" data-type="div" id="div-custom-special_form">
+	                               <input type="text" value="" data-type="" id="picker_bank" class="picker-custom-addCard" readonly="" style="color:#999;font-size:16px ;" data-validate="bankcard" v-model="myInfo.send_card_bank_" v-if="isDis == '3'"/>
+	                                <input type="text" value="" data-type="" id="picker_bank" class="picker-custom-addCard" readonly="" style="color:#999;font-size:16px ;" data-validate="bankcard" v-model="myInfo.send_card_bank_" v-if="isDis == '1'"/>
+	                                 <input type="text" value="" data-type="" id="picker_bank" class="picker-custom-addCard" readonly="" style="color:#999;font-size:16px ;" data-validate="bankcard" v-model="myInfo.send_card_bank_" v-if="isDis == '2'" readonly="true"/>
+			                     </div>             
+			                      
+			              </li>
+			             <li>
+			                   <a href="#">
+			                                                                               手机号
+			                   </a>
+			                    <div class="div-custom-input" data-type="div" id="div-custom-special_form">
+	                                <input type="text" name="" placeholder="请输入银行预留手机号"
+	                                       class="input input-right" id="input_cord" data-validate="phone" v-model="myInfo.phone_"  v-if="isDis == '3'" />
+	                                 <input type="text" name="" placeholder="请输入银行预留手机号"
+	                                       class="input input-right" id="input_cord" data-validate="phone" v-model="myInfo.phone_"  v-if="isDis == '1'" />
+	                                 <input type="text" name="" placeholder="请输入银行预留手机号"
+	                                       class="input input-right" id="input_cord" data-validate="phone" v-model="myInfo.phone_" v-if="isDis == '2'" readonly="true"/>
+			                     </div>             
+			                      
+			              </li> 
+                    </ul>
+                    <div data-type="div" id="div_box" class="clause-container">
+	                    <label class="label-checkbox" data-type="checkbox" id="checkbox_1">
+	                        <input type="checkbox" id="consent" v-model="myInfo.checked"> <span class="icon icon-form-check" id="goubox" ></span>
+	                    </label>
+	                        
+	                    <a href="#" data-type="a" id="a_1" class="a-custom-text">同意《用户各大银行限额说明协议》</a>
+	                </div>
+	                <div data-type="div" class="save-container" v-if="isShow">
+	                  
+	                     <input  type="button" name="submit" value="完成"
+			                   class="button button-big registerbtn" data-type="input" v-on:click="submit" id="button-custom-addFinish">
+	                </div>
+	                 <div data-type="div" class="save-container" v-if="!isShow">
+	                  
+	                     <input  type="button" name="submit" value="签约激活"
+			                   class="button button-big registerbtn" data-type="input" v-on:click="submit1" id="button-custom-addFinish">
+	                </div>
+	                    
+                </div>
+            </form>
+	    </div>
+        
+    </div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/bank.js"></script>
+<script src="../../js/public/common.js"></script>
+
+<script src="js/addBlankCardEventBinds.js"></script>
+</html>

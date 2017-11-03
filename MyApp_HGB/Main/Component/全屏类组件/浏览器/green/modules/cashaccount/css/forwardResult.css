@@ -1,0 +1,35 @@
+#page-forwardResult_tpl .content,
+#page-cash_recharge_fail_tpl{
+    padding: 24px 0 0 0;
+    margin: 0;
+}
+#page-forwardResult_tpl .span-custom-txs.cashimg{
+    display: block;
+
+}
+#page-forwardResult_tpl .span-custom-txs.cashimg img{
+    width: 37px;
+    height:37px;
+}
+#page-forwardResult_tpl .tops{
+    text-align: center;
+    height: 150px;
+    box-sizing:border-box;
+    padding-top:27px;
+    background: #fff;
+}
+
+#page-forwardResult_tpl .bottoms span{
+    display: inline-block;
+    font-size: 14px;
+    color: #888888;
+}
+#page-forwardResult_tpl .bottoms{
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    height: 48px;
+    margin-top: 13px;
+    padding:0 1rem 0 1rem;
+    line-height: 48px;
+}
+

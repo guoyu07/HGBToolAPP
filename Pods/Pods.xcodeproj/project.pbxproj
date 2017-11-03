@@ -1,0 +1,1433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0214246CCB1FF7182F7222B9CCDF8FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487457B207FD32BC494EA1EDA168789E /* Foundation.framework */; };
+		09732418DE04022154307E5F82C66BA8 /* CDVHandleOpenURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 747E854B41DD5F9D09BD08902438C50F /* CDVHandleOpenURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ED395443CAB8F49F5A5B7CC51A85016 /* CDVScreenOrientationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 214D567B84709A5A47459FF927C84C5D /* CDVScreenOrientationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F3534B9119F45FD3CCD08872F6CB1FE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5699810D257370540629C3DC00D5FA /* MobileCoreServices.framework */; };
+		1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF3D5D09F1302034C082A3ECE6E99F1 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16A5253C79F83370409D2DFE029D1454 /* CDVInvokedUrlCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A03D52052604F79FBD4688A58CB0EE1 /* CDVInvokedUrlCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E7517662140701D88A8CEE2CF19586 /* CDVURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B95E682721B4A15FABD5CA9C9476AEA /* CDVURLProtocol.m */; };
+		18C345438D6821F5FECF27E761F871D2 /* CDVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9280C2C5B32BC933F74E5BA7585C8D /* CDVViewController.m */; };
+		1E87B9DBC6A636EC9268A2AD47F374F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487457B207FD32BC494EA1EDA168789E /* Foundation.framework */; };
+		2010500719B5F5C0BD28F9140F2CB3BF /* NSMutableArray+QueueAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C91EC17702816376925559D15C851C7F /* NSMutableArray+QueueAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AA50580A21A223E8EC029F141D3827 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7DF4646D95BE6C54047B2F5F12B0E6 /* NSMutableArray+QueueAdditions.m */; };
+		215BAE1D39F682BBFD015383CEE06B40 /* CDVWhitelist.m in Sources */ = {isa = PBXBuildFile; fileRef = CF175426D8FEF30C7A92B017372C3954 /* CDVWhitelist.m */; };
+		2222C7A38388F65C7AB82EB8FC8876D4 /* NSArray+Comparisons.m in Sources */ = {isa = PBXBuildFile; fileRef = 524615545395D62E27EE17DE7AF7978E /* NSArray+Comparisons.m */; };
+		2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEFC4EFE318283A3F8F3CDF1914CDE7 /* UIActivityIndicatorView+AFNetworking.m */; };
+		2D0849D41156BD2C90F39CCEB19E6970 /* CDVLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB06227B6117470BC7CCF55C84C9CA4 /* CDVLocalStorage.m */; };
+		2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ECCB8DFABACEC5A83DBCAC075DE80BD4 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F9F4967CA8CE7AC89E1730D3A49636B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3152CDEE8BC38D4CE21AF970F0EA15 /* CFNetwork.framework */; };
+		31D5AD53F41D4092BB7FCCB356E5ECB3 /* CDVJSON_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 294BC600736446D5B44897E43BCD7DB1 /* CDVJSON_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6599F34B2EB9FB11397648B6130EC575 /* AFNetworkActivityIndicatorManager.m */; };
+		37D8A1AED090FAC7DFAD98DE13C9E1A0 /* CDVLocalStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1901CB0EC972FA9BACC963DE5927C342 /* CDVLocalStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		383EECD437DA9DF2B3C7971747E01D69 /* CDVCommandDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADE5F042416221051A4366A8A270E81 /* CDVCommandDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39B450D9F12638DA765B76B55C26694A /* CDVShared.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EBF0B85BB979A12494528F43BF177EB /* CDVShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C1C8AA15369F2AA7B6384AAC13493FB /* CDVCommandDelegateImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 557D2E374F618C1E027C029392BB44CA /* CDVCommandDelegateImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D54BA6934B7CB8B31AA5A1EBF53882E /* UIDevice+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31926726958FA25F564D7A991FCDDC54 /* UIDevice+Extensions.m */; };
+		3E48DE349E8A4E1511B1ADEDEB830997 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B8654C9504552C4514DE0A09B009EE4A /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436D40E4802FE9477C316DFFC09BCCC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3733856CF418E4A66A63E3AA76089208 /* CoreLocation.framework */; };
+		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5F0B8918B7F68728E785D4244CC2D1 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A8CD3754B83A0BA2605BF4F41ECC7C6 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E04948E6D9FA34411377CE86D44CF98B /* SRWebSocket.m */; };
+		4B4D1EFB0067796B4134F8D02485A1C9 /* CDVConfigParser.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC9DE229B4418EFD2451F801DD1C160 /* CDVConfigParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DF9C931496C729E8B2EC81F30ADE84A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487457B207FD32BC494EA1EDA168789E /* Foundation.framework */; };
+		54EC296114DCFE4A8E624AF1A2CFA24F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CD2B8025CB65C428F5C89DF1F6859A /* AssetsLibrary.framework */; };
+		5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F52E5B93959F88EDDC3F3A65180685E0 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57646A4034C7390C7BEE8CFC2E85DAEA /* UIDevice+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 90231F3A6485FDC3FB89ED97C66138B5 /* UIDevice+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		577E88B7B2596AE42CA6DB663CADCC36 /* CDVAvailabilityDeprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = 423993AEDBEE04FAD9844EBECC980BBF /* CDVAvailabilityDeprecated.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5197138BDB5F1D2CDE0D95DEE66757 /* AFURLRequestSerialization.m */; };
+		5A815327BC206D390B3B7DE3ABC0E445 /* CDVJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE619CD44EDAE7992A245443809D02E /* CDVJSON.m */; };
+		5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 91428A70D95B7D62F0D82980D487DD00 /* AFImageDownloader.m */; };
+		5C6D143F56BCE7BB5B9D3E4FCE52175A /* CDVAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = E96EBE84319BDC533360FEEB147D7358 /* CDVAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E8476251216A2EF225D0A5D95D3CBBA /* CDVPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 975F46CFF231BABA80D5A8C9550DE7FC /* CDVPlugin.m */; };
+		5FF4601DA5206FAA77EF81051CD400B1 /* CDVUserAgentUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 82137F319948F37AABF2E98DC0D688F6 /* CDVUserAgentUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60CFE8F3B0D0F58D33190E34A34FEAFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487457B207FD32BC494EA1EDA168789E /* Foundation.framework */; };
+		62EEE7BA30319C7E7453D05C0C6714C4 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD38D2F75112C8E431D8AD4BAA1679D5 /* NSDictionary+Extensions.m */; };
+		66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1303214848D91388CFA195C7F06ABA /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F131A15A8A42368A104AC8B951DA88 /* AFSecurityPolicy.m */; };
+		67207C0E6B3729EC634C7FF0D73F8DF8 /* Cordova-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C97EE2140C155B76060989CD635BFD4E /* Cordova-dummy.m */; };
+		682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 613BD47927AF128BF7A4BA84F570C224 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6914238938455F9A41A89C6F263D483B /* CDV.h in Headers */ = {isa = PBXBuildFile; fileRef = 6851F2304631ACE147D79DA67D33F789 /* CDV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A9908298D6E1F5269913D6065136439 /* CDVWhitelist.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D6DFDE5B4F6948D942A237094E47A6 /* CDVWhitelist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BB748C4B55C4771B0CB59484381885EE /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4579EB797D979B4D624F7A7BAF671BA4 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		710B6FD18A5720E9E62D95763D0025F0 /* CDVWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADC7EC20D5CF1BCDF0964AD11AAF28 /* CDVWebViewDelegate.m */; };
+		73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BF93B8E89034280AFFAE23A944255 /* AFHTTPSessionManager.m */; };
+		775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400FDDAB29C579E10A2D46EE11F5D9A /* AFAutoPurgingImageCache.m */; };
+		805FDFC7085D4DAC4C7EDDFAB91FB883 /* CDVHandleOpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423CFA1113B355C7CA36245368A4275 /* CDVHandleOpenURL.m */; };
+		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E73596E2096A6A81F0EA51A0D12FA31 /* AFURLResponseSerialization.m */; };
+		86A401D712A38538CDB487A3E909263B /* CDVCommandDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD935122B95FF4F40B272871CFED2F /* CDVCommandDelegateImpl.m */; };
+		8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE7E42A58CB2BE46C13F0CD35963B3A /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		898699BCFB19F9F48ED1F54E3D1F7EFC /* CDVPluginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671EEC18CF877A71E2E6B05FF816049 /* CDVPluginResult.m */; };
+		903158692A045396106CA22C0DD13BA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F383998B08902CF1BC50C68352B67D43 /* SystemConfiguration.framework */; };
+		9056706C4F41A1456D7D705365C1F527 /* CDVDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 0708EE0833CCF6D5386AB5E40FFA90E7 /* CDVDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917F1A1E1AE5A9A6D610E59B3B09B59B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 09682E9CC38B527A6A16D0567A0EAA0B /* NSData+Base64.m */; };
+		93B1409D1379DAC9E7E03753CDD7C4C8 /* CDVJSON_private.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0CA7AC31D9ECA1AF7A9FC0C51F9022 /* CDVJSON_private.m */; };
+		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE369F3AB4C29EFB5A03BF921C808B6 /* AFNetworking-dummy.m */; };
+		99FB22FA530F30E192F351DE1301CD37 /* CDVWebViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB8CF77AF1D440A5E6297296E5A15A4 /* CDVWebViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CC31037CFD2A859F84D13C311DFF355 /* SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8938018EDEBC05BC398B2AFD03EC48 /* SocketRocket-dummy.m */; };
+		9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A51A1F83D4383A25A585E5C9CE283B8 /* AFURLSessionManager.m */; };
+		A0E1B67A141AA99F779EE8500EC02D68 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FDA86192478E0B84113FA1B851B868 /* AVFoundation.framework */; };
+		A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DAFF7EA1C244E06FFF26AAFD6844CB /* UIImageView+AFNetworking.m */; };
+		A3DF8B643C97DF37AA385D4BA0FD1817 /* CDVInvokedUrlCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = BA356512FE7C848E9367751E29344520 /* CDVInvokedUrlCommand.m */; };
+		A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF6F0F3BBA1E23BDDD6282F719CDC3 /* UIWebView+AFNetworking.m */; };
+		A8D52D64B33C805A91F58369E62045F2 /* CDVCommandQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC3648A74C4569291910E3A09ED41BA /* CDVCommandQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC6C08A5888B66F3F347E3FD629D5A0F /* CDVViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE69EB1DA5B074D0474D36176D234E3 /* CDVViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD2BD539FD0F78A7FA853F35298AAD9F /* CDVConfigParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AC194C77FB7864B04A43CEE2B2EA7523 /* CDVConfigParser.m */; };
+		AE538588C2452C60BD6F6D74D5A6F0E3 /* CDVPluginResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDEFB060059712C3B9F5AFD11A99A9B /* CDVPluginResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEA14BBE4C059381760F2FE3F6959024 /* NSArray+Comparisons.h in Headers */ = {isa = PBXBuildFile; fileRef = 193399061D341D9780A6B588AB759CBD /* NSArray+Comparisons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B053F1B9E57D6EDEBECBEF0A88FD1AF7 /* CDVURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7720C04773824DCDCC8E35B6DE6E5B1F /* CDVURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F414C3CE7034392EEC0150BB3B32271 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B47525E64AC1EC938552344794353546 /* CDVUserAgentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 877104C1D0E3F12A83DB559382E52094 /* CDVUserAgentUtil.m */; };
+		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B09C0CE5AD5112468FDC1956D7C7DB8 /* UIRefreshControl+AFNetworking.m */; };
+		B94B2DA7055DDBD3222CFD96EFE35943 /* NSDictionary+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD5C2E73D2CCAF66B39CD53B7F3F66D /* NSDictionary+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDD4B52954744D7BF75296B40D35A059 /* CDVTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC25BECEA734F31BB7D6E62EA7A7757 /* CDVTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6B7B5A0D84E20E3E1ACCC260F0DEBB /* CDVJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D20BB203ECD3761ADDC7D2CA82A73F /* CDVJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B290A2214BE2E171DA87AA17953806E9 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C40FB41ECD59E44CB915116873232E80 /* CDVPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 37007457DF6CE036D2E973D0247B29EE /* CDVPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBCCEAD402645565401CA93924736979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C56EF22902C05679D19D6AB6B6E40206 /* CoreGraphics.framework */; };
+		D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9492403CFC6D3B9AC86BFF38E21BD /* UIButton+AFNetworking.m */; };
+		D1CAF97CA8914D0B80AED07916069657 /* CDVCommandQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C456024504A0384034CD9774C98B2DFB /* CDVCommandQueue.m */; };
+		D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E10E694106ED9F3452ACB04628645484 /* UIProgressView+AFNetworking.m */; };
+		D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 60BED3A469C69F5D6DCC64CFE9325C03 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A7387EA574C2301A43E4E86FB6C93151 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6FB0D5ED10354CE038D7FBC257ABF9A /* SocketRocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B70F904413F11F653678B0463FF9A967 /* SocketRocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA1EE6229F3A27D8950416B9F9403B29 /* CDVTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E087E8DC39B5F0162989F183656621C /* CDVTimer.m */; };
+		DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C62D59181F5DBA14FE456A7F454013B6 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE825B8F32AB823F4BE5492CAC6FCB4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB2308EE7345D39DB64419B99947A9B /* Security.framework */; };
+		E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8071BB63FE36500DB454366F8078CE0E /* AFNetworkReachabilityManager.m */; };
+		E25F3F0B49D3F49E7548352B3B4F5941 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD6683F931BE39EAAC2F9298566EB6E /* NSData+Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F0D949D6F6F86206AFA0F0232422DA88 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F06E64E6EEB227D46F901B48EE621E7C /* Pods-MyApp_HGB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 561E65A150C6FD197D6BC197EB07FAAE /* Pods-MyApp_HGB-dummy.m */; };
+		F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E911E37B13451C09A0980241E8026985 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D13693F2CABEFE9D24033846F719672F /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0BCB298DF4EDDB7A62D58F359B602C /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8DCA6C3C05A59B2C95A1B5F1CBD8C99 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5699810D257370540629C3DC00D5FA /* MobileCoreServices.framework */; };
+		F8DD9957E499B876DD18331088BE6E80 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB2308EE7345D39DB64419B99947A9B /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20A726C69318E02D8534B7FA91896D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
+			remoteInfo = AFNetworking;
+		};
+		36B7FD64642065539582F6CCDCD451FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ED7D40288589E0641861406241076F9;
+			remoteInfo = SocketRocket;
+		};
+		370A8BA45AE58D0FB35A294619038C55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C582FA7743527D884929F609B217F70;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03704423AC31689C8E3B9025958C3583 /* BMKGeocodeSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeocodeSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKGeocodeSearch.h; sourceTree = "<group>"; };
+		0430E08C002AF519D3C242BA32D13D38 /* Pods-MyApp_HGB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyApp_HGB.release.xcconfig"; sourceTree = "<group>"; };
+		05C985E023BB5909952BDF82C4C535EA /* BMKRadarResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarResult.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarResult.h; sourceTree = "<group>"; };
+		06D85745EE2285260163E9817FE45F65 /* BMKTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKTypes.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKTypes.h; sourceTree = "<group>"; };
+		0708EE0833CCF6D5386AB5E40FFA90E7 /* CDVDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVDebug.h; path = CordovaLib/Classes/CDVDebug.h; sourceTree = "<group>"; };
+		08B0FF71519E4F3AABFFFD08051B7BBB /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Cloud.framework; path = BaiduMapKit/BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
+		09682E9CC38B527A6A16D0567A0EAA0B /* NSData+Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "CordovaLib/Classes/NSData+Base64.m"; sourceTree = "<group>"; };
+		0A03D52052604F79FBD4688A58CB0EE1 /* CDVInvokedUrlCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVInvokedUrlCommand.h; path = CordovaLib/Classes/CDVInvokedUrlCommand.h; sourceTree = "<group>"; };
+		0AABEE5E1FB5B0DB46812E6F21229FA3 /* BMKOpenPanorama.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenPanorama.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenPanorama.h; sourceTree = "<group>"; };
+		0B9280C2C5B32BC933F74E5BA7585C8D /* CDVViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVViewController.m; path = CordovaLib/Classes/CDVViewController.m; sourceTree = "<group>"; };
+		0DDEFB060059712C3B9F5AFD11A99A9B /* CDVPluginResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVPluginResult.h; path = CordovaLib/Classes/CDVPluginResult.h; sourceTree = "<group>"; };
+		0EB06227B6117470BC7CCF55C84C9CA4 /* CDVLocalStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVLocalStorage.m; path = CordovaLib/Classes/CDVLocalStorage.m; sourceTree = "<group>"; };
+		0ECD935122B95FF4F40B272871CFED2F /* CDVCommandDelegateImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVCommandDelegateImpl.m; path = CordovaLib/Classes/CDVCommandDelegateImpl.m; sourceTree = "<group>"; };
+		0EEB68393CD517FCA5A4F936F02C9F6D /* BMKOpenPoiOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenPoiOption.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenPoiOption.h; sourceTree = "<group>"; };
+		0EF2FFFE10AD1596080E4E90D404651A /* native-bundle-main.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = "native-bundle-main.js"; path = "WeexSDK.framework/native-bundle-main.js"; sourceTree = "<group>"; };
+		1016838B0AE8019AADB22990924A13D4 /* BMKSuggestionSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSuggestionSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSuggestionSearchOption.h; sourceTree = "<group>"; };
+		1183FF0B9E7DC29AED323A46F949790A /* Pods-MyApp_HGB-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyApp_HGB-frameworks.sh"; sourceTree = "<group>"; };
+		122B4D275558323FE3C91377DB0EBB13 /* BMKVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKVersion.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKVersion.h; sourceTree = "<group>"; };
+		13F6B668E468C7B19A884ABA546745C8 /* BMKFavPoiInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKFavPoiInfo.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKFavPoiInfo.h; sourceTree = "<group>"; };
+		16046B6F06731AA6C6EA3FF5CD9BF60F /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Radar.framework; path = BaiduMapKit/BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
+		173F21EE69A5A94EB20107B0A2BB10FC /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1809BF34F5B0AF2D2156E7D8944C8694 /* BMKCloudSearchInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudSearchInfo.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudSearchInfo.h; sourceTree = "<group>"; };
+		1901CB0EC972FA9BACC963DE5927C342 /* CDVLocalStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVLocalStorage.h; path = CordovaLib/Classes/CDVLocalStorage.h; sourceTree = "<group>"; };
+		193399061D341D9780A6B588AB759CBD /* NSArray+Comparisons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Comparisons.h"; path = "CordovaLib/Classes/NSArray+Comparisons.h"; sourceTree = "<group>"; };
+		1B21021E3EC2432A11B19D0DDA9FFCDE /* BMKShareUrlSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKShareUrlSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKShareUrlSearchOption.h; sourceTree = "<group>"; };
+		1B95E682721B4A15FABD5CA9C9476AEA /* CDVURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVURLProtocol.m; path = CordovaLib/Classes/CDVURLProtocol.m; sourceTree = "<group>"; };
+		1D40152EA07B6E2E807DEB30F61E632A /* BMKRouteSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRouteSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKRouteSearch.h; sourceTree = "<group>"; };
+		1DC25BECEA734F31BB7D6E62EA7A7757 /* CDVTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVTimer.h; path = CordovaLib/Classes/CDVTimer.h; sourceTree = "<group>"; };
+		1FFF139A424D6BD80F311734F7E94245 /* BMKGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeometry.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKGeometry.h; sourceTree = "<group>"; };
+		214D567B84709A5A47459FF927C84C5D /* CDVScreenOrientationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVScreenOrientationDelegate.h; path = CordovaLib/Classes/CDVScreenOrientationDelegate.h; sourceTree = "<group>"; };
+		23093AC42BC683A1E37CF92F1B7A1757 /* Pods-MyApp_HGB-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyApp_HGB-acknowledgements.markdown"; sourceTree = "<group>"; };
+		273120C4C9248C3E84FE65C1D0AE55AC /* BMKOfflineMapType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOfflineMapType.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOfflineMapType.h; sourceTree = "<group>"; };
+		294BC600736446D5B44897E43BCD7DB1 /* CDVJSON_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVJSON_private.h; path = CordovaLib/Classes/CDVJSON_private.h; sourceTree = "<group>"; };
+		29B5F9B15BCCA84CD16DD2DDB0DBF270 /* Cordova.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cordova.xcconfig; sourceTree = "<group>"; };
+		2CC7CAF752F12FC7E95D5201D7DDB39E /* BMKOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlay.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlay.h; sourceTree = "<group>"; };
+		2CD5C2E73D2CCAF66B39CD53B7F3F66D /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Extensions.h"; path = "CordovaLib/Classes/NSDictionary+Extensions.h"; sourceTree = "<group>"; };
+		2EF26061A2E28E67DDC8C100CA107D28 /* BMKLocationVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationVersion.h; path = BaiduMapKit/BaiduMapAPI_Location.framework/Headers/BMKLocationVersion.h; sourceTree = "<group>"; };
+		2F5C8DE46126BAF70FCBF3EDA9FD06F2 /* BMKPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolygon.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolygon.h; sourceTree = "<group>"; };
+		2F81DEBCB42E1D92B72D936E580F81CB /* BMKMapStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapStatus.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapStatus.h; sourceTree = "<group>"; };
+		31926726958FA25F564D7A991FCDDC54 /* UIDevice+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+Extensions.m"; path = "CordovaLib/Classes/UIDevice+Extensions.m"; sourceTree = "<group>"; };
+		3451EAD23BF5D783D293BDF6F8ACEF44 /* BMKRadarVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarVersion.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarVersion.h; sourceTree = "<group>"; };
+		36569D44C1D20669F755A5D26D2A1D75 /* BMKMapManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapManager.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKMapManager.h; sourceTree = "<group>"; };
+		37007457DF6CE036D2E973D0247B29EE /* CDVPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVPlugin.h; path = CordovaLib/Classes/CDVPlugin.h; sourceTree = "<group>"; };
+		3733856CF418E4A66A63E3AA76089208 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		3CAE45A2CBD09D5ABE9A3EED9F6A5785 /* BMKCircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCircleView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKCircleView.h; sourceTree = "<group>"; };
+		3CE369F3AB4C29EFB5A03BF921C808B6 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		3D180E9A0C359231C78C7CAD0D82D20A /* BMKSearchComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSearchComponent.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSearchComponent.h; sourceTree = "<group>"; };
+		3DA5D03F26527CBFDD9FC2EBCDF2ABE8 /* BMKOverlayGLBasicView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlayGLBasicView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlayGLBasicView.h; sourceTree = "<group>"; };
+		402DF34F76D1DBD8D931A6436253370C /* BMKGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGradient.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKGradient.h; sourceTree = "<group>"; };
+		4149EA280FB9C0E0C810A861042AEFEA /* BMKGeneralDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeneralDelegate.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKGeneralDelegate.h; sourceTree = "<group>"; };
+		423993AEDBEE04FAD9844EBECC980BBF /* CDVAvailabilityDeprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVAvailabilityDeprecated.h; path = CordovaLib/Classes/CDVAvailabilityDeprecated.h; sourceTree = "<group>"; };
+		4359496A6523D4546604845BCCD9A4D1 /* BMKCloudVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudVersion.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudVersion.h; sourceTree = "<group>"; };
+		4579EB797D979B4D624F7A7BAF671BA4 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		4874477FACF2EEC5F339530FAA86AC33 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Utils.framework; path = BaiduMapKit/BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		487457B207FD32BC494EA1EDA168789E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4A51A1F83D4383A25A585E5C9CE283B8 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		4ADFF2716F4AC5C4A1FA6AB047B7FE17 /* BMKGroundOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGroundOverlayView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKGroundOverlayView.h; sourceTree = "<group>"; };
+		4C7F147831AC2D1D60DAD85172AA3ED0 /* wx_load_error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "wx_load_error@3x.png"; path = "WeexSDK.framework/wx_load_error@3x.png"; sourceTree = "<group>"; };
+		4E04AE6D43080307A88DCD5B1FBB02B9 /* Pods-MyApp_HGB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyApp_HGB.debug.xcconfig"; sourceTree = "<group>"; };
+		4EBF0B85BB979A12494528F43BF177EB /* CDVShared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVShared.h; path = CordovaLib/Classes/CDVShared.h; sourceTree = "<group>"; };
+		524615545395D62E27EE17DE7AF7978E /* NSArray+Comparisons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Comparisons.m"; path = "CordovaLib/Classes/NSArray+Comparisons.m"; sourceTree = "<group>"; };
+		52E663423276FC09ACDC92F9AE4E7E93 /* libPods-MyApp_HGB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp_HGB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D1FAE7E41FD73BACDA770FD867F81F /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Location.framework; path = BaiduMapKit/BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		5511B2F7A945D19EF24C740D3F77C241 /* WeexSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WeexSDK.framework; sourceTree = "<group>"; };
+		557D2E374F618C1E027C029392BB44CA /* CDVCommandDelegateImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVCommandDelegateImpl.h; path = CordovaLib/Classes/CDVCommandDelegateImpl.h; sourceTree = "<group>"; };
+		561E65A150C6FD197D6BC197EB07FAAE /* Pods-MyApp_HGB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyApp_HGB-dummy.m"; sourceTree = "<group>"; };
+		56876B3F7874CF5CA54349B919D94016 /* BMKOpenRouteOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenRouteOption.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenRouteOption.h; sourceTree = "<group>"; };
+		576BB302109E01F6125F7F20F2358D3F /* BMKActionPaopaoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKActionPaopaoView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKActionPaopaoView.h; sourceTree = "<group>"; };
+		5776089963471BCE70D1AFF71DD7B758 /* BMKCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCircle.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKCircle.h; sourceTree = "<group>"; };
+		57ED4184ECE1F098D3E6055F91BEA554 /* BMKCloudSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudSearch.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudSearch.h; sourceTree = "<group>"; };
+		5959B61FC258F96053FDA74EBA26091C /* BMKTileLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKTileLayerView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKTileLayerView.h; sourceTree = "<group>"; };
+		5ADE5F042416221051A4366A8A270E81 /* CDVCommandDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVCommandDelegate.h; path = CordovaLib/Classes/CDVCommandDelegate.h; sourceTree = "<group>"; };
+		5BEBB0C589345B2BE6F3F1FA00590C1E /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		5C8938018EDEBC05BC398B2AFD03EC48 /* SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		60BED3A469C69F5D6DCC64CFE9325C03 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		613BD47927AF128BF7A4BA84F570C224 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		62ABD6280F8517AD03A9515AE1283881 /* BMKPoiSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPoiSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKPoiSearch.h; sourceTree = "<group>"; };
+		62D6DFDE5B4F6948D942A237094E47A6 /* CDVWhitelist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVWhitelist.h; path = CordovaLib/Classes/CDVWhitelist.h; sourceTree = "<group>"; };
+		6599F34B2EB9FB11397648B6130EC575 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		66740EB4C9B3A705ACA2D9D40BCC77E7 /* BMKPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPinAnnotationView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPinAnnotationView.h; sourceTree = "<group>"; };
+		66D41163B96E9B2E55F62438FEA62E9E /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6851F2304631ACE147D79DA67D33F789 /* CDV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDV.h; path = CordovaLib/Classes/CDV.h; sourceTree = "<group>"; };
+		68C9492403CFC6D3B9AC86BFF38E21BD /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		6DEFC4EFE318283A3F8F3CDF1914CDE7 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		6E572872D7B41B13A903AAC21DD52268 /* BMKSearchBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSearchBase.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSearchBase.h; sourceTree = "<group>"; };
+		6EA720A1C1C6C8EE8F1B86DC2ABC3FA7 /* mapapi.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		70F131A15A8A42368A104AC8B951DA88 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		72678D95559AE0F0DD17444268399518 /* BMKBusLineSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBusLineSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKBusLineSearchOption.h; sourceTree = "<group>"; };
+		747E854B41DD5F9D09BD08902438C50F /* CDVHandleOpenURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVHandleOpenURL.h; path = CordovaLib/Classes/CDVHandleOpenURL.h; sourceTree = "<group>"; };
+		74CD2B8025CB65C428F5C89DF1F6859A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		74FDA86192478E0B84113FA1B851B868 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		7671EEC18CF877A71E2E6B05FF816049 /* CDVPluginResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVPluginResult.m; path = CordovaLib/Classes/CDVPluginResult.m; sourceTree = "<group>"; };
+		7720C04773824DCDCC8E35B6DE6E5B1F /* CDVURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVURLProtocol.h; path = CordovaLib/Classes/CDVURLProtocol.h; sourceTree = "<group>"; };
+		799657E5F3FF8136D5A8E7997541298B /* BMKFavPoiManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKFavPoiManager.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKFavPoiManager.h; sourceTree = "<group>"; };
+		7A40980D1DB54B3317BBBDCFAEEA1CBD /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Map.framework; path = BaiduMapKit/BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		7C29B03B231732300078D1F0A5844EAF /* BMKArclineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKArclineView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKArclineView.h; sourceTree = "<group>"; };
+		7C3152CDEE8BC38D4CE21AF970F0EA15 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		7CC43003EEEFAD6A8523D4498D3B1424 /* BMKRadarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarManager.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarManager.h; sourceTree = "<group>"; };
+		7D0CA7AC31D9ECA1AF7A9FC0C51F9022 /* CDVJSON_private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVJSON_private.m; path = CordovaLib/Classes/CDVJSON_private.m; sourceTree = "<group>"; };
+		7EBCC03CF04C51150E5D8520E51440B1 /* BMKOfflineMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOfflineMap.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOfflineMap.h; sourceTree = "<group>"; };
+		7EE39DF63AE20A664094011756962443 /* Cordova-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cordova-prefix.pch"; sourceTree = "<group>"; };
+		7FB2174544A3BDC6EAE563EE5945FF69 /* BMKGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGroundOverlay.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKGroundOverlay.h; sourceTree = "<group>"; };
+		8071BB63FE36500DB454366F8078CE0E /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		80A1813DB0897DCEACBEB1785BAC03BC /* BMKRouteSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRouteSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKRouteSearchOption.h; sourceTree = "<group>"; };
+		815325C30A52465311EC54C7019AB5C4 /* BMKAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKAnnotationView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKAnnotationView.h; sourceTree = "<group>"; };
+		81645B30982218FEEFD276DCDC932551 /* Pods-MyApp_HGB-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyApp_HGB-acknowledgements.plist"; sourceTree = "<group>"; };
+		82137F319948F37AABF2E98DC0D688F6 /* CDVUserAgentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVUserAgentUtil.h; path = CordovaLib/Classes/CDVUserAgentUtil.h; sourceTree = "<group>"; };
+		8400FDDAB29C579E10A2D46EE11F5D9A /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		8423CFA1113B355C7CA36245368A4275 /* CDVHandleOpenURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVHandleOpenURL.m; path = CordovaLib/Classes/CDVHandleOpenURL.m; sourceTree = "<group>"; };
+		84AF6F0F3BBA1E23BDDD6282F719CDC3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		877104C1D0E3F12A83DB559382E52094 /* CDVUserAgentUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVUserAgentUtil.m; path = CordovaLib/Classes/CDVUserAgentUtil.m; sourceTree = "<group>"; };
+		89BBA4F13BDA0ACFA1CA11B4FB43BBF4 /* BMKPoiSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPoiSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKPoiSearchOption.h; sourceTree = "<group>"; };
+		8B09C0CE5AD5112468FDC1956D7C7DB8 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		8E087E8DC39B5F0162989F183656621C /* CDVTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVTimer.m; path = CordovaLib/Classes/CDVTimer.m; sourceTree = "<group>"; };
+		8E73596E2096A6A81F0EA51A0D12FA31 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		8EDB96816F75334AEFE8BB2BC686073D /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
+		90231F3A6485FDC3FB89ED97C66138B5 /* UIDevice+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Extensions.h"; path = "CordovaLib/Classes/UIDevice+Extensions.h"; sourceTree = "<group>"; };
+		91428A70D95B7D62F0D82980D487DD00 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		92AFBAA03929652517644D8231375BFF /* BMKOverlayPathView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlayPathView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlayPathView.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		947184F5FA3F984D3C7DF677F09CC0D7 /* BMKLocationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationService.h; path = BaiduMapKit/BaiduMapAPI_Location.framework/Headers/BMKLocationService.h; sourceTree = "<group>"; };
+		95DAFF7EA1C244E06FFF26AAFD6844CB /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		97274AEBECF4451FFFD3B0138EDC56ED /* BMKBaseIndoorMapInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBaseIndoorMapInfo.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKBaseIndoorMapInfo.h; sourceTree = "<group>"; };
+		975F46CFF231BABA80D5A8C9550DE7FC /* CDVPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVPlugin.m; path = CordovaLib/Classes/CDVPlugin.m; sourceTree = "<group>"; };
+		9B2BF93B8E89034280AFFAE23A944255 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		9BE7E42A58CB2BE46C13F0CD35963B3A /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		9D0F25A0EC638C254B4C8C28207CEC09 /* BMKMapComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapComponent.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapComponent.h; sourceTree = "<group>"; };
+		9EB22F644F403F5FBEF93387748D3B27 /* BMKRadarOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarOption.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarOption.h; sourceTree = "<group>"; };
+		9EBAC2E930C1A2B34FD5374B1168140C /* BMKBaseComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBaseComponent.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKBaseComponent.h; sourceTree = "<group>"; };
+		9F414C3CE7034392EEC0150BB3B32271 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		A08BD965E17B451653A157DAC860E1CC /* BMKBusLineSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKBusLineSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKBusLineSearch.h; sourceTree = "<group>"; };
+		A2547A1F3A71B5B38192DB3FD20E855D /* BMKDistrictSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKDistrictSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKDistrictSearch.h; sourceTree = "<group>"; };
+		A611940572E4488D5537158C43ECFD1B /* BMKLocationComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationComponent.h; path = BaiduMapKit/BaiduMapAPI_Location.framework/Headers/BMKLocationComponent.h; sourceTree = "<group>"; };
+		A7387EA574C2301A43E4E86FB6C93151 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		AA0BCB298DF4EDDB7A62D58F359B602C /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		AB79A0CB8FFE6FD7AA5B196657B87568 /* BMKCloudSearchComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudSearchComponent.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudSearchComponent.h; sourceTree = "<group>"; };
+		ABC3648A74C4569291910E3A09ED41BA /* CDVCommandQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVCommandQueue.h; path = CordovaLib/Classes/CDVCommandQueue.h; sourceTree = "<group>"; };
+		AC194C77FB7864B04A43CEE2B2EA7523 /* CDVConfigParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVConfigParser.m; path = CordovaLib/Classes/CDVConfigParser.m; sourceTree = "<group>"; };
+		AD38D2F75112C8E431D8AD4BAA1679D5 /* NSDictionary+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Extensions.m"; path = "CordovaLib/Classes/NSDictionary+Extensions.m"; sourceTree = "<group>"; };
+		AE3CDB1FC9F3ABE142278813A2B9B0F4 /* BMKPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolygonView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolygonView.h; sourceTree = "<group>"; };
+		AEE4410859E59900991EEA0C438A0B67 /* BMKHeatMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKHeatMap.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKHeatMap.h; sourceTree = "<group>"; };
+		AF5699810D257370540629C3DC00D5FA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		B07DA1A7BF214C78E044B32A638144DF /* SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SocketRocket.xcconfig; sourceTree = "<group>"; };
+		B210C26250122DEA2C0D23D65F1D158E /* BMKPoiSearchType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPoiSearchType.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKPoiSearchType.h; sourceTree = "<group>"; };
+		B290A2214BE2E171DA87AA17953806E9 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		B4D260BFE702B8133F47A8788895036F /* Pods-MyApp_HGB-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyApp_HGB-resources.sh"; sourceTree = "<group>"; };
+		B576ECA5FC4F45A08A8AC7625AE01D77 /* BMKPolylineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolylineView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolylineView.h; sourceTree = "<group>"; };
+		B70088D6A8B02641B5F1DE9296D59793 /* BMKUtilsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKUtilsVersion.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKUtilsVersion.h; sourceTree = "<group>"; };
+		B70F904413F11F653678B0463FF9A967 /* SocketRocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SocketRocket.h; path = SocketRocket/SocketRocket.h; sourceTree = "<group>"; };
+		B789BD31062C20D1073DCF2E8E196090 /* BMKLocationViewDisplayParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKLocationViewDisplayParam.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKLocationViewDisplayParam.h; sourceTree = "<group>"; };
+		B8654C9504552C4514DE0A09B009EE4A /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		BA356512FE7C848E9367751E29344520 /* CDVInvokedUrlCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVInvokedUrlCommand.m; path = CordovaLib/Classes/CDVInvokedUrlCommand.m; sourceTree = "<group>"; };
+		BAE20721A9AE32679106A79395DBF0BF /* BMKOpenPoi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenPoi.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenPoi.h; sourceTree = "<group>"; };
+		BB748C4B55C4771B0CB59484381885EE /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BBE619CD44EDAE7992A245443809D02E /* CDVJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVJSON.m; path = CordovaLib/Classes/CDVJSON.m; sourceTree = "<group>"; };
+		BC522D9905F8131ED5E392077457A163 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		BDB2308EE7345D39DB64419B99947A9B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		BE5B20D68FD4F14ECC5DBCD4B449D945 /* BMKAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKAnnotation.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKAnnotation.h; sourceTree = "<group>"; };
+		C27751C25681B79EB4EDF2C114617AD5 /* SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+		C2BD1137AECF142DD40FB2B42CF357AC /* BMKRadarComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRadarComponent.h; path = BaiduMapKit/BaiduMapAPI_Radar.framework/Headers/BMKRadarComponent.h; sourceTree = "<group>"; };
+		C456024504A0384034CD9774C98B2DFB /* CDVCommandQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVCommandQueue.m; path = CordovaLib/Classes/CDVCommandQueue.m; sourceTree = "<group>"; };
+		C4CDD6DA9C0C8FAB864AF242D021B593 /* BMKOpenOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenOption.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenOption.h; sourceTree = "<group>"; };
+		C56EF22902C05679D19D6AB6B6E40206 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C59067D6B6EA4DB96FB1F8711C9E428D /* BMKSuggestionSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSuggestionSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSuggestionSearch.h; sourceTree = "<group>"; };
+		C62D59181F5DBA14FE456A7F454013B6 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		C65488D182E46696A18B6486F0A663D4 /* BMKArcline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKArcline.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKArcline.h; sourceTree = "<group>"; };
+		C7842AAB67B1F3AB461D3CA3FCCB69E9 /* BMKOpenRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOpenRoute.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKOpenRoute.h; sourceTree = "<group>"; };
+		C91EC17702816376925559D15C851C7F /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+QueueAdditions.h"; path = "CordovaLib/Classes/NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		C97EE2140C155B76060989CD635BFD4E /* Cordova-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cordova-dummy.m"; sourceTree = "<group>"; };
+		CAF4154CFA1F754A06D7E0AB6108F6BE /* BMKGeocodeType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeocodeType.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKGeocodeType.h; sourceTree = "<group>"; };
+		CB5197138BDB5F1D2CDE0D95DEE66757 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		CBD5A36D3B684A1C81D11185E066F3B4 /* BMKSearchVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKSearchVersion.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKSearchVersion.h; sourceTree = "<group>"; };
+		CCD6683F931BE39EAAC2F9298566EB6E /* NSData+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "CordovaLib/Classes/NSData+Base64.h"; sourceTree = "<group>"; };
+		CD5F0B8918B7F68728E785D4244CC2D1 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		CDA9A73C82ACEBABF4F25F4E7B083946 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Search.framework; path = BaiduMapKit/BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		CDADC7EC20D5CF1BCDF0964AD11AAF28 /* CDVWebViewDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVWebViewDelegate.m; path = CordovaLib/Classes/CDVWebViewDelegate.m; sourceTree = "<group>"; };
+		CF175426D8FEF30C7A92B017372C3954 /* CDVWhitelist.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CDVWhitelist.m; path = CordovaLib/Classes/CDVWhitelist.m; sourceTree = "<group>"; };
+		D00035E2632BA57FECA3A2B2A1467F24 /* BMKMapVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapVersion.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapVersion.h; sourceTree = "<group>"; };
+		D030D6DDD8444317202848A722589633 /* BMKCloudPOIList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKCloudPOIList.h; path = BaiduMapKit/BaiduMapAPI_Cloud.framework/Headers/BMKCloudPOIList.h; sourceTree = "<group>"; };
+		D046F815AEE52D77BC8F6CA66B94CB9D /* BMKMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMapView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMapView.h; sourceTree = "<group>"; };
+		D13693F2CABEFE9D24033846F719672F /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		D1BDF25F6758DEA9D7F21350BD6DEA07 /* BMKShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKShape.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKShape.h; sourceTree = "<group>"; };
+		D8D20BB203ECD3761ADDC7D2CA82A73F /* CDVJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVJSON.h; path = CordovaLib/Classes/CDVJSON.h; sourceTree = "<group>"; };
+		DAE69EB1DA5B074D0474D36176D234E3 /* CDVViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVViewController.h; path = CordovaLib/Classes/CDVViewController.h; sourceTree = "<group>"; };
+		DCF3D5D09F1302034C082A3ECE6E99F1 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		DDA1D229A42BA7E5CBCBD3ECAED74B56 /* BMKGeocodeSearchOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKGeocodeSearchOption.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKGeocodeSearchOption.h; sourceTree = "<group>"; };
+		E03EEED685E13D6F1F952C759B760128 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMMobClick.framework; path = "umsdk_IOS_analyics_no-idfa_v4.2.5/UMMobClick.framework"; sourceTree = "<group>"; };
+		E04948E6D9FA34411377CE86D44CF98B /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		E0DCE4AA02B14502910A026D1883A05C /* BMKMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKMultiPoint.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKMultiPoint.h; sourceTree = "<group>"; };
+		E10E694106ED9F3452ACB04628645484 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		E2BA2FCEECC24F8441863B780C6AA26B /* BMKOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKOverlayView.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKOverlayView.h; sourceTree = "<group>"; };
+		E5F17A16BDE15C1882F4A22356E93DFA /* BMKPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPolyline.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPolyline.h; sourceTree = "<group>"; };
+		E911E37B13451C09A0980241E8026985 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		E96EBE84319BDC533360FEEB147D7358 /* CDVAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVAvailability.h; path = CordovaLib/Classes/CDVAvailability.h; sourceTree = "<group>"; };
+		E9CAB05BD967D204134725F65181E60C /* BMKPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKPointAnnotation.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKPointAnnotation.h; sourceTree = "<group>"; };
+		EC165E5CEEEC833983A4B9A5068F7AC6 /* BMKRouteSearchType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKRouteSearchType.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKRouteSearchType.h; sourceTree = "<group>"; };
+		ECCB8DFABACEC5A83DBCAC075DE80BD4 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		ED7DF4646D95BE6C54047B2F5F12B0E6 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+QueueAdditions.m"; path = "CordovaLib/Classes/NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		EFB8CF77AF1D440A5E6297296E5A15A4 /* CDVWebViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVWebViewDelegate.h; path = CordovaLib/Classes/CDVWebViewDelegate.h; sourceTree = "<group>"; };
+		F0D949D6F6F86206AFA0F0232422DA88 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		F1649074EE68C4372B5E7A17642639C7 /* BMKUtilsComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKUtilsComponent.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKUtilsComponent.h; sourceTree = "<group>"; };
+		F383998B08902CF1BC50C68352B67D43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F4D82B0B3ABA37D6B1BED81C0AB24861 /* BMKUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKUserLocation.h; path = BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKUserLocation.h; sourceTree = "<group>"; };
+		F52E5B93959F88EDDC3F3A65180685E0 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		F65473BD57FC17568B0FA2FFBA6863A5 /* libCordova.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCordova.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1303214848D91388CFA195C7F06ABA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		FA7C2CAFF7BED2A4754B530D6ECB46E7 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		FB4AFDA6D183B18371DF6C60303F8E29 /* BMKTileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKTileLayer.h; path = BaiduMapKit/BaiduMapAPI_Map.framework/Headers/BMKTileLayer.h; sourceTree = "<group>"; };
+		FBB327F62C62D9AFB228EEDFE0FDF6D2 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI_Base.framework; path = BaiduMapKit/BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		FCBB3D899EDDD67BD98273E90C531908 /* BMKShareURLSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKShareURLSearch.h; path = BaiduMapKit/BaiduMapAPI_Search.framework/Headers/BMKShareURLSearch.h; sourceTree = "<group>"; };
+		FEC9DE229B4418EFD2451F801DD1C160 /* CDVConfigParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CDVConfigParser.h; path = CordovaLib/Classes/CDVConfigParser.h; sourceTree = "<group>"; };
+		FF9E67198E190D39D3ADF1529F95C594 /* BMKNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMKNavigation.h; path = BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/BMKNavigation.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		518609AB6AB18028DA957E66FFE2D079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EC296114DCFE4A8E624AF1A2CFA24F /* AssetsLibrary.framework in Frameworks */,
+				A0E1B67A141AA99F779EE8500EC02D68 /* AVFoundation.framework in Frameworks */,
+				436D40E4802FE9477C316DFFC09BCCC9 /* CoreLocation.framework in Frameworks */,
+				1E87B9DBC6A636EC9268A2AD47F374F1 /* Foundation.framework in Frameworks */,
+				0F3534B9119F45FD3CCD08872F6CB1FE /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		603B2B900E26A30D28CBFF47503A4BE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9F4967CA8CE7AC89E1730D3A49636B /* CFNetwork.framework in Frameworks */,
+				4DF9C931496C729E8B2EC81F30ADE84A /* Foundation.framework in Frameworks */,
+				F8DD9957E499B876DD18331088BE6E80 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA680B4BF55BE0A3B23DBEB73DB364C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CFE8F3B0D0F58D33190E34A34FEAFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCCEAD402645565401CA93924736979 /* CoreGraphics.framework in Frameworks */,
+				0214246CCB1FF7182F7222B9CCDF8FCB /* Foundation.framework in Frameworks */,
+				F8DCA6C3C05A59B2C95A1B5F1CBD8C99 /* MobileCoreServices.framework in Frameworks */,
+				DE825B8F32AB823F4BE5492CAC6FCB4B /* Security.framework in Frameworks */,
+				903158692A045396106CA22C0DD13BA6 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017E8D95665B97EE8BFA5EE5B6EFCB13 /* UMengAnalytics-NO-IDFA */ = {
+			isa = PBXGroup;
+			children = (
+				F40324F3E20A5982AAAFF683AF451A08 /* Frameworks */,
+			);
+			path = "UMengAnalytics-NO-IDFA";
+			sourceTree = "<group>";
+		};
+		034E3BDAE07CBD4A69893E2D7683C277 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6EA720A1C1C6C8EE8F1B86DC2ABC3FA7 /* mapapi.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		14DC1C0A9803595516C2D92DFB1646AF /* Cordova */ = {
+			isa = PBXGroup;
+			children = (
+				6851F2304631ACE147D79DA67D33F789 /* CDV.h */,
+				E96EBE84319BDC533360FEEB147D7358 /* CDVAvailability.h */,
+				423993AEDBEE04FAD9844EBECC980BBF /* CDVAvailabilityDeprecated.h */,
+				5ADE5F042416221051A4366A8A270E81 /* CDVCommandDelegate.h */,
+				557D2E374F618C1E027C029392BB44CA /* CDVCommandDelegateImpl.h */,
+				0ECD935122B95FF4F40B272871CFED2F /* CDVCommandDelegateImpl.m */,
+				ABC3648A74C4569291910E3A09ED41BA /* CDVCommandQueue.h */,
+				C456024504A0384034CD9774C98B2DFB /* CDVCommandQueue.m */,
+				FEC9DE229B4418EFD2451F801DD1C160 /* CDVConfigParser.h */,
+				AC194C77FB7864B04A43CEE2B2EA7523 /* CDVConfigParser.m */,
+				0708EE0833CCF6D5386AB5E40FFA90E7 /* CDVDebug.h */,
+				747E854B41DD5F9D09BD08902438C50F /* CDVHandleOpenURL.h */,
+				8423CFA1113B355C7CA36245368A4275 /* CDVHandleOpenURL.m */,
+				0A03D52052604F79FBD4688A58CB0EE1 /* CDVInvokedUrlCommand.h */,
+				BA356512FE7C848E9367751E29344520 /* CDVInvokedUrlCommand.m */,
+				D8D20BB203ECD3761ADDC7D2CA82A73F /* CDVJSON.h */,
+				BBE619CD44EDAE7992A245443809D02E /* CDVJSON.m */,
+				294BC600736446D5B44897E43BCD7DB1 /* CDVJSON_private.h */,
+				7D0CA7AC31D9ECA1AF7A9FC0C51F9022 /* CDVJSON_private.m */,
+				1901CB0EC972FA9BACC963DE5927C342 /* CDVLocalStorage.h */,
+				0EB06227B6117470BC7CCF55C84C9CA4 /* CDVLocalStorage.m */,
+				37007457DF6CE036D2E973D0247B29EE /* CDVPlugin.h */,
+				975F46CFF231BABA80D5A8C9550DE7FC /* CDVPlugin.m */,
+				0DDEFB060059712C3B9F5AFD11A99A9B /* CDVPluginResult.h */,
+				7671EEC18CF877A71E2E6B05FF816049 /* CDVPluginResult.m */,
+				214D567B84709A5A47459FF927C84C5D /* CDVScreenOrientationDelegate.h */,
+				4EBF0B85BB979A12494528F43BF177EB /* CDVShared.h */,
+				1DC25BECEA734F31BB7D6E62EA7A7757 /* CDVTimer.h */,
+				8E087E8DC39B5F0162989F183656621C /* CDVTimer.m */,
+				7720C04773824DCDCC8E35B6DE6E5B1F /* CDVURLProtocol.h */,
+				1B95E682721B4A15FABD5CA9C9476AEA /* CDVURLProtocol.m */,
+				82137F319948F37AABF2E98DC0D688F6 /* CDVUserAgentUtil.h */,
+				877104C1D0E3F12A83DB559382E52094 /* CDVUserAgentUtil.m */,
+				DAE69EB1DA5B074D0474D36176D234E3 /* CDVViewController.h */,
+				0B9280C2C5B32BC933F74E5BA7585C8D /* CDVViewController.m */,
+				EFB8CF77AF1D440A5E6297296E5A15A4 /* CDVWebViewDelegate.h */,
+				CDADC7EC20D5CF1BCDF0964AD11AAF28 /* CDVWebViewDelegate.m */,
+				62D6DFDE5B4F6948D942A237094E47A6 /* CDVWhitelist.h */,
+				CF175426D8FEF30C7A92B017372C3954 /* CDVWhitelist.m */,
+				193399061D341D9780A6B588AB759CBD /* NSArray+Comparisons.h */,
+				524615545395D62E27EE17DE7AF7978E /* NSArray+Comparisons.m */,
+				CCD6683F931BE39EAAC2F9298566EB6E /* NSData+Base64.h */,
+				09682E9CC38B527A6A16D0567A0EAA0B /* NSData+Base64.m */,
+				2CD5C2E73D2CCAF66B39CD53B7F3F66D /* NSDictionary+Extensions.h */,
+				AD38D2F75112C8E431D8AD4BAA1679D5 /* NSDictionary+Extensions.m */,
+				C91EC17702816376925559D15C851C7F /* NSMutableArray+QueueAdditions.h */,
+				ED7DF4646D95BE6C54047B2F5F12B0E6 /* NSMutableArray+QueueAdditions.m */,
+				90231F3A6485FDC3FB89ED97C66138B5 /* UIDevice+Extensions.h */,
+				31926726958FA25F564D7A991FCDDC54 /* UIDevice+Extensions.m */,
+				45AD3F16FE2BBB9B21D37959A07D1D64 /* Support Files */,
+			);
+			path = Cordova;
+			sourceTree = "<group>";
+		};
+		19CB07BE7B4C0E42018DA1DA5E875281 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5E48F33D5E12C35958032C7A77C641A /* Pods-MyApp_HGB */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BB7D2901AF5AF2F32C88D6FADC2FC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E19F4FEAAEB899DDF0AAEDC137B0B0F /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C62D59181F5DBA14FE456A7F454013B6 /* AFNetworkReachabilityManager.h */,
+				8071BB63FE36500DB454366F8078CE0E /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		2E9BB7D2901AF5AF2F32C88D6FADC2FC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				74CD2B8025CB65C428F5C89DF1F6859A /* AssetsLibrary.framework */,
+				74FDA86192478E0B84113FA1B851B868 /* AVFoundation.framework */,
+				7C3152CDEE8BC38D4CE21AF970F0EA15 /* CFNetwork.framework */,
+				C56EF22902C05679D19D6AB6B6E40206 /* CoreGraphics.framework */,
+				3733856CF418E4A66A63E3AA76089208 /* CoreLocation.framework */,
+				487457B207FD32BC494EA1EDA168789E /* Foundation.framework */,
+				AF5699810D257370540629C3DC00D5FA /* MobileCoreServices.framework */,
+				BDB2308EE7345D39DB64419B99947A9B /* Security.framework */,
+				F383998B08902CF1BC50C68352B67D43 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2F3628A73992DF8FF75E788A5FE63320 /* WeexSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F4D6488E2DDD53C6BBCB53BF7B48D0FB /* Frameworks */,
+				A771C77D5AADFC39C52055B3B55BD71C /* Resources */,
+			);
+			path = WeexSDK;
+			sourceTree = "<group>";
+		};
+		45AD3F16FE2BBB9B21D37959A07D1D64 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29B5F9B15BCCA84CD16DD2DDB0DBF270 /* Cordova.xcconfig */,
+				C97EE2140C155B76060989CD635BFD4E /* Cordova-dummy.m */,
+				7EE39DF63AE20A664094011756962443 /* Cordova-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cordova";
+			sourceTree = "<group>";
+		};
+		61B9D3DF578CA619CF702791AD0890FA /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				60BED3A469C69F5D6DCC64CFE9325C03 /* AFSecurityPolicy.h */,
+				70F131A15A8A42368A104AC8B951DA88 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		62E4E4B26010DC461EBAE86854FB5B13 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				B70F904413F11F653678B0463FF9A967 /* SocketRocket.h */,
+				B8654C9504552C4514DE0A09B009EE4A /* SRWebSocket.h */,
+				E04948E6D9FA34411377CE86D44CF98B /* SRWebSocket.m */,
+				863F87AFDFC0DD72735EDE1F5C8DA604 /* Support Files */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		6848AF2BFF6CE1AC18FD1AEC281E1753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66D41163B96E9B2E55F62438FEA62E9E /* libAFNetworking.a */,
+				F65473BD57FC17568B0FA2FFBA6863A5 /* libCordova.a */,
+				52E663423276FC09ACDC92F9AE4E7E93 /* libPods-MyApp_HGB.a */,
+				173F21EE69A5A94EB20107B0A2BB10FC /* libSocketRocket.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72373D81406106DC292DD9A515625DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBB327F62C62D9AFB228EEDFE0FDF6D2 /* BaiduMapAPI_Base.framework */,
+				08B0FF71519E4F3AABFFFD08051B7BBB /* BaiduMapAPI_Cloud.framework */,
+				53D1FAE7E41FD73BACDA770FD867F81F /* BaiduMapAPI_Location.framework */,
+				7A40980D1DB54B3317BBBDCFAEEA1CBD /* BaiduMapAPI_Map.framework */,
+				16046B6F06731AA6C6EA3FF5CD9BF60F /* BaiduMapAPI_Radar.framework */,
+				CDA9A73C82ACEBABF4F25F4E7B083946 /* BaiduMapAPI_Search.framework */,
+				4874477FACF2EEC5F339530FAA86AC33 /* BaiduMapAPI_Utils.framework */,
+				8EDB96816F75334AEFE8BB2BC686073D /* libcrypto.a */,
+				5BEBB0C589345B2BE6F3F1FA00590C1E /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				24002A6670E6882ECD6250D3E60F9CB2 /* Frameworks */,
+				7EAB747A05E9ACA3F4790B67C92D52AC /* Pods */,
+				6848AF2BFF6CE1AC18FD1AEC281E1753 /* Products */,
+				19CB07BE7B4C0E42018DA1DA5E875281 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7EAB747A05E9ACA3F4790B67C92D52AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4F0DA06E784809738B08142A5EF2621 /* AFNetworking */,
+				C383E271FC2E540DB3FFC3143A6589D6 /* BaiduMapKit */,
+				14DC1C0A9803595516C2D92DFB1646AF /* Cordova */,
+				62E4E4B26010DC461EBAE86854FB5B13 /* SocketRocket */,
+				017E8D95665B97EE8BFA5EE5B6EFCB13 /* UMengAnalytics-NO-IDFA */,
+				2F3628A73992DF8FF75E788A5FE63320 /* WeexSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		863F87AFDFC0DD72735EDE1F5C8DA604 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B07DA1A7BF214C78E044B32A638144DF /* SocketRocket.xcconfig */,
+				5C8938018EDEBC05BC398B2AFD03EC48 /* SocketRocket-dummy.m */,
+				C27751C25681B79EB4EDF2C114617AD5 /* SocketRocket-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SocketRocket";
+			sourceTree = "<group>";
+		};
+		A771C77D5AADFC39C52055B3B55BD71C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EF2FFFE10AD1596080E4E90D404651A /* native-bundle-main.js */,
+				4C7F147831AC2D1D60DAD85172AA3ED0 /* wx_load_error@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C383E271FC2E540DB3FFC3143A6589D6 /* BaiduMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				576BB302109E01F6125F7F20F2358D3F /* BMKActionPaopaoView.h */,
+				BE5B20D68FD4F14ECC5DBCD4B449D945 /* BMKAnnotation.h */,
+				815325C30A52465311EC54C7019AB5C4 /* BMKAnnotationView.h */,
+				C65488D182E46696A18B6486F0A663D4 /* BMKArcline.h */,
+				7C29B03B231732300078D1F0A5844EAF /* BMKArclineView.h */,
+				9EBAC2E930C1A2B34FD5374B1168140C /* BMKBaseComponent.h */,
+				97274AEBECF4451FFFD3B0138EDC56ED /* BMKBaseIndoorMapInfo.h */,
+				A08BD965E17B451653A157DAC860E1CC /* BMKBusLineSearch.h */,
+				72678D95559AE0F0DD17444268399518 /* BMKBusLineSearchOption.h */,
+				5776089963471BCE70D1AFF71DD7B758 /* BMKCircle.h */,
+				3CAE45A2CBD09D5ABE9A3EED9F6A5785 /* BMKCircleView.h */,
+				D030D6DDD8444317202848A722589633 /* BMKCloudPOIList.h */,
+				57ED4184ECE1F098D3E6055F91BEA554 /* BMKCloudSearch.h */,
+				AB79A0CB8FFE6FD7AA5B196657B87568 /* BMKCloudSearchComponent.h */,
+				1809BF34F5B0AF2D2156E7D8944C8694 /* BMKCloudSearchInfo.h */,
+				4359496A6523D4546604845BCCD9A4D1 /* BMKCloudVersion.h */,
+				A2547A1F3A71B5B38192DB3FD20E855D /* BMKDistrictSearch.h */,
+				13F6B668E468C7B19A884ABA546745C8 /* BMKFavPoiInfo.h */,
+				799657E5F3FF8136D5A8E7997541298B /* BMKFavPoiManager.h */,
+				4149EA280FB9C0E0C810A861042AEFEA /* BMKGeneralDelegate.h */,
+				03704423AC31689C8E3B9025958C3583 /* BMKGeocodeSearch.h */,
+				DDA1D229A42BA7E5CBCBD3ECAED74B56 /* BMKGeocodeSearchOption.h */,
+				CAF4154CFA1F754A06D7E0AB6108F6BE /* BMKGeocodeType.h */,
+				1FFF139A424D6BD80F311734F7E94245 /* BMKGeometry.h */,
+				402DF34F76D1DBD8D931A6436253370C /* BMKGradient.h */,
+				7FB2174544A3BDC6EAE563EE5945FF69 /* BMKGroundOverlay.h */,
+				4ADFF2716F4AC5C4A1FA6AB047B7FE17 /* BMKGroundOverlayView.h */,
+				AEE4410859E59900991EEA0C438A0B67 /* BMKHeatMap.h */,
+				A611940572E4488D5537158C43ECFD1B /* BMKLocationComponent.h */,
+				947184F5FA3F984D3C7DF677F09CC0D7 /* BMKLocationService.h */,
+				2EF26061A2E28E67DDC8C100CA107D28 /* BMKLocationVersion.h */,
+				B789BD31062C20D1073DCF2E8E196090 /* BMKLocationViewDisplayParam.h */,
+				9D0F25A0EC638C254B4C8C28207CEC09 /* BMKMapComponent.h */,
+				36569D44C1D20669F755A5D26D2A1D75 /* BMKMapManager.h */,
+				2F81DEBCB42E1D92B72D936E580F81CB /* BMKMapStatus.h */,
+				D00035E2632BA57FECA3A2B2A1467F24 /* BMKMapVersion.h */,
+				D046F815AEE52D77BC8F6CA66B94CB9D /* BMKMapView.h */,
+				E0DCE4AA02B14502910A026D1883A05C /* BMKMultiPoint.h */,
+				FF9E67198E190D39D3ADF1529F95C594 /* BMKNavigation.h */,
+				7EBCC03CF04C51150E5D8520E51440B1 /* BMKOfflineMap.h */,
+				273120C4C9248C3E84FE65C1D0AE55AC /* BMKOfflineMapType.h */,
+				C4CDD6DA9C0C8FAB864AF242D021B593 /* BMKOpenOption.h */,
+				0AABEE5E1FB5B0DB46812E6F21229FA3 /* BMKOpenPanorama.h */,
+				BAE20721A9AE32679106A79395DBF0BF /* BMKOpenPoi.h */,
+				0EEB68393CD517FCA5A4F936F02C9F6D /* BMKOpenPoiOption.h */,
+				C7842AAB67B1F3AB461D3CA3FCCB69E9 /* BMKOpenRoute.h */,
+				56876B3F7874CF5CA54349B919D94016 /* BMKOpenRouteOption.h */,
+				2CC7CAF752F12FC7E95D5201D7DDB39E /* BMKOverlay.h */,
+				3DA5D03F26527CBFDD9FC2EBCDF2ABE8 /* BMKOverlayGLBasicView.h */,
+				92AFBAA03929652517644D8231375BFF /* BMKOverlayPathView.h */,
+				E2BA2FCEECC24F8441863B780C6AA26B /* BMKOverlayView.h */,
+				66740EB4C9B3A705ACA2D9D40BCC77E7 /* BMKPinAnnotationView.h */,
+				E9CAB05BD967D204134725F65181E60C /* BMKPointAnnotation.h */,
+				62ABD6280F8517AD03A9515AE1283881 /* BMKPoiSearch.h */,
+				89BBA4F13BDA0ACFA1CA11B4FB43BBF4 /* BMKPoiSearchOption.h */,
+				B210C26250122DEA2C0D23D65F1D158E /* BMKPoiSearchType.h */,
+				2F5C8DE46126BAF70FCBF3EDA9FD06F2 /* BMKPolygon.h */,
+				AE3CDB1FC9F3ABE142278813A2B9B0F4 /* BMKPolygonView.h */,
+				E5F17A16BDE15C1882F4A22356E93DFA /* BMKPolyline.h */,
+				B576ECA5FC4F45A08A8AC7625AE01D77 /* BMKPolylineView.h */,
+				C2BD1137AECF142DD40FB2B42CF357AC /* BMKRadarComponent.h */,
+				7CC43003EEEFAD6A8523D4498D3B1424 /* BMKRadarManager.h */,
+				9EB22F644F403F5FBEF93387748D3B27 /* BMKRadarOption.h */,
+				05C985E023BB5909952BDF82C4C535EA /* BMKRadarResult.h */,
+				3451EAD23BF5D783D293BDF6F8ACEF44 /* BMKRadarVersion.h */,
+				1D40152EA07B6E2E807DEB30F61E632A /* BMKRouteSearch.h */,
+				80A1813DB0897DCEACBEB1785BAC03BC /* BMKRouteSearchOption.h */,
+				EC165E5CEEEC833983A4B9A5068F7AC6 /* BMKRouteSearchType.h */,
+				6E572872D7B41B13A903AAC21DD52268 /* BMKSearchBase.h */,
+				3D180E9A0C359231C78C7CAD0D82D20A /* BMKSearchComponent.h */,
+				CBD5A36D3B684A1C81D11185E066F3B4 /* BMKSearchVersion.h */,
+				D1BDF25F6758DEA9D7F21350BD6DEA07 /* BMKShape.h */,
+				FCBB3D899EDDD67BD98273E90C531908 /* BMKShareURLSearch.h */,
+				1B21021E3EC2432A11B19D0DDA9FFCDE /* BMKShareUrlSearchOption.h */,
+				C59067D6B6EA4DB96FB1F8711C9E428D /* BMKSuggestionSearch.h */,
+				1016838B0AE8019AADB22990924A13D4 /* BMKSuggestionSearchOption.h */,
+				FB4AFDA6D183B18371DF6C60303F8E29 /* BMKTileLayer.h */,
+				5959B61FC258F96053FDA74EBA26091C /* BMKTileLayerView.h */,
+				06D85745EE2285260163E9817FE45F65 /* BMKTypes.h */,
+				F4D82B0B3ABA37D6B1BED81C0AB24861 /* BMKUserLocation.h */,
+				F1649074EE68C4372B5E7A17642639C7 /* BMKUtilsComponent.h */,
+				B70088D6A8B02641B5F1DE9296D59793 /* BMKUtilsVersion.h */,
+				122B4D275558323FE3C91377DB0EBB13 /* BMKVersion.h */,
+				72373D81406106DC292DD9A515625DA7 /* Frameworks */,
+				034E3BDAE07CBD4A69893E2D7683C277 /* Resources */,
+			);
+			path = BaiduMapKit;
+			sourceTree = "<group>";
+		};
+		CCCC08A237DF0E1D352230C05DF06D54 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				B290A2214BE2E171DA87AA17953806E9 /* AFURLRequestSerialization.h */,
+				CB5197138BDB5F1D2CDE0D95DEE66757 /* AFURLRequestSerialization.m */,
+				FA1303214848D91388CFA195C7F06ABA /* AFURLResponseSerialization.h */,
+				8E73596E2096A6A81F0EA51A0D12FA31 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		DC1CFB21F9CB048BD04C99A3CB021B4E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC522D9905F8131ED5E392077457A163 /* AFNetworking.xcconfig */,
+				3CE369F3AB4C29EFB5A03BF921C808B6 /* AFNetworking-dummy.m */,
+				FA7C2CAFF7BED2A4754B530D6ECB46E7 /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		E5E48F33D5E12C35958032C7A77C641A /* Pods-MyApp_HGB */ = {
+			isa = PBXGroup;
+			children = (
+				23093AC42BC683A1E37CF92F1B7A1757 /* Pods-MyApp_HGB-acknowledgements.markdown */,
+				81645B30982218FEEFD276DCDC932551 /* Pods-MyApp_HGB-acknowledgements.plist */,
+				561E65A150C6FD197D6BC197EB07FAAE /* Pods-MyApp_HGB-dummy.m */,
+				1183FF0B9E7DC29AED323A46F949790A /* Pods-MyApp_HGB-frameworks.sh */,
+				B4D260BFE702B8133F47A8788895036F /* Pods-MyApp_HGB-resources.sh */,
+				4E04AE6D43080307A88DCD5B1FBB02B9 /* Pods-MyApp_HGB.debug.xcconfig */,
+				0430E08C002AF519D3C242BA32D13D38 /* Pods-MyApp_HGB.release.xcconfig */,
+			);
+			name = "Pods-MyApp_HGB";
+			path = "Target Support Files/Pods-MyApp_HGB";
+			sourceTree = "<group>";
+		};
+		E9088F66C3A97EB05690CA63A87DE8D9 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D13693F2CABEFE9D24033846F719672F /* AFAutoPurgingImageCache.h */,
+				8400FDDAB29C579E10A2D46EE11F5D9A /* AFAutoPurgingImageCache.m */,
+				4579EB797D979B4D624F7A7BAF671BA4 /* AFImageDownloader.h */,
+				91428A70D95B7D62F0D82980D487DD00 /* AFImageDownloader.m */,
+				F0D949D6F6F86206AFA0F0232422DA88 /* AFNetworkActivityIndicatorManager.h */,
+				6599F34B2EB9FB11397648B6130EC575 /* AFNetworkActivityIndicatorManager.m */,
+				613BD47927AF128BF7A4BA84F570C224 /* UIActivityIndicatorView+AFNetworking.h */,
+				6DEFC4EFE318283A3F8F3CDF1914CDE7 /* UIActivityIndicatorView+AFNetworking.m */,
+				ECCB8DFABACEC5A83DBCAC075DE80BD4 /* UIButton+AFNetworking.h */,
+				68C9492403CFC6D3B9AC86BFF38E21BD /* UIButton+AFNetworking.m */,
+				DCF3D5D09F1302034C082A3ECE6E99F1 /* UIImage+AFNetworking.h */,
+				A7387EA574C2301A43E4E86FB6C93151 /* UIImageView+AFNetworking.h */,
+				95DAFF7EA1C244E06FFF26AAFD6844CB /* UIImageView+AFNetworking.m */,
+				F52E5B93959F88EDDC3F3A65180685E0 /* UIKit+AFNetworking.h */,
+				9F414C3CE7034392EEC0150BB3B32271 /* UIProgressView+AFNetworking.h */,
+				E10E694106ED9F3452ACB04628645484 /* UIProgressView+AFNetworking.m */,
+				E911E37B13451C09A0980241E8026985 /* UIRefreshControl+AFNetworking.h */,
+				8B09C0CE5AD5112468FDC1956D7C7DB8 /* UIRefreshControl+AFNetworking.m */,
+				9BE7E42A58CB2BE46C13F0CD35963B3A /* UIWebView+AFNetworking.h */,
+				84AF6F0F3BBA1E23BDDD6282F719CDC3 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		F40324F3E20A5982AAAFF683AF451A08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E03EEED685E13D6F1F952C759B760128 /* UMMobClick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A3CD549E04A1CC86BE5641D5D808A2 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				BB748C4B55C4771B0CB59484381885EE /* AFHTTPSessionManager.h */,
+				9B2BF93B8E89034280AFFAE23A944255 /* AFHTTPSessionManager.m */,
+				AA0BCB298DF4EDDB7A62D58F359B602C /* AFURLSessionManager.h */,
+				4A51A1F83D4383A25A585E5C9CE283B8 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		F4D6488E2DDD53C6BBCB53BF7B48D0FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5511B2F7A945D19EF24C740D3F77C241 /* WeexSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4F0DA06E784809738B08142A5EF2621 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F0B8918B7F68728E785D4244CC2D1 /* AFNetworking.h */,
+				F4A3CD549E04A1CC86BE5641D5D808A2 /* NSURLSession */,
+				2E19F4FEAAEB899DDF0AAEDC137B0B0F /* Reachability */,
+				61B9D3DF578CA619CF702791AD0890FA /* Security */,
+				CCCC08A237DF0E1D352230C05DF06D54 /* Serialization */,
+				DC1CFB21F9CB048BD04C99A3CB021B4E /* Support Files */,
+				E9088F66C3A97EB05690CA63A87DE8D9 /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A1C2B07813030B0D51EB1D804A4439E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */,
+				6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */,
+				707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */,
+				E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */,
+				46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */,
+				DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */,
+				D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */,
+				C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */,
+				66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */,
+				F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */,
+				682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */,
+				1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */,
+				D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */,
+				5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */,
+				B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */,
+				F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */,
+				8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2592543448EA3013614B3AF55F2FC0B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6FB0D5ED10354CE038D7FBC257ABF9A /* SocketRocket.h in Headers */,
+				3E48DE349E8A4E1511B1ADEDEB830997 /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F3612EDFB12A4F9265A31832AD5DF3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6914238938455F9A41A89C6F263D483B /* CDV.h in Headers */,
+				5C6D143F56BCE7BB5B9D3E4FCE52175A /* CDVAvailability.h in Headers */,
+				577E88B7B2596AE42CA6DB663CADCC36 /* CDVAvailabilityDeprecated.h in Headers */,
+				383EECD437DA9DF2B3C7971747E01D69 /* CDVCommandDelegate.h in Headers */,
+				3C1C8AA15369F2AA7B6384AAC13493FB /* CDVCommandDelegateImpl.h in Headers */,
+				A8D52D64B33C805A91F58369E62045F2 /* CDVCommandQueue.h in Headers */,
+				4B4D1EFB0067796B4134F8D02485A1C9 /* CDVConfigParser.h in Headers */,
+				9056706C4F41A1456D7D705365C1F527 /* CDVDebug.h in Headers */,
+				09732418DE04022154307E5F82C66BA8 /* CDVHandleOpenURL.h in Headers */,
+				16A5253C79F83370409D2DFE029D1454 /* CDVInvokedUrlCommand.h in Headers */,
+				BE6B7B5A0D84E20E3E1ACCC260F0DEBB /* CDVJSON.h in Headers */,
+				31D5AD53F41D4092BB7FCCB356E5ECB3 /* CDVJSON_private.h in Headers */,
+				37D8A1AED090FAC7DFAD98DE13C9E1A0 /* CDVLocalStorage.h in Headers */,
+				C40FB41ECD59E44CB915116873232E80 /* CDVPlugin.h in Headers */,
+				AE538588C2452C60BD6F6D74D5A6F0E3 /* CDVPluginResult.h in Headers */,
+				0ED395443CAB8F49F5A5B7CC51A85016 /* CDVScreenOrientationDelegate.h in Headers */,
+				39B450D9F12638DA765B76B55C26694A /* CDVShared.h in Headers */,
+				BDD4B52954744D7BF75296B40D35A059 /* CDVTimer.h in Headers */,
+				B053F1B9E57D6EDEBECBEF0A88FD1AF7 /* CDVURLProtocol.h in Headers */,
+				5FF4601DA5206FAA77EF81051CD400B1 /* CDVUserAgentUtil.h in Headers */,
+				AC6C08A5888B66F3F347E3FD629D5A0F /* CDVViewController.h in Headers */,
+				99FB22FA530F30E192F351DE1301CD37 /* CDVWebViewDelegate.h in Headers */,
+				6A9908298D6E1F5269913D6065136439 /* CDVWhitelist.h in Headers */,
+				AEA14BBE4C059381760F2FE3F6959024 /* NSArray+Comparisons.h in Headers */,
+				E25F3F0B49D3F49E7548352B3B4F5941 /* NSData+Base64.h in Headers */,
+				B94B2DA7055DDBD3222CFD96EFE35943 /* NSDictionary+Extensions.h in Headers */,
+				2010500719B5F5C0BD28F9140F2CB3BF /* NSMutableArray+QueueAdditions.h in Headers */,
+				57646A4034C7390C7BEE8CFC2E85DAEA /* UIDevice+Extensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3ED7D40288589E0641861406241076F9 /* SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F54EB83BEF388A40B80617FF17043C /* Build configuration list for PBXNativeTarget "SocketRocket" */;
+			buildPhases = (
+				D62BBFBC66CAB0E24F2E7DD67259B71A /* Sources */,
+				603B2B900E26A30D28CBFF47503A4BE8 /* Frameworks */,
+				2592543448EA3013614B3AF55F2FC0B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketRocket;
+			productName = SocketRocket;
+			productReference = 173F21EE69A5A94EB20107B0A2BB10FC /* libSocketRocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6C582FA7743527D884929F609B217F70 /* Cordova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B13D89C97E6B752A5FAFFE34626A0492 /* Build configuration list for PBXNativeTarget "Cordova" */;
+			buildPhases = (
+				50A02519299B6D110594B0A8F41DF3E5 /* Sources */,
+				518609AB6AB18028DA957E66FFE2D079 /* Frameworks */,
+				4F3612EDFB12A4F9265A31832AD5DF3A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cordova;
+			productName = Cordova;
+			productReference = F65473BD57FC17568B0FA2FFBA6863A5 /* libCordova.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9E033EDB5EC0819481B0546434FA577B /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				0068413C89BADAAF4691AA78AFE62C3E /* Sources */,
+				F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */,
+				0A1C2B07813030B0D51EB1D804A4439E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 66D41163B96E9B2E55F62438FEA62E9E /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B667E0008AD43BBE44838675CE5E3B06 /* Pods-MyApp_HGB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB09E57785AA51ACDCF5FEC3E29E5F3 /* Build configuration list for PBXNativeTarget "Pods-MyApp_HGB" */;
+			buildPhases = (
+				1BABCEC89939C67DF239360B216D6B07 /* Sources */,
+				AA680B4BF55BE0A3B23DBEB73DB364C5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1D76FB0DA90E4AC061D97D2653D6EA0 /* PBXTargetDependency */,
+				D4C955268DECB6FDC587D1DC6B75B005 /* PBXTargetDependency */,
+				681E707C84266C8E650FCD841213A581 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyApp_HGB";
+			productName = "Pods-MyApp_HGB";
+			productReference = 52E663423276FC09ACDC92F9AE4E7E93 /* libPods-MyApp_HGB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6848AF2BFF6CE1AC18FD1AEC281E1753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E033EDB5EC0819481B0546434FA577B /* AFNetworking */,
+				6C582FA7743527D884929F609B217F70 /* Cordova */,
+				B667E0008AD43BBE44838675CE5E3B06 /* Pods-MyApp_HGB */,
+				3ED7D40288589E0641861406241076F9 /* SocketRocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0068413C89BADAAF4691AA78AFE62C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */,
+				73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */,
+				5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */,
+				31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */,
+				97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */,
+				E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */,
+				66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */,
+				5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */,
+				85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */,
+				9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */,
+				2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */,
+				A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */,
+				D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */,
+				B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */,
+				A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BABCEC89939C67DF239360B216D6B07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06E64E6EEB227D46F901B48EE621E7C /* Pods-MyApp_HGB-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A02519299B6D110594B0A8F41DF3E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A401D712A38538CDB487A3E909263B /* CDVCommandDelegateImpl.m in Sources */,
+				D1CAF97CA8914D0B80AED07916069657 /* CDVCommandQueue.m in Sources */,
+				AD2BD539FD0F78A7FA853F35298AAD9F /* CDVConfigParser.m in Sources */,
+				805FDFC7085D4DAC4C7EDDFAB91FB883 /* CDVHandleOpenURL.m in Sources */,
+				A3DF8B643C97DF37AA385D4BA0FD1817 /* CDVInvokedUrlCommand.m in Sources */,
+				5A815327BC206D390B3B7DE3ABC0E445 /* CDVJSON.m in Sources */,
+				93B1409D1379DAC9E7E03753CDD7C4C8 /* CDVJSON_private.m in Sources */,
+				2D0849D41156BD2C90F39CCEB19E6970 /* CDVLocalStorage.m in Sources */,
+				5E8476251216A2EF225D0A5D95D3CBBA /* CDVPlugin.m in Sources */,
+				898699BCFB19F9F48ED1F54E3D1F7EFC /* CDVPluginResult.m in Sources */,
+				DA1EE6229F3A27D8950416B9F9403B29 /* CDVTimer.m in Sources */,
+				17E7517662140701D88A8CEE2CF19586 /* CDVURLProtocol.m in Sources */,
+				B47525E64AC1EC938552344794353546 /* CDVUserAgentUtil.m in Sources */,
+				18C345438D6821F5FECF27E761F871D2 /* CDVViewController.m in Sources */,
+				710B6FD18A5720E9E62D95763D0025F0 /* CDVWebViewDelegate.m in Sources */,
+				215BAE1D39F682BBFD015383CEE06B40 /* CDVWhitelist.m in Sources */,
+				67207C0E6B3729EC634C7FF0D73F8DF8 /* Cordova-dummy.m in Sources */,
+				2222C7A38388F65C7AB82EB8FC8876D4 /* NSArray+Comparisons.m in Sources */,
+				917F1A1E1AE5A9A6D610E59B3B09B59B /* NSData+Base64.m in Sources */,
+				62EEE7BA30319C7E7453D05C0C6714C4 /* NSDictionary+Extensions.m in Sources */,
+				20AA50580A21A223E8EC029F141D3827 /* NSMutableArray+QueueAdditions.m in Sources */,
+				3D54BA6934B7CB8B31AA5A1EBF53882E /* UIDevice+Extensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62BBFBC66CAB0E24F2E7DD67259B71A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC31037CFD2A859F84D13C311DFF355 /* SocketRocket-dummy.m in Sources */,
+				4A8CD3754B83A0BA2605BF4F41ECC7C6 /* SRWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		681E707C84266C8E650FCD841213A581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 3ED7D40288589E0641861406241076F9 /* SocketRocket */;
+			targetProxy = 36B7FD64642065539582F6CCDCD451FE /* PBXContainerItemProxy */;
+		};
+		A1D76FB0DA90E4AC061D97D2653D6EA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
+			targetProxy = 20A726C69318E02D8534B7FA91896D65 /* PBXContainerItemProxy */;
+		};
+		D4C955268DECB6FDC587D1DC6B75B005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cordova;
+			target = 6C582FA7743527D884929F609B217F70 /* Cordova */;
+			targetProxy = 370A8BA45AE58D0FB35A294619038C55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51A03E78C4821053D9055CEC53ECC7EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07DA1A7BF214C78E044B32A638144DF /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5CDC21BAEBE69383D5DC1A76241DA53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0430E08C002AF519D3C242BA32D13D38 /* Pods-MyApp_HGB.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		67E76B7951F8BE965B9D45F4B5410A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B5F9B15BCCA84CD16DD2DDB0DBF270 /* Cordova.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cordova/Cordova-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		72D1B831316303C2E356BBAC53FEF78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC522D9905F8131ED5E392077457A163 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		973F4596F19CD0C3B86B76E327629F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B5F9B15BCCA84CD16DD2DDB0DBF270 /* Cordova.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cordova/Cordova-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB71A53003DA954E996A25CC06CB5FD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07DA1A7BF214C78E044B32A638144DF /* SocketRocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SocketRocket/SocketRocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E5E920D1F29CF65E4E8B68EA772AEDEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E04AE6D43080307A88DCD5B1FBB02B9 /* Pods-MyApp_HGB.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FF778088B62C05BE1205DAE628D151DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC522D9905F8131ED5E392077457A163 /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AB09E57785AA51ACDCF5FEC3E29E5F3 /* Build configuration list for PBXNativeTarget "Pods-MyApp_HGB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E920D1F29CF65E4E8B68EA772AEDEE /* Debug */,
+				5CDC21BAEBE69383D5DC1A76241DA53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF778088B62C05BE1205DAE628D151DF /* Debug */,
+				72D1B831316303C2E356BBAC53FEF78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59F54EB83BEF388A40B80617FF17043C /* Build configuration list for PBXNativeTarget "SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51A03E78C4821053D9055CEC53ECC7EC /* Debug */,
+				AB71A53003DA954E996A25CC06CB5FD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B13D89C97E6B752A5FAFFE34626A0492 /* Build configuration list for PBXNativeTarget "Cordova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973F4596F19CD0C3B86B76E327629F43 /* Debug */,
+				67E76B7951F8BE965B9D45F4B5410A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,28 @@
+.div-custom-without_add{
+	padding-top: 4rem;
+	margin: 0;
+}
+#page-withoutAdd_tpl .div-custom-cardBoxs .span-custom-righttext{
+	display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.6rem;
+    background: url(../imgs/55.svg) no-repeat 3.3rem 1.2rem;
+    background-size: 9px 18px;
+}
+#page-withoutAdd_tpl .div-custom-cardBoxs{
+	height: 65px;
+    background: url(../imgs/small.svg) no-repeat 16px 24px;
+    background-size: 24px 24px;
+    background-color: #FFFFFF;
+    margin-top: 5rem;
+    padding-top: .3rem;
+    box-shadow: 0 1px 0 0 #F0F0F0;
+}
+#page-withoutAdd_tpl .span-custom-cashimage img{
+    width: 78px;
+    height: 64px;	
+}

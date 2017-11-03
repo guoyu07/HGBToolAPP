@@ -1,0 +1,144 @@
+#page-bankCardLimit_tpl .div-custom-bankcardBox{
+	position: relative;
+    padding: 1rem 0 0 0;
+}
+.div-custom-bankcardBox .span-custom-bankicons,
+.div-custom-bankcardBox .span-custom-banks,
+.div-custom-bankcardBox .span-custom-cardNumbers,
+.div-custom-bankcardBox .span-custom-cardbank
+{
+	position: absolute;
+}
+#page-bankCardLimit_tpl .span-custom-bankicons img{
+	width: 36px;
+	height: 36px;
+	display: block;
+}
+#page-bankCardLimit_tpl .span-custom-bankicons{
+	top: 1.4rem;
+    left: 1.3rem;
+}
+#page-bankCardLimit_tpl .span-custom-cardbank{
+	top: 1.3rem;
+    left: 3.6rem;
+    font-size: 15px;
+    color: #E2E2E2;
+}
+#page-bankCardLimit_tpl .span-custom-banks{
+	font-size: 13px;
+    color: #E2E2E2;
+    top: 2.3rem;
+    left: 3.6rem;
+}
+#page-bankCardLimit_tpl .span-custom-cardNumbers{
+    color: #fff;
+}
+
+#page-bankCardLimit_tpl .span-custom-cardNumbers .last-threenumber, .span-custom-cardNumbers .last-twonumber, .span-custom-cardNumbers .last-onenumber {
+    font-size: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -2.2rem;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+#page-bankCardLimit_tpl .span-custom-cardNumbers .last-twonumber {
+    left: 8rem;
+}
+#page-bankCardLimit_tpl .span-custom-cardNumbers .last-onenumber {
+    left: 5rem;
+}
+#page-bankCardLimit_tpl .span-custom-cardNumbers .last-threenumber {
+    left: 11rem;
+}
+#page-bankCardLimit_tpl .span-custom-cardNumbers .lastfour {
+    font-size: 31px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 14rem;
+    top: -2.7rem;
+}
+#page-bankCardLimit_tpl .bankcard_limitinfo li{
+	line-height:48px;
+	height:48px;
+    padding-right: .8rem;
+	color: #444;
+	font-size: 16px;
+}
+#page-bankCardLimit_tpl .bankcard_limitinfo {
+	border-top:1px solid #f0f0f0;
+	background:#fff;
+    padding-left: 0px;
+	border-bottom: 1px solid #F0f0f0; 
+}
+#page-bankCardLimit_tpl .bankcard_limitinfo li  a{
+	color: #999;
+	float:right;
+	font-size: 16px;
+}
+#page-bankCardLimit_tpl .div-enchashment_texts{
+	text-indent: 1rem;
+    font-size: 14px;
+    color: #999999;
+    line-height: 2rem;
+    height: .9rem;
+}
+#page-bankCardLimit_tpl .bankcard_limitinfo li:first-child{
+	border-bottom: 1px solid #F0f0f0;
+	margin-left: 1rem;
+}
+#page-bankCardLimit_tpl .last-onenumber {
+    left: 5rem;
+}
+#page-bankCardLimit_tpl .span-custom-cardnumbers {
+    font-size: 26px;
+    color: #FFFFFF;
+}
+#page-bankCardLimit_tpl .span-custom-cardicons img {
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+#page-bankCardLimit_tpl .span-custom-cardicons {
+    top: 4.4em;
+    left: 1.3rem;
+}
+#page-bankCardLimit_tpl .span-custom-cards,
+#page-bankCardLimit_tpl .span-custom-cardblank,
+#page-bankCardLimit_tpl .span-custom-cardicons {
+    position: absolute;
+}
+#page-bankCardLimit_tpl .last-threenumber, #page-bankCardLimit_tpl .last-twonumber, #page-bankCardLimit_tpl .last-onenumber {
+    font-size: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 5.3rem;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+
+
+#page-bankCardLimit_tpl .span-custom-cards {
+    top: 4.9rem;
+    font-size: 12px;
+    color: #E2E2E2;
+    left: 1.3rem;
+}
+#page-bankCardLimit_tpl .span-custom-cards, #page-bankCardLimit_tpl .span-custom-cardblank, #page-bankCardLimit_tpl .span-custom-cardicons {
+    position: absolute;
+}
+#page-bankCardLimit_tpl .span-custom-cardblank {
+    font-size: 14px;
+    color: #E2E2E2;
+    top: 3.8rem;
+    left: 3.6rem;
+}
+#page-bankCardLimit_tpl .span-custom-cardblank {
+    font-size: 14px;
+    color: #E2E2E2;
+    top: 4.8rem;
+    left:3rem;
+}
+#page-bankCardLimit_tpl .span-custom-cards, #page-bankCardLimit_tpl .span-custom-cardblank, #page-bankCardLimit_tpl .span-custom-cardicons {
+    position: absolute;
+}

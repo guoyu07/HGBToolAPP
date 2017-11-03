@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="690px" height="181px" viewBox="0 0 690 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="690" height="180" rx="9.5567867"></rect>
+        <polygon id="path-3" points="0.841841737 179.204439 181.227096 179.204439 181.227096 0.104166977 0.841841737 0.104166977"></polygon>
+    </defs>
+    <g id="J_现金账户" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="J_1.1-现金账户-未绑定银行卡-Copy" transform="translate(-30.000000, -711.000000)">
+            <g id="Group-2" transform="translate(30.000000, 711.165975)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-3" fill="#FD6F58" xlink:href="#path-1"></use>
+                <g id="Group-3" transform="translate(417.000000, 0.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

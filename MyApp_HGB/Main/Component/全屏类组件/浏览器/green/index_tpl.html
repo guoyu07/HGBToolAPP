@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>登录</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<link rel="stylesheet" href="css/libs/sm.css">
+		<link rel="stylesheet" href="css/theme/theme.css">
+		<link rel="stylesheet" href="css/appPublicStyle.css"/>
+		<link rel="stylesheet" href="css/login.css"/>
+		
+		
+	</head>
+	<body>
+		<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+		<div class="page-group">
+			<!-- 单个page ,默认被展示-->
+			<div id="page-index_tpl" class="page page-current page-bck">
+				<!-- 这里是页面内容区 -->
+				<div class="content" data-type="content" id="loginpage">
+					<!--占位图-->
+					<div class="div" data-type="div">
+					    <img class="logo" src="imgs/logo.svg" data-type="img"/>
+					</div>
+					<div class="title" data-type="div">
+					碳积分
+					</div>
+					<form id="demoform" data-type="form">
+						<div class="list-block" data-type="div" id="login">
+							<ul class="loginList">
+								<!-- Text inputs -->
+								<li data-type="itemContent" class="userName">
+									<div class="item-content" data-type="div">
+										<div class="item-media" data-type="div">
+											<span class="user-item-icon" data-type="span"><img src="imgs/zhanghu.svg"></span>
+										</div>
+										<div class="item-inner" data-type="div">
+											<div class="item-input" data-type="div">
+												<input type="text" placeholder="请输入您的用户名" id="username" name="username" data-required="true" v-model="username" data-descriptions="username"  data-validate="phone"/>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li data-type="itemContent" class="pword">
+									<div class="item-content" data-type="div">
+										<div class="item-media" data-type="div">
+											<span class="user-item-icon-pswd" data-type="span"><img src="imgs/psword.svg"></span>
+										</div>
+										<div class="item-inner" data-type="div">
+											<div class="item-input" data-type="div">
+												<input type="password" placeholder="请输入您的密码" id="password" name="password" data-required="true" v-model="userpwd" data-descriptions="password" data-validate="password"/>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						
+						</div>
+							<!--忘记密码-->
+							<div class="footers">
+						 	 <a class="zhuce" href="#" data-type="a"><img src="imgs/zczh.svg" />立即注册</a>
+							 <a class="password" href="#" data-type="a" style="display: inline-block;"><img src="imgs/wjmm.svg" />忘记密码?</a>
+							</div>
+							<div class="content-block" data-type="div">
+								<div class="row" data-type="row" id="loginBtn">
+									  <input id="btn_login" v-on:click="submit" type="button" name="submit" value="登录"
+			                   class="button login" data-type="input">
+								</div>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--sui框架js-->
+	<script src="js/libs/zepto.js"></script>
+	<!--打包时-->
+	<script src="js/libs/sm.js"></script>
+	<!--开发时-->
+	<!--<script src="../../js/dev/sm.dev.js"></script>-->
+	<!--agreeSDK插件定义js-->
+	
+	<script src="js/public/agreeSDK.js"></script>
+    <script src="js/public/bank.js"></script>
+    <script src="js/public/md5.js"></script>
+	<script src="js/public/common.js"></script>
+	<!--公有方法-->
+	<script src="js/public/appPublicAction.js"></script>
+	<!--card页面初始化js事件-->
+	<script src="js/indexEventBinds.js"></script>
+</html>

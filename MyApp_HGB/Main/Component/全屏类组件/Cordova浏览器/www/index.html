@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SDK调用示例</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.css">
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="page page-current" id="pgFirst">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav">
+            <h1 class="title">SDK调用示例</h1>
+        </header>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <div class="content-block">
+                <a class="button button-fill button-big" id="btn_QRCode">返回</a>
+            </div>
+            <div class="content-block">
+                <a class="button button-fill button-big" id="btn_Share">打电话</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type='text/javascript' src='js/common/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src="js/common/config.js" charset='utf-8'></script>
+<script type='text/javascript' src='js/common/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/common/sm-extend.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/index.js' charset='utf-8'></script>
+</body>
+</html>

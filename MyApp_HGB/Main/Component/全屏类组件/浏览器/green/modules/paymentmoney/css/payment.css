@@ -1,0 +1,168 @@
+#page-payment_tpl{
+    background-image: url(../imgs/33.png) !important;
+    background-size: 100% auto !important;
+}
+#page-payment_tpl .bar-nav {
+    background: none !important;
+}
+#page-payment_tpl .bar:after{
+	height: 0px;
+}
+#page-payment_tpl .div-custom-collectionbox{
+	padding: 15px 0 0 0;
+	height: 400px;
+	box-sizing:border-box;
+    margin: auto;
+	background: #FFF;
+	border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+#page-payment_tpl {
+	padding: 36px 20px 0 20px;
+}
+#page-payment_tpl  .span-custom-topcont,.span-custom-topcode,.span-custom-toptext{
+	display: block;
+}
+#page-payment_tpl  .span-custom-topcont{
+	background: url(../imgs/shangpu.svg) no-repeat .9rem 0rem;
+    background-size: 20px 20px;
+    padding-left: 2.3rem;
+    font-size: 14px;
+    color: #444444;
+}
+#page-payment_tpl  .span-custom-topcode,.span-custom-toptext{
+	text-align: center;
+	font-size: 16px;
+    color: #000;
+}
+#page-payment_tpl .span-custom-toptm{
+    text-align: center;
+	padding-top: 14px;
+	display: block;
+}
+#page-payment_tpl .span-custom-toptm .imgs_code{
+	width:170px;
+    height:170px;
+}
+#page-payment_tpl .span-custom-toptext{
+	padding-top:9px;
+}
+#page-payment_tpl .span-custom-topcode img{
+	display: inline-block;
+    text-align: center;
+    height: 170px;
+    margin-top: 14px;
+}
+#page-payment_tpl .span-custom-collect_jf{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background: url(../imgs/jfo.png) no-repeat 1px 1px;
+    background-size: 22px 20px;
+    font-size: 15px;
+    color: #444444;
+    width: 36%;
+    padding-left: .4rem;
+}
+#page-payment_tpl .collection{
+    display:block;
+     line-height: 1rem;
+	text-align: center;
+}
+#page-payment_tpl .span-custom-collect_je{
+    padding-right: .7rem;
+    height: 16px;
+    line-height: 16px;
+	border-right: 1px solid #999;
+}
+#page-payment_tpl .span-custom-record{
+	padding-left: .5rem;
+}
+#page-payment_tpl .img-custom-moreThan{
+	width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: .2rem;
+    left: 4.9rem;
+}
+#page-payment_tpl .img-custom-moreThanBtn{
+	width: 10px;
+    height: 13px;
+    display: inline-block;
+    position: absolute;
+    top: 1.7rem;
+    left: 14.8rem;
+}
+#page-payment_tpl .div-custom-personalPayment{
+	padding-top: 15px;
+	position:relative;
+	text-align: center;
+}
+#page-payment_tpl .div-custom-footerText{
+	text-align: center;
+    line-height: 13rem;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+#page-payment_tpl .span-custom-paymentbtn{
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+	border-radius: 5px;
+	height: 55px;
+    width: 99%;
+    line-height:55px;
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    background-image: url(../imgs/erweima.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 3.8rem .7rem;
+}
+#page-payment_tpl .popup-about .content-block .list-block {
+    margin-top: 2.5rem;
+}
+#page-payment_tpl .popup-about .list-block .item-content{
+	height: 2.4rem;
+} 
+#page-payment_tpl .popup-about .list-block .item-title{
+	text-align: left;
+    padding-left: .9rem;
+    top: .6rem;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+#page-payment_tpl .popup-about .bckimg{
+	background: url(../imgs/right.png) no-repeat 100% 2.2rem;
+    background-size: 0.8rem 0.6rem;
+}
+#page-payment_tpl .popup-about .selected{
+	color: #4997f2 !important;
+}
+#page-payment_tpl .popup-about .one{
+	background: url(../imgs/jfo.png) no-repeat 0rem 1.2rem;
+    background-size: 20px 20px;
+    height: 65px;
+    font-size: 16px;
+    line-height: 65px;
+    color: #000;
+}
+#page-payment_tpl .popup-about .two{
+	background: url(../imgs/CombinedShape.png) no-repeat 0rem 1.3rem;
+    background-size: 22px 20px;
+    height: 65px;
+    font-size: 16px;
+    line-height: 65px;
+    color: #000;
+}
+#page-payment_tpl .popup-about .three{
+	background: url(../imgs/lxyk.svg) no-repeat 0rem 1.4rem;
+    background-size: 22px 20px;
+    height: 65px;
+    font-size: 16px;
+    line-height: 65px;
+    color: #000;
+}

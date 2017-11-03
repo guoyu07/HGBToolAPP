@@ -1,0 +1,114 @@
+
+#page-selectMerchants_tpl .pull-to-refresh-layer{
+	height: .4rem;
+}
+#page-selectMerchants_tpl{
+	background: #eaeaea !important;
+}
+#page-selectMerchants_tpl .div-custom-selectTop{
+    font-size: 17px;
+    color: #000000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+   
+}
+#page-selectMerchants_tpl .div-custom-selectBottom{
+	font-size: 14px;
+    color: #999;
+    width: 100%;
+}
+#page-selectMerchants_tpl .div-custom-isBd {
+    font-size: 13px;
+    color: #FC4E5A;
+     float: right;
+    display: inline-block;
+
+}
+#page-selectMerchants_tpl .div-custom-selectBottom span{
+	font-size: 13px;
+    padding-left: 4rem;
+    color: #444;
+    float: right;
+}
+#page-selectMerchants_tpl .div-custom-selectBottom .div-custom-number{
+	font-size: 13px;
+    float: right;
+    color: #444;
+    display: inline-block;
+}
+#page-selectMerchants_tpl .search-inputs{
+	position: relative;
+}
+#page-selectMerchants_tpl .search-inputs input{
+    border-radius: 4px;
+    height:1.2rem;
+    line-height: 30px;
+    padding-left: 1.6rem;
+    box-shadow: 0;
+    border: none;
+    position: absolute;
+    top: 2.3rem;
+    width: 78%;
+    left: .3rem;
+}
+#page-selectMerchants_tpl .pull-to-refresh-content.refreshing  .preloader{
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    visibility: hidden;*/
+}
+#page-selectMerchants_tpl .pull-to-refresh-content {
+       padding-top: 0.3rem;
+       top:0;
+}
+#page-selectMerchants_tpl .pull-to-refresh-layer .pull-to-refresh-arrow{
+	margin-top: -1.5rem;
+}
+#page-selectMerchants_tpl .icon-custom-searchicon img{
+	width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 2.9rem; 
+}
+#page-selectMerchants_tpl .icon-custom-searchicon {
+    left: -.3rem;
+}
+#page-selectMerchants_tpl  .div-custom-footer_search{
+	font-size: 14px;
+	 padding-top: 2rem;
+    text-align: center;
+    color: #999999; 
+}
+#page-selectMerchants_tpl .div-custom-merchant:first-child{
+	margin-top: -3px;
+}
+#page-selectMerchants_tpl .div-custom-merchant{
+    height: 76px;
+    box-sizing:border-box;
+    margin-bottom: 5px;
+    padding-right: .7rem;
+    border-bottom: 1px solid #F0f0f0;
+    margin-left: .7rem;
+    padding-top: .7rem;
+}
+#page-selectMerchants_tpl .div-custom-selectMerimg img{
+   /* background: url(../imgs/yonghu.svg) no-repeat 0rem 0;
+    background-size: 100% 100%;*/
+    width: 43px;
+    height: 43px;
+    float: left;
+}
+.pull-to-refresh-layer{
+	height: 1rem;
+}
+#page-selectMerchants_tpl .content{
+	background: #fff;
+    margin-top: 4.5rem;
+}
+#page-selectMerchants_tpl .div-custom-rightSelectbox{
+	float: right;
+    width: 85%;
+}

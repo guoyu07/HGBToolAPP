@@ -1,0 +1,76 @@
+
+.div-custom-header-img img{
+    width: 100%;
+    height: 240px;
+    display: block;
+}
+.div-custom-activitydetail_header{
+    padding: 6px 7px 0 19px;
+}
+.div-custom-activitydetail_header h1{
+	font-size: 21px;
+    color: #444444;
+     text-align: left;
+}
+.div-custom-activitydetail_header .span-custom-special{
+	font-size: 12px;
+    color: #999999;
+    margin-top:-12px;
+    display: block;
+}
+.div-custom-activitydetail_header .span-custom-special  div{
+	display: inline-block;
+    padding-right: .4rem;
+}
+.div-custom-activitydetail_header .span-custom-special  div span{
+	padding-right: .4rem;
+}
+.div-custom-btngroup{
+	margin-top: -1rem;
+}
+.div-custom-btngroup .button{
+	width: 47%;
+    float: left;
+    margin-right: .5rem;
+    border: 2px solid #FB4251;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 2rem;
+    height: 44px;
+    font-size: 18px;
+    color: #FB4251;
+    line-height: 44px;
+    display: inline-block;
+}
+.ul-custom-detailul{
+	padding:0 .5rem 0 0;
+}
+.ul-custom-detailul .list.special .span-custom-o.special{
+	width: 65%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.ul-custom-detailul .list.special .right{
+	border-bottom: none !important;
+}
+.ul-custom-detailul .list.special{
+	background: url(../imgs/3.png) no-repeat 16.4rem .2rem;
+    background-size: 11px 18px;
+    padding-right: .7rem;
+}
+.div-custom-details-title{
+	padding-top: 1rem;
+	
+}
+.div-custom-details-title h1{
+	font-size: 16px;
+    color: #999999;
+}
+.div-custom-detail-text p{
+	font-size: 16px;
+    color: #444444;
+}
+.div-custom-details-title h1{
+	text-align: left;
+}

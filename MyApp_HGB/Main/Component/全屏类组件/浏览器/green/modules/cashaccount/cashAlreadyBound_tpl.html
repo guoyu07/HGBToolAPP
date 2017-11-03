@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>现金账户-已绑定银行卡</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link rel="stylesheet" href="css/cashAlreadyBound.css"/>
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-cashAlreadyBound_tpl" class="page page-current">  	
+        <!-- 这里是页面内容区 -->
+        <header class="bar bar-nav header" data-type="header" id="my_headers">
+			            <a class="button button-link pull-left back" href="#" id="special_back" data-type="button">
+			                <span class="icon icon-left" data-type="icon"></span>
+			            </a>
+			            <h1 class="title" data-type="h1">现金账户</h1>
+			             <div class="list-block cashaccount">
+						      <div data-type="div" class="div-custom-cashmoney">￥{{moneyInfo.balance_}}</div>
+						      <div data-type="div" class="div-custom-cashtext">我的现金账户余额(元)</div>
+						  </div>
+	    </header>
+        <div class="content" data-type="content" v-if="!isShow">					 
+					<div class="list-block  cash_already">
+					    <ul class="mycont_list specialis" style="border-bottom: 1px solid #f0f0f0;">
+					      <li class="item-content item-link" id="recharge" v-on:click="recharge">
+					        <div class="item-media"><i class="icon icon-custom-alreadyimgone"></i></div>
+					        <div class="item-inner">
+					          <div class="item-title" >充值</div>
+					        </div>
+					      </li>
+					       <li class="item-content item-link"  id="withdraw_money" v-on:click="withdrawals">
+					        <div class="item-media"><i class="icon icon-custom-alreadyimgtwo"></i></div>
+					        <div class="item-inner special">
+					          <div class="item-title">提现</div>
+					        </div>
+					      </li>
+					      									      
+					    </ul>
+					</div>
+				<div data-type="div" class="div-custom-cashaccountBox"  style="border-top:1px solid #f0f0f0;">
+					    <div class="div-custom-cashaccount" data-type="div" style="height: 166px;" id="cardblank">
+	        	          <div>
+	        	           <span data-type="span" class="span-custom-lefttext">银行卡</span> 
+	        	           <span data-type="span" class="span-custom-righttext" v-on:click="replace" >更换银行卡</span> 
+	        	          </div>
+	        	          <div v-for="li in blankCard.list" v-on:click="onRoad" class="waiy">
+                              <div>
+<!--                               <span data-type="span" class="span-custom-bankbg"><img src="imgs/bigbc.svg" /></span>-->
+                               <span data-type="span" class="span-custom-cardicons"><img src="bankimg/{{BANKIMG}}"  style="width: 90px;height: 23px" /></span> 
+				               <span data-type="span" class="span-custom-cardblank_pre">
+                                   <span data-type="span" class="span-custom-status">{{qianyue_status_}}</span>
+                               </span>
+                               </div>
+                              <div class="span-custom-chubox">
+		        	           <span data-type="span" class="span-custom-chu">储蓄卡</span>
+                              </div>
+                              <div>
+		        	           
+                               <span data-type="span" class="span-custom-cardnumbers">
+		        	               <span class="last-onenumber" data-type="span">{{li.bkacctno_}}</span>
+		        	           </span>
+                              </div>
+	        	          </div>
+	       	              
+	        	        </div>
+			        </div>
+	   </div>
+        <div class="content" data-type="content" v-if="isShow">
+                        <div data-type="div" class="div-custom-cashaccountBox" style="padding-top: 6rem;" >
+                            <div data-type="div" class="div-custom-biaoti">请绑定银行卡(仅限储蓄卡)</div>
+                            <div class="div-custom-cardBox" data-type="div">
+                               <span data-type="span" class="span-custom-lefttext">银行卡</span> 
+                               <span data-type="span" class="span-custom-righttext" v-on:click="addCardBank">添加银行卡</span>
+                            </div>
+                              <div class="div-custom-cardboxs">
+                               <span data-type="span" class="span-custom-cashimage"><img src="imgs/xyk.svg" / style="width:64px;height:50px;"></span>
+                               <span data-type="span" class="span-custom-temporary">暂时没有绑定银行卡</span> 
+                               <span data-type="span" class="span-custom-pleaseBound">请先绑定银行卡，才可以进行充值</span>
+                            </div>
+                        </div>  
+        </div> 
+    </div>
+    
+</div>
+</body>
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="js/cashAlreadyBoundEventBinds.js"></script>
+</html>

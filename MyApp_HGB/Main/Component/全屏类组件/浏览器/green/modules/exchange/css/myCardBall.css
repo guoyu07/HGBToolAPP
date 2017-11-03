@@ -1,0 +1,110 @@
+
+#page-myCardBall_tpl .buttons-tab{
+     z-index: 999;
+    border-bottom: 2px solid #f8f8f8;
+}
+
+#page-myCardBall_tpl .buttons-tab:after{
+	 background: transparent;
+}
+#page-myCardBall_tpl  .buttons-tab .button{
+    line-height: 2rem;
+}
+#page-myCardBall_tpl #content-activityAll  .buttons-tab {
+	background: none;
+     z-index: 999;
+}
+#page-myCardBall_tpl{
+    background: #fff !important;
+}
+#page-myCardBall_tpl #content-activityAll .buttons-tab .button.active {
+    font-size: 16px;
+    color: #FB4251  !important;
+    margin: 0 1rem 0 1rem;
+    border-color: #FB4251  !important;
+    z-index: 100;
+	opacity: 1;
+	line-height: 30px !important;
+    height: 39px !important;
+}
+#page-myCardBall_tpl .pull-to-refresh-layer .pull-to-refresh-arrow{
+    height: 0;
+}
+#page-myCardBall_tpl .pull-to-refresh-layer .preloader{
+    height: 8rem;
+}
+#page-myCardBall_tpl #content-activityAll .buttons-tab .button{
+	color: #000;
+	margin: 0 1rem 0 1rem;
+	opacity: 0.7;
+	line-height: 30px !important;
+    height: 39px !important;
+	font-size: 16px;
+}
+#page-myCardBall_tpl #search_hotactivity{
+    width: 295px;
+    padding-left:10px;
+    height: 30px;
+    border-style: none; 
+    background: #FFFFFF;
+    border-radius: 18px;    
+}
+
+#page-myCardBall_tpl .div-custom-search_hotactivity{ 
+    height:2.2rem !important;
+    background: #FC4E5A !important;
+}
+#page-myCardBall_tpl .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: red;
+}
+#page-myCardBall_tpl  #div_activity_list{
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+#page-myCardBall_tpl  #div_activity_list {
+    margin-bottom: 10px;
+    padding-left: .7rem;
+}
+#page-myCardBall_tpl #div_activity_list .right {
+ 
+    width: 81%;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-myCardBall_tpl .activity_time {
+    font-size: 12px;
+     /*padding-left: 1rem;
+   background: url(../imgs/time.png) no-repeat 0 1px;*/
+    color: #999999;
+    /*background-size: 12px 12px;*/
+}
+#page-myCardBall_tpl  .bar-nav > a{
+    color: #333;
+}
+#page-myCardBall_tpl .allList{
+    padding: .3rem .3rem 0 .3rem;
+    margin:0;
+}
+#page-myCardBall_tpl  #content-activityAll{
+   padding-top: .5rem;
+}
+#page-myCardBall_tpl #div_activity_list .leftimg img {
+    width: 43px;
+    height: 43px;
+}
+#page-myCardBall_tpl .floatBox{
+    
+    font-size: 12px;
+    color: #999;
+    padding-left: 2rem;
+    cursor: pointer;  
+}
+#page-myCardBall_tpl  #div_activity_list .right .special {
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0;
+    display: block;
+}
+#page-myCardBall_tpl .allList.friends .right{
+     padding-top: 1rem;
+}

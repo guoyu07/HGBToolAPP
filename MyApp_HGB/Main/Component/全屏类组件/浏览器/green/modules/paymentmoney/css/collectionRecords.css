@@ -1,0 +1,37 @@
+.div-custom-onetop{
+	height: 30px;
+	font-size: 15px;
+    background: #fafafa;
+    color: #4B4B4B;
+    clear: both;
+	line-height: 30px;
+	box-sizing:border-box; 
+    text-indent: .8rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+.div-custom-collectionlist{
+	border-bottom: 1px solid #f0f0f0;
+}
+.div-custom-rightcont .div-custom-collectiontext{
+	line-height: 26px;
+}
+.name_paymoney{
+	color: #000;
+	font-size:17px ;
+}
+#page-collectionRecords_tpl .div-custom-collectioncont:last-child{
+	border-bottom: none;
+}
+.dates{
+	color: #999;
+	font-size:14px ;
+}
+#page-collectionRecords_tpl  #collectionsBox{
+	background: #FFF;
+}
+
+#page-collectionRecords_tpl .div-custom-collectioncont {
+     background: none;
+     padding: 15px 0 0 0;
+     margin-left: .7rem;
+}

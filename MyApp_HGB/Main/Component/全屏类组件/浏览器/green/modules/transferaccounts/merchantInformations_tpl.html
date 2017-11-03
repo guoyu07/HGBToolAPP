@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>商户信息</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/merchantInformations.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-merchantInformations_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+                <span class="icon icon-left icon-font" data-type="icon"></span>
+            </a>
+            <h1 class="title" data-type="h1">商户信息</h1>
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content content-custom-inner" data-type="content" id="page-merchant">
+             <div class="top">
+               <span data-type="span" class="span-custom-tx"><img src="{{tenant_Info.image_}}" /></span> 
+               <span data-type="span" class="span-custom-tx">
+                  <span data-type="span" class="span-custom-inter">{{tenant_Info.name_}}</span> 
+                  <span data-type="span" class="span-custom-phonenumber"></span> 
+                  
+               </span>    
+             <div data-type="div" class="list-block specialy">
+              <ul data-type="list" class="list-custom-bottom" v-if="tenant_Info.check_type_ == '3'" >
+                 <li><a class="#"><span><input type="text" placeholder="请输入手机号" data-validate="phone" v-model="phone_"/></span>手机号</a></li>
+                 <li><a class="#"><span><input type="text" placeholder="请输入" v-model="code_"/></span>验证码</a>
+                 <span  class="yzms">获取验证码</span></li>
+                 <li><a class="#"><span><input type="text" placeholder="请输入姓名/用户名" v-model="account_" data-validate=""/></span>姓名/用户名</a></li>
+                 <li><a class="#"><span><input type="text" placeholder="请输入会员卡号" v-model="cardid_" data-validate="number"/></span>会员卡号</a></li>
+              </ul>
+              <ul data-type="list" class="list-custom-bottom" v-if="tenant_Info.check_type_ == '2'" >
+                  <li><a class="#"><span><input type="text" placeholder="请输入手机号" data-validate="phone" v-model="phone_"/></span>手机号</a></li>
+                  <li><a class="#"><span><input type="text" placeholder="请输入" v-model="code_"/></span>验证码</a>
+                      <span  class="yzms">获取验证码</span></li>
+                  <li><a class="#"><span><input type="text" placeholder="请输入姓名/用户名" v-model="account_" data-validate=""/></span>姓名/用户名</a></li>
+              </ul>
+              <ul data-type="list" class="list-custom-bottom" v-if="tenant_Info.check_type_ == '1'">
+                  <li><a class="#"><span><input type="text" placeholder="请输入手机号" data-validate="phone" v-model="phone_"/></span>手机号</a></li>
+                  <li><a class="#"><span><input type="text" placeholder="请输入" v-model="code_"/></span>验证码</a>
+                      <span  class="yzms">获取验证码</span></li>
+              </ul>
+             </div>
+        </div>  
+         <div data-type="div" class="div-custom-bangd">
+             <span class="span-custom-bdbtn" v-on:click="bound" >绑定</span>
+         </div>
+         <!-- <div data-type="div" class="div-custom-bangd">
+             <span class="span-custom-bdbtn" v-on:click="bound">已绑定的卡包</span>
+         </div> -->
+    </div>
+</div>
+</body>
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/merchantInformationsEventBinds.js"></script>
+</html>

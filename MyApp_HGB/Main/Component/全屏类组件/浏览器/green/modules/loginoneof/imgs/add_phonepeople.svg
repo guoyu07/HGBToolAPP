@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="72" height="72"></rect>
+    </defs>
+    <g id="M_好友" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M_1.5添加好友" transform="translate(-20.000000, -500.000000)">
+            <rect id="Rectangle-2-Copy-2" fill="#FAFAFA" x="0" y="0" width="750" height="1334"></rect>
+            <g id="Group-5-Copy" transform="translate(0.000000, 480.000000)">
+                <g id="Group-4" fill="#FFFFFF">
+                    <rect id="Rectangle-3-Copy" x="0" y="0" width="750" height="110"></rect>
+                </g>
+                <g id="Group-3" transform="translate(20.000000, 16.000000)">
+                    <g id="Group-7" transform="translate(0.000000, 4.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Rectangle-9" fill="#29B8F1" xlink:href="#path-1"></use>
+                        <path d="M47.3742239,59 L24.3067305,59 C23.0327033,59 22,57.939688 22,56.631612 L22,16.368388 C22,15.0603748 23.0327033,14 24.3067305,14 L47.3742239,14 C48.6482511,14 49.6809544,15.0603748 49.6809544,16.368388 L49.6809544,56.631612 C49.6809544,57.939688 48.6481884,59 47.3742239,59 Z M35.8404458,57.815806 C37.1144731,57.815806 38.1471763,56.7554312 38.1471763,55.447418 C38.1471763,54.1392792 37.1144103,53.07903 35.8404458,53.07903 C34.5664186,53.07903 33.5337153,54.1392792 33.5337153,55.447418 C33.5337153,56.7554312 34.5664814,57.815806 35.8404458,57.815806 Z M41.0306366,16.368388 L31.803589,16.368388 C31.4850665,16.368388 31.226922,16.6335445 31.226922,16.9605478 C31.226922,17.2876767 31.4850665,17.5527076 31.803589,17.5527076 L41.0306366,17.5527076 C41.3490335,17.5527076 41.6073035,17.2876767 41.6073035,16.9605478 C41.6073663,16.6335445 41.3490963,16.368388 41.0306366,16.368388 Z M24.3067305,50.710642 L47.3742239,50.710642 L47.3742239,19.9210956 L24.3067305,19.9210956 L24.3067305,50.710642 Z" id="手机" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

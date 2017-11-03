@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>卡包-已绑定</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link rel="stylesheet" href="css/cardBall.css"/>
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-cardBall_tpl" class="page page-current">
+    	<!-- 标题栏 -->
+		<header class="bar bar-nav" data-type="header">
+			<a class="button button-link pull-left back" href="#" data-type="a">
+				<span class="icon icon-left" data-type="icon"></span>
+			</a>
+            <h1 class="title" data-type="h1">卡包  (共<span>{{cardcount}}</span>张)</h1>
+		</header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content">
+        	 <div class="list-block media-list inset list-block-two vipcard" id="div-custom-cardlist">
+        	        <div class="div-custom-cardbox">
+        	           <span class="span-custom-lefttext">会员卡</span> 
+        	           <span class="span-custom-righttext" v-on:click="addCard">添加绑定会员卡</span>
+        	        </div>
+					<div data-type="div" class="div-custom-shopslist">
+					    <!--已绑定-->
+		        	      <!-- <div data-type="div" class="div-custom-collectioncont">
+		        	          <div datatype="div" class="div-custom-leftcont">
+		        	             <img src="imgs/yonghu.svg" data-type="img"> 
+		        	          </div>
+		        	          <div datatype="div" class="div-custom-rightcont">
+		        	              <div data-type="div" class="div-custom-collectiontext name_card">中国移动</div>
+		        	               <div data-type="div" class="div-custom-collectiontext card_infor">商户详情描述</div>
+		        	              <span data-type="span" class="span-custom-vipcard">会员卡</span>
+		        	              <span data-type="span" class="span-custom-jccard"><img  src="imgs/jc.svg"/ data-type="img"></span>
+		        	          </div>
+		        	          <span dta-type="span" class="span-custom-deletecard">解绑</span>
+		        	      </div> -->
+		        	      <!-- <div class="" data-type="swipeItemContent" id="swipeItemContent_1">
+							<ul data-type="list" id="list_cardball">
+								<li data-type="itemContent" class="div-custom-collectioncont" id="itemContent_1">
+									<div class="item-content item-link" data-type="div" id="div_1">
+										<div class="item-media div-custom-leftcont" data-type="div" id="div_2">
+					        	             <img src="imgs/yonghu.svg" data-type="img"> 
+										</div>
+										<div class="item-inner div-custom-rightcont" data-type="div" id="div_3">
+											<div class="item-title" data-type="div" id="div_4">
+											      <div data-type="div" class="div-custom-collectiontext name_card">中国移动</div>
+						        	               <div data-type="div" class="div-custom-collectiontext card_infor">商户详情描述</div>
+						        	               <span data-type="span" class="span-custom-vipcard">会员卡</span>
+						        	               <span data-type="span" class="span-custom-jccard"><img  src="imgs/jc.svg"/ data-type="img"></span>
+											</div>
+											<div class="item-after" data-type="div" id="div_5">
+												<button class="span-custom-deletecard">解绑</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div> -->
+                          
+                          
+						<div class="list-block div-custom-cardBallBox" data-type="div" id="swipeItemContent_1" >
+							<ul data-type="list" id="cardBallList" >
+                                <li data-type="itemContent" v-for="list in cardBollList" v-cloak class="list-item-li" id="{{list.id_}}" >
+                                    
+									<div href="#" class="item-content item-link " data-type="a">
+                                     
+										<div class="item-media div-custom-leftcont" data-type="div" id="div_2">
+					        	             <img src="{{list.image_}}" data-type="img"> 
+										</div>
+										<div class="item-inner div-custom-rightcont div-custom-collectioncont" data-type="div" id="div_8">
+											<div class="item-title cardballSpecial" data-type="div" id="">
+											      <div data-type="div" class="div-custom-collectiontext name_card">{{list.name_}}</div>
+                                                  <div data-type="div" class="div-custom-collectiontext card_infor">&nbsp;</div>
+						        	               <span data-type="span" class="span-custom-vipcard">&nbsp;</span>
+<!--                                                   <span data-type="span" class="span-custom-jccard"><img  src="imgs/jc.svg"/ data-type="img"></span>-->
+											</div>
+											<div class="item-after" data-type="div" id="div_10" v-on:click="unbundleCard(list.id_)">
+												<button class="span-custom-deletecard">解绑</button>
+											</div>
+										</div>
+                                        
+									</div>
+                                    
+								</li>
+							</ul>
+						</div>
+		        	</div> 
+		    </div>
+        </div>
+      
+    </div>
+    
+</div>
+</body>
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/cardBallEventBinds.js"></script>
+<script type="text/javascript">
+	
+</script>
+</html>
+

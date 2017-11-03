@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="80px" viewBox="0 0 280 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.061617e-15%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FC4C5A" offset="0%"></stop>
+            <stop stop-color="#FDA256" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="D_扫一扫" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D_切图" transform="translate(-30.000000, -403.000000)" fill="url(#linearGradient-1)">
+            <rect id="Rectangle-5" x="30" y="403" width="280" height="80" rx="8"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,37 @@
+
+#page-cashTransferTriend_tpl .buttons-tab{
+    background: transparent;
+    position: relative;
+    height: 40px;
+    border-bottom: 2px solid #f8f8f8;
+    line-height: 50px;
+}
+
+#page-cashTransferTriend_tpl .buttons-tab:after{
+	 background: transparent;
+}
+#content-page_cash  .buttons-tab .button{
+	line-height: 2rem !important;
+}
+#content-page_cash  .buttons-tab {
+	background: none;
+}
+#content-page_cash .buttons-tab .button.active {
+    font-size: 16px;
+    color: #FB4251  !important;
+    margin: 0 1rem 0 1rem;
+    border-color: #FB4251  !important;
+    z-index: 100;
+	opacity: 1;
+	line-height: 30px !important;
+    height: 39px !important;
+}
+
+#content-page_cash .buttons-tab .button{
+	color: #000;
+	margin: 0 1rem 0 1rem;
+	opacity: 0.7;
+	line-height: 30px !important;
+    height: 39px !important;
+	font-size: 16px;
+}

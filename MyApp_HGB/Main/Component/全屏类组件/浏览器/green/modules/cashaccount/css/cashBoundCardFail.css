@@ -1,0 +1,38 @@
+
+#page-cashBoundCardFail_tpl .content{
+	padding: 24px 0 0 0;
+    margin: 0;
+}
+#page-cashBoundCardFail_tpl .span-custom-txs.cashimg{
+	display: block;
+
+}
+#page-cashBoundCardFail_tpl .span-custom-txs.cashimg img{
+	width: 37px;
+	height:37px;
+}
+
+#page-cashBoundCardFail_tpl .tops{
+    text-align: center;
+     padding-bottom: 10px;
+    box-sizing:border-box;
+    padding-top:18px;
+    background: #fff;
+}
+
+#page-cashBoundCardFail_tpl .bottoms span{
+
+	font-size: 14px;
+	color: #888888;
+}
+#page-cashBoundCardFail_tpl .bottoms{
+	background: #fff;
+    height: 48px;
+    border: 1px solid #f0f0f0;
+    margin-top: 13px;
+    padding:0 1rem 0 1rem;
+    line-height: 48px;
+}
+#page-cashBoundCardFail_tpl .span-custom-finishbtn.speciales{
+	margin-top: 3.5rem;
+}

@@ -1,0 +1,102 @@
+#page-recordFriend_tpl #transaction_header .header{
+    background: url(../imgs/arrow.png) no-repeat center left;
+    background-size: 11px 20px;
+}
+#page-recordFriend_tpl .content{
+	background: #fff;
+    padding-top: 5.7rem;
+}
+#page-recordFriend_tpl  #transaction_header .header h3{
+	text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+#page-recordFriend_tpl .list-block.transaction {
+    margin:2rem 0 0 .1rem !important;
+}
+#page-recordFriend_tpl .tranctionists{
+	background: transparent !important;
+}
+#page-recordFriend_tpl .transaction .tranctionists::before {
+    height: 0px !important;
+}
+#page-recordFriend_tpl .tranctionists  li .item-content {
+    padding-left: 0px !important;
+}
+#page-recordFriend_tpl .tranctionists li .item-media img {
+    width: 60px;
+    height: 60px;
+}
+#page-recordFriend_tpl .list-block.transaction  .item-link .item-inner{
+	background: none;
+}
+#page-recordFriend_tpl .tranctionists li .item-title-row {
+    padding-top: 1rem;
+}
+#page-recordFriend_tpl .tranctionists li .item-subtitle {
+    color: #FFF;
+    font-size: 16px;
+}
+#page-recordFriend_tpl .tranctionists li .item-text {
+    color: #FFF;
+    font-size: 13px;
+}
+#page-recordFriend_tpl .img-custom-transimg{
+	width: 43px;
+    height: 43px;
+}
+#page-recordFriend_tpl .transaction .tranctionists::before {
+    height: 0px !important;
+}
+#page-recordFriend_tpl .div-custom-obox{
+    border-bottom: 1px solid #f0f0f0;
+  
+}
+#page-recordFriend_tpl .div-custom-transbox{
+    line-height: 5.6rem;
+    display: inline-block;
+}
+#page-recordFriend_tpl .span-custom-toptext{
+    display: inline-block;
+    color: #000;
+    font-size: 19px;
+    margin-right:0rem;
+    padding-left: 5rem;
+}
+#page-recordFriend_tpl .div-custom-mouthboxs{
+
+	border-top: 1px solid #F0f0f0;
+}
+#page-recordFriend_tpl .div-custom-transboxs{
+    padding-top: .6rem;
+}
+#page-recordFriend_tpl .div-custom-transbottom{
+	font-size:14px;
+    color: #999999;
+    float: left;
+    width: 100%;
+    display: inline-block;
+}
+#page-recordFriend_tpl .div-custom-transtop{
+	font-size: 17px;
+    color: #000000;
+}
+#page-recordFriend_tpl   #transaction_header{
+    padding-left: .5rem !important;
+}
+#page-recordFriend_tpl .span-custom-bottomtext{
+    display: inline-block;
+    font-size: 13px;
+    color: #FC4E5A;
+    padding-left: 1rem;
+}
+#page-recordFriend_tpl .div-custom-transationbox{
+    padding-right: .8rem;   
+    height: 80px;
+    position:relative;
+    border-bottom: 1px solid #F0f0f0;
+    margin-left: .8rem;
+}
+#page-recordFriend_tpl .div-custom-transationbox:last-child{
+	border-bottom: none;
+}

@@ -1,0 +1,133 @@
+#page-cashAlreadyBound_tpl  .list-block.cash_already{
+	margin:5.6rem 0 10px 0;
+}
+#page-cashAlreadyBound_tpl .icon-custom-alreadyimgone{
+	background: url(../imgs/cz.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+}
+#page-cashAlreadyBound_tpl  .list-block.cashaccounts{
+
+}
+#page-cashAlreadyBound_tpl .icon-custom-alreadyimgtwo{
+	background: url(../imgs/tx.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+}
+#page-cashAlreadyBound_tpl .span-custom-cardicons img{
+	display:inline-block;
+	width: 35px;
+	height: 35px;
+}
+.last-onenumber .specialy{
+    position: absolute;
+    top: -.4rem;
+    left: 9rem;
+    font-size: 30px;
+}
+#page-cashAlreadyBound_tpl .span-custom-cards,
+#page-cashAlreadyBound_tpl .span-custom-cardblank,
+#page-cashAlreadyBound_tpl .span-custom-cardicons,
+#page-cashAlreadyBound_tpl  span-custom-cardblanks{
+	position: absolute;
+}
+#page-cashAlreadyBound_tpl .span-custom-cardblank{
+	font-size: 14px;
+    color: #E2E2E2;
+    top: 3.8rem;
+    left: 3.6rem;
+}
+#page-cashAlreadyBound_tpl .span-custom-cardblanks{
+    font-size: 14px;
+    color: #E2E2E2;
+    top: 3.8rem;
+    left: 3.6rem;
+}
+#page-cashAlreadyBound_tpl .span-custom-righttext{
+	display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.7rem;
+    background: url(../imgs/55.svg) no-repeat 3.8rem 1.2rem;
+    background-size: 9px 18px;
+}
+#page-cashAlreadyBound_tpl .span-custom-cards{
+    top: 5.8rem;
+    font-size: 12px;
+    color: #E2E2E2;
+    left: 1.2rem
+}
+.waiy{
+    padding:.5rem .5rem 0 .5rem;
+     background: url(../imgs/bigbc.svg) no-repeat;
+      background-size:100%;
+      height:90px;
+      width:90%;
+      margin:auto;
+}
+#page-cashAlreadyBound_tpl  .list-block.mymessage .specialis:after, 
+#page-cashAlreadyBound_tpl .list-block.mymessage .specialis:before, 
+#page-cashAlreadyBound_tpl .list-block.cash_already .specialis:after,
+#page-cashAlreadyBound_tpl  .list-block.cash_already .specialis:before {
+    background-color: none;
+}
+#page-cashAlreadyBound_tpl .span-custom-cardicons{
+/*    top: 4.1rem;*/
+/*    left: 1.2rem;*/
+}
+.span-custom-chubox{
+    padding-left: .1rem;
+    padding-top:1.4rem;
+}
+.span-custom-chu{
+    font-size: 12px;
+    color: #E2E2E2;
+    display:block;
+}
+#page-cashAlreadyBound_tpl .last-onenumber{
+    font-size: 26px;
+    color: #FFFFFF;
+    float:right;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+.span-custom-cardblank_pre{
+    display: inline-block;
+    float: right;
+}
+#page-cashAlreadyBound_tpl .span-custom-cardnumbers{
+	font-size: 26px;
+    color: #FFFFFF;
+}
+/*#page-cashAlreadyBound_tpl .span-custom-cardnumbers .lastfour{*/
+/*    font-size: 31px;*/
+/*    color: #FFFFFF;*/
+/*    position: absolute;*/
+/*    left:13.7rem;*/
+/*    top: 5.6rem;*/
+/*}*/
+#page-cashAlreadyBound_tpl .div-custom-cashaccount .span-custom-righttext{
+	display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.9rem;
+    background: url(../imgs/55.svg) no-repeat 4rem 1.2rem;
+    background-size: 9px 18px;
+}
+
+
+
+
+
+
+
+
+

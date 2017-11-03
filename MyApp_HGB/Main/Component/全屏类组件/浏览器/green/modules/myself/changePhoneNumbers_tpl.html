@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>更改手机号</title>
+	<link rel="stylesheet" href="../../css/libs/sm.css">
+	<link rel="stylesheet" href="../../css/theme/theme.css">
+	<link rel="stylesheet" href="../../css/appPublicStyle.css">
+	<link rel="stylesheet" href="css/changePhoneNumbers.css" />
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+	<!-- 单个page ,默认被展示-->
+	<div class="page page-current" id="page-changePhoneNumbers_tpl">
+	     <header class="bar bar-nav" data-type="header" id="header_1">
+            <a class="button button-link pull-left header-white back phone_cancel" href="#" data-type="a" id="a-custom-left">
+               取消 
+            </a>
+            <h1 class="title header-white" data-type="h1">更换手机号</h1>
+        </header>
+		<div class="content set_phonenumber" data-type="content">
+			    <!-- 这里是页面内容区 -->
+			 <div data-type="div" class="titles">短信验证码已发送，请填写验证码</div>
+	    </div>
+	    <div class="list-block div-custom-change" data-type="div" id="div_7">
+		   <ul class="ul_changes">
+		        <li>
+                    <div class="item-content" data-type="div" id="div_13">
+                        <div class="item-inner" data-type="itemInner" id="itemInner_2">
+                            <div class="item-title label specialy" data-type="div" id="div_14">
+                                手机号
+                            </div>
+                            <div class="item-input specialy" data-type="div" id="div_23">
+                                <!--<input type="text" value="实时" data-type="picker"
+                                       id="picker_1" class="picker-custom-2">-->
+                                   +86   <span class="span-custom-specialNumber">{{phone_new}}</span>  
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content" data-type="div" id="div_24">
+                        <div class="item-inner" data-type="itemInner" id="itemInner_3">
+                            <div class="item-title label normal" data-type="div" id="div_25">
+                                验证码
+                            </div>
+                            <div class="item-input" data-type="div" id="div_26">
+                                <input type="text" name="" placeholder="请输入验证码"
+                                       class="input input-right" id="input_cord" v-model="mobile_code"/>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+		   </ul>
+		</div>
+	    <div data-type="div" class="div-custom-submit" v-on:click="submit">
+				<a  class="button" data-type="button" id="button-custom-submit">提交</a>
+	    </div>
+	    <div data-type="div" class="title-special">收不到验证码？</div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<script src="../../js/libs/template.js"></script>
+<script src="../../js/libs/echarts.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<script type="text/javascript" src="js/changePhoneNumbersEventBinds.js" ></script>
+</html>

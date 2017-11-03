@@ -1,0 +1,47 @@
+#page-myQrcode_tpl .content{
+	margin-top: 1rem;
+	background: #fff;
+	height: 55%;
+	border:1px solid #f0f0f0;
+	border-left:none;
+	border-right:none;
+	padding: .3rem 0 0 .6rem;
+}
+.div-custom-codeimg img{
+    float: left;
+    width: 36px;
+    height: 36px;
+   /* background: url(../imgs/2.png) no-repeat .1rem 0;
+    background-size: 100% 100%;*/
+}
+.div-custom-rightcode{
+	float: right;
+    width: 86%;
+}
+.div-custom-codeTop{
+	color: #000;
+	font-size: 17px;
+}
+.div-custom-codeBottom{
+	color: #999;
+	font-size: 14px;
+}
+.div-custom-codebox{
+	margin: auto;
+    text-align: center;
+}
+.div-custom-mycodeimg img{
+	width: 240px;
+	height: 240px;
+}
+.div-custom-mycodeimg{
+	 padding-top: 3rem;
+}
+.div-custom-topcode{
+	font-size: 14px;
+	color: #323234;
+}
+.div-custom-bottomcode{
+	font-size: 13px;
+	color: #FF6634;
+}

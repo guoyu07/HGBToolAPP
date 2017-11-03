@@ -1,0 +1,29 @@
+/*搜索热门活动*/
+#search_hotactivity{
+	width: 295px;
+	padding-left:10px;
+	height: 30px;
+    border-style: none; 
+	background: #FFFFFF;
+    border-radius: 18px;	
+}
+
+.div-custom-search_hotactivity{	
+    height:2.2rem !important;
+    background: #FC4E5A !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: red;
+}
+#page-merchantName #div_activity_list{
+    margin-bottom: 10px;
+    padding-left: 0;
+}
+#page-merchantName  .right .activity_time{
+	font-size: 12px;
+    padding-left: 1rem;
+    background: url(../imgs/time.png) no-repeat 0 1px;
+    color: #999999;
+    background-size: 12px 12px;
+}

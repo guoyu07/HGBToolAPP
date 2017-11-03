@@ -1,0 +1,129 @@
+
+.div-custom-footer_search{
+	font-size: 14px;
+	 padding-top: 2rem;
+    text-align: center;
+    color: #999999; 
+}
+
+#page-mobileContact_tpl .cityList li .list-custom-friends{
+	height: 55px;
+	width:90%;
+    font-size: 12px;
+    color: #999;
+    background: #fff;
+    margin-left: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-mobileContact_tpl{
+	background: #fff !important;
+}
+#page-mobileContact_tpl .already{
+    font-size: 14px;
+    color: #999999;
+    position: absolute;
+    top:.4rem;
+    padding-left: 10rem;
+}
+
+#page-mobileContact_tpl  .list-block .list-group-title{
+	height:30px;
+}
+#page-mobileContact_tpl .letters-nav{
+	top:8.1rem;
+}
+#page-mobileContact_tpl  .list-custom-friends .box img{
+	width: 36px;
+	height: 36px;
+}
+#page-mobileContact_tpl  .list-custom-friends .box img {
+    width: 36px;
+    height: 36px;
+}
+#page-mobileContact_tpl .silider-search div a{
+    color: #333;
+}
+#page-mobileContact_tpl .cityList li .homeList_right span{
+	display: block;
+    height: 1rem;
+    line-height: 1;
+    font-size: 14px;
+    color: #444444;
+}
+#page-mobileContact_tpl .homeLists_right {
+    float: right;
+    position: relative;
+}
+#page-mobileContact_tpl .letters-nav{
+	top:5.9rem;
+}
+#page-mobileContact_tpl  #topspans {
+    font-size: 17px;
+    color: #000;
+    line-height: 1rem;
+}
+#page-mobileContact_tpl .list-block.mobileContact  ul:before{
+	background-color: transparent !important;
+}
+#page-mobileContact_tpl .list-block .item-content:after, 
+.list-block .item-link.list-button:after, 
+.list-block .item-thumb-content:after,
+.list-block ul:after{
+	height:0px;
+}
+#page-mobileContact_tpl .list-block.media-list .item-title {
+    overflow: initial !important;
+    padding-right: 0px;
+    text-overflow: initial !important;
+}
+#page-mobileContact_tpl .friendlist .sort_list {
+    border-bottom: 1px solid #f0f0f0;
+    margin-left: .9rem;
+}
+#page-mobileContact_tpl  .friendlist li {
+    height: 55px;
+}
+#page-mobileContact_tpl  #bottomspans {
+    font-size: 14px;
+    color: #999;
+    display: block;
+}
+#page-mobileContact_tpl  .friendlist li .list-custom-friends {
+    font-size: 12px;
+    color: #999;
+}
+#page-mobileContact_tpl  .list-block.media-list .item-content{
+	padding: .5rem .75rem .75rem 0;
+}
+#page-mobileContact_tpl .list-block.media-list{
+	margin: 0;
+}
+#page-mobileContact_tpl #topspan{
+	font-size: 17px;
+	color: #000;
+}
+#page-mobileContact_tpl #bottomspan{
+	font-size: 14px;
+	color: #999;
+}
+#page-mobileContact_tpl .cityName{
+	padding-top: 0.9rem;
+}
+#page-mobileContact_tpl .cityList  .UP{
+	text-indent: .9rem;
+    height: 30px;
+    line-height:33px;
+    background: #fafafa;
+}
+#page-mobileContact_tpl .silider-search{
+	position: fixed;
+    top: 5.5rem;
+    right: 0rem;
+    font-size: .75rem; 
+}
+#page-mobileContact_tpl .homeList_right{
+    width: 88%;
+}
+#page-mobileContact_tpl .icon-custom-searchicon{
+    margin-left:0;
+}

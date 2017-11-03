@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<Item a="1" b="2" c="3" />
+<Item ItemID="1"><name>Item</name><length>10</length></Item>
+<Item>abc</Item>
+<Item>
+<subItem1>subItem1</subItem1>
+<subItem2>subItem2</subItem2>
+<subItem3>subItem3</subItem3>
+</Item>
+</Items>

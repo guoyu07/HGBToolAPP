@@ -1,0 +1,28 @@
+/* === #21ACFF layout === */
+/*是否显示*/
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.curr-theme-clr {
+    color: #21ACFF !important;
+}
+
+.page .bar-nav {
+    background: #21ACFF;
+}
+
+.page .bar-nav > a, .page .bar-nav > h1 {
+    color: #FFFFFF;
+}
+
+.login-btn {
+    background-color: #21ACFF;
+}
+[v-cloak] {
+    display: none;
+}

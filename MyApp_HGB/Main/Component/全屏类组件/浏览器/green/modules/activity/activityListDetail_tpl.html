@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>商户活动详情</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link rel="stylesheet" href="css/activityListDetail.css"/>
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-activityListDetail_tpl" class="page page-current">
+         <header class="bar bar-nav" data-type="header">
+					<a class="button button-link pull-left back" href="#" data-type="a">
+						<span class="icon icon-left" data-type="icon"></span>
+					</a>
+					<h1 class="title" data-type="h1">活动</h1>
+					<a class="button button-link pull-right" href="#" data-type="a" id="shareBtn">
+						<span class="icon icon-left icon-share" data-type="icon"></span>
+					</a>
+	    </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content" id="content-custom-activity-detail">
+        
+           <div data-type="div" class="div-custom-header-img">
+            <img src="{{activityDetailInfo.thumb_image_}}" />
+           </div>
+		   <div data-type="div" class="div-custom-activitydetail_header">
+       		        <h1 data-type="h1">{{activityDetailInfo.name_}}</h1>		           
+                    <div data-type="div" class="ul-custom-detailul">                     
+                           <div class="list" id='div_activitydetails-list' data-type="div">
+								<div class="leftimg"><img src="imgs/timecopy.png" data-type="img" id="img_1" class="">
+								</div>
+								<div class="right">
+								             活动开始时间
+								    <span data-type="span" class="span-custom-o">{{activityDetailInfo.start_time_}}</span>
+								</div>
+								<div class="clear"></div>
+						   </div>
+						    <div class="list" id='div_activitydetails-list' data-type="div">
+								<div class="leftimg"><img src="imgs/timecopy.png" data-type="img" id="img_1" class="">
+								</div>
+								<div class="right">
+								             活动结束时间
+								    <span data-type="span" class="span-custom-o">{{activityDetailInfo.end_time}}</span>
+								</div>
+								<div class="clear"></div>
+						   </div>
+						    <div class="list special" id='div_activitydetails-list' data-type="div">
+								<div class="leftimg"><img src="imgs/address.png" data-type="img" id="img_1" class="">
+								</div>
+								<div class="right" style="padding-left: .1rem;">
+								             活动地址
+								    <span data-type="span" class="span-custom-o special">{{activityDetailInfo.city_}}</span>
+								</div>
+								<div class="clear"></div>
+						   </div>
+                      
+                    </div>
+                    <div data-type="div" class="div-custom-details-title">
+                      <h1 data-type="h1">活动详情</h1> 
+                      <div class="div-custom-detail-text" data-type="div">
+                         <p>{{activityDetailInfo.desc_}}
+						</p>  
+						
+                      </div>   
+                    </div>
+		   </div>
+          
+        </div>
+
+    </div>
+    
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--公有方法-->
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<!--页面初始化js事件-->
+<script src="js/activityListDetailEventBinds.js"></script>
+</html>

@@ -1,0 +1,178 @@
+
+#page-recharge_tpl  .list-block.cash_already{
+	margin:0 ;
+}
+#page-recharge_tpl .icon-custom-alreadyimgone{
+	background: url(../imgs/cz.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+}
+#page-recharge_tpl .icon-custom-alreadyimgtwo{
+	background: url(../imgs/tx.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+}
+#page-recharge_tpl .span-custom-cardicons img{
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+#page-recharge_tpl .span-custom-txbtn.activies{
+    opacity: 0.5;
+}
+#page-recharge_tpl .span-custom-cards,
+#page-recharge_tpl .span-custom-cardblank,
+#page-recharge_tpl .span-custom-cardicons{
+	position: absolute;
+}
+#page-recharge_tpl .span-custom-cardblank{
+	font-size: 14px;
+    color: #E2E2E2;
+    top: 3.8rem;
+    left: 3.6rem;
+}
+#page-recharge_tpl .span-custom-righttext{
+	display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.7rem;
+    background: url(../imgs/55.svg) no-repeat 3.3rem 1.2rem;
+    background-size: 9px 18px;
+}
+#page-recharge_tpl .span-custom-cards{
+    top: 4.8rem;
+    font-size: 12px;
+    color: #E2E2E2;
+    left: 1.3rem;
+}
+#page-recharge_tpl .span-custom-cardicons{
+    top: 4.4em;
+    left: 1.3rem;
+}
+#page-recharge_tpl .last-threenumber,
+#page-recharge_tpl .last-twonumber,
+#page-recharge_tpl .last-onenumber{
+    font-size: 26px;
+    color: #FFFFFF;
+    position:absolute;
+    top:6rem;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+#page-recharge_tpl .last-onenumber{
+	 left: 5rem;
+}
+#page-recharge_tpl .last-threenumber{
+	 left: 11rem;
+}
+#page-recharge_tpl .last-twonumber{
+	 left:8rem;
+}
+#page-recharge_tpl .span-custom-cardnumbers{
+	font-size: 26px;
+    color: #FFFFFF;
+}
+#page-recharge_tpl .span-custom-cardnumbers .lastfour{
+	font-size: 31px;
+    color: #FFFFFF;
+    position: absolute;
+    left:13.7rem;
+    top: 5.6rem;
+}
+#page-recharge_tpl .div-custom-cashaccount .span-custom-righttext{
+	display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.9rem;
+    background: url(../imgs/55.svg) no-repeat .6rem 1.2rem;
+    background-size: 9px 18px;
+}
+#page-recharge_tpl #modifyinfo  li #span-custom-shopinforSpecial{
+	font-size: 15px;
+    color: #436BF2;
+    right: 4.9rem;
+    line-height:2.1rem;
+    position: absolute;
+}
+#page-recharge_tpl #modifyinfo #input_verifyCode{
+	margin-top: -1px;
+    padding-left: 0.9rem;
+}
+#page-recharge_tpl #modifyinfo li{
+	height: 48px;
+	line-height: 48px;
+}
+#page-recharge_tpl #modifyinfo #div-custom-special{	
+    margin: 0px;
+    position: relative;
+}
+#page-recharge_tpl  #a_modify_password{
+	font-size: 16px;
+	color: #999;
+}
+#page-recharge_tpl #modifyinfo:after, #modifyinfo:before{
+	background-color: #f0f0f0;
+}
+#page-recharge_tpl .div-enchashment_text{
+	font-size: 14px;
+    color: #999999;
+    padding-right: .6rem;
+    line-height: 2.8rem;
+    text-indent: 15px;
+    height: 45px;
+}
+#page-recharge_tpl #input_mobilenumber,
+#page-recharge_tpl #input_mobilenumber{
+	padding-left: 1rem;
+}
+#page-recharge_tpl #modifyinfo li a{
+	display: inline-block;
+    color: #444;
+    font-size: 16px;
+}
+.span-custom-enchash{
+	float: right;
+    font-size: 14px;
+    color: #5F97DD;
+}
+#page-recharge_tpl .div-enchashment_text .span-custom-rechargeMoney{
+     padding-left: .4rem;
+} 
+#page-recharge_tpl #modifyinfo li #nomal{
+	display: inline-block;
+    color: #999;
+    padding-left: .4rem;
+    font-size: 14px;
+}
+#page-recharge_tpl #modifyinfo{
+	clear: both;
+}
+#page-recharge_tpl #modifyinfo li #nomal_password{
+	display: inline-block;
+    color: #999;
+    padding-left: .8rem;
+    font-size: 14px;
+}
+#page-recharge_tpl #div-custom-special_form{
+	display: inline-block;
+    color: #999;
+    padding-left: .4rem;
+    font-size: 14px;
+}
+#page-recharge_tpl .verify,
+#page-recharge_tpl .verify{
+	margin-left: 0;
+    color: #444;
+    font-size: 16px;
+}
+#page-recharge_tpl .list-block.div-custom-listBlock{
+	margin: 0;
+}

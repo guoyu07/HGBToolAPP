@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>朋友--积分转账</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/cashTransferFriend.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-cashTransferFriend_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left" href="#"  data-type="button" v-on:click="returns">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+            <h1 class="title" data-type="h1">积分转账</h1>
+            <!--<a class="button button-link pull-right" href="#" id="friend_records" data-type="button" v-on:click="recordsList">转账记录</a>
+             -->
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content" id="content-page_cash"> 
+           
+            <div class="content-block" data-type="div">
+                <div class="tabs" data-type="tabs">
+                    <div id="tab1" data-type="div" class="tab active">
+                        <div class="content-block" data-type="div">                       
+	                       <div class="top">
+	                          <div class="top_header" data-type="div"> 
+                               <span data-type="span" class="span-custom-tx friend"><img src="{{friend_Infos.image_}}" /></span>
+				               <span data-type="span" class="span-custom-tx">
+				                  <span data-type="span" class="span-custom-inter">{{friend_Infos.nick_name_}}</span>
+				                  <span data-type="span" class="span-custom-phonenumber">{{friend_Infos.phone_}}</span>
+				               </span>   
+				               </div>
+				               
+				             <!--商户积分转账--> 
+				              <div data-type="div" class="div-custom-cashs">
+				                  <span data-type="span" class="span-custom-yue">
+				                    <span data-type="span" class="span-custom-specialyue">剩余：<b>{{point}}</b> 积分</span>转账积分
+				                  </span> 
+				                  <span data-type="span" class="span-custom-cashmoney"> 
+				                    <span data-type="span" class="span-custom-amount">
+                                     <!-- 正常选择好友进行积分转账 -->
+				                     <input type="number" placeholder="" data-type="input" data-validate="number" pattern="[0-9]*" v-model="input_point" id="money_intergral" class="" v-if="!isintegral">
+                                     <!-- 当识别二维码传递积分时不允许修改 -->
+                                     <input type="number" placeholder="" data-type="input" data-validate="number" v-model="input_point" id="money_intergral" class="" v-if="isintegral" readOnly="true" >
+				                     <span data-type="span" class="span-custom-yuan">积分</span>  
+				                    </span> 
+				                  </span>  
+				                  <span data-type="span" class="span-custom-amount_text ">
+				                       <input type="text" placeholder="添加备注(20字以内)" data-type="input" maxlength="20"data-validate="" id="remarks" class="">
+				                  </span>    
+				             </div>
+				          </div>  
+                        </div>
+                    
+                         <!--商户积分转账--> 
+                        <div data-type="div" class="div-custom-open_cash">
+                            <span class="span-custom-open_surebtn" id="intergalPay" v-on:click="onsubmit">确认转账</span> 
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="js/cashTransferFriendEventBinds.js"></script>
+</html>

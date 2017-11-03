@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>用户扫商户-积分付款-现金付款</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/cashTransferShops.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-cashTransferShops_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left" href="#" id="" data-type="button" v-on:click="pull_goback">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+            <h1 class="title" data-type="h1">付款</h1>
+            <!-- <a class="button button-link pull-right" href="#" id="shop_records" data-type="button">付款记录</a> -->
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content" id="content-page_cash"> 
+             <div data-type="div" class="div-custom-cashs">
+	                  <span data-type="span" class="span-custom-cashmoney">
+	                    <span data-type="span" class="span-custom-order">订单</span> 
+	                    <span data-type="span" class="span-custom-amount">
+	                   <!--   <input type="number" placeholder="{{obj.amount}}" data-type="input" v-model.number="obj.amount" data-validate="number" id="moneys" v-on:focus="onAmountFocus" class="" pattern="[0-9]*" >  -->
+                          <input type="number" placeholder="请输入本次消费总额" data-type="input" v-model.number="obj.amount" data-validate="number" id="moneys" v-on:focus="onAmountFocus" class="" pattern="[0-9]*" > 
+	                     <span data-type="span" class="span-custom-yuan">元</span>  
+	                    </span> 
+	                  </span> 
+	        </div>
+	         <div data-type="div" class="div-custom-open_cash">
+                       <span class="span-custom-open_surebtn" v-on:click="onPay" v-if="isShow">支付</span> 
+                       
+              </div>
+        </div>
+             
+    </div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+<script src="../../js/public/common.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/cashTransferShopsEventBinds.js"></script>
+</html>

@@ -1,0 +1,58 @@
+
+#page-cardBall_tpl  .div-custom-cardbox .span-custom-righttext{
+	display: inline-block;
+    float: right;
+    line-height: 67px;
+    color: #444;
+    font-size: 14px;
+    height: 65px;
+    padding-right: 1.1rem;
+    background: url(../imgs/55.svg) no-repeat 5.6rem 1.2rem;
+    background-size: 9px 18px;
+}
+
+#page-cardBall_tpl .div-custom-shopslist .div-custom-rightcont{
+   /* width: 87%;
+    float: right;*/
+    margin-left: 1rem !important;	
+}
+#page-cardBall_tpl .div-custom-shopslist .div-custom-leftcont img{
+    width:48px;
+    height:48px ;
+}
+#page-cardBall_tpl .div-custom-shopslist .div-custom-leftcont{
+    z-index: 2;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding-left: 1.5rem;
+/*    position: relative !important;*/
+}
+#list_cardball .item-inner.div-custom-rightcont{
+    background-image: none;
+}
+#deleteBox{
+    position: relative;
+}
+.div-custom-cardBallBox{
+    margin:0;
+}
+
+.list-item-li{
+    height: 100px;
+}
+.list-block.media-list .item-title.cardballSpecial{
+	max-width: 90% !important;
+}
+#cardBallList{
+/*    height: 90px;*/
+}
+#page-cardBall_tpl .list-block .item-link {
+    -webkit-transition-duration: 0s !important;
+    transition-duration: 0s !important;
+    background: none;
+}
+#page-cardBall_tpl  #cardBallList .item-title{
+   padding-left: 2.5rem;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<title>积分钱包-已经添加商户</title>
+		<link rel="stylesheet" href="../../css/libs/sm.css">
+		<link rel="stylesheet" href="../../css/theme/theme.css">
+		<link rel="stylesheet" href="../../css/appPublicStyle.css">
+		<link rel="stylesheet" href="css/addShops.css" />
+
+	</head>
+	<body>
+		<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+		<div class="page-group">
+			<!-- 单个page ,默认被展示-->
+			<div id="page-addShops_tpl" class="page page-current">
+				<!-- 标题栏 -->
+				<header class="bar bar-nav" data-type="header">
+					<a class="button button-link pull-left back" href="#" data-type="a">
+						<span class="icon icon-left" data-type="icon"></span>
+					</a>
+                    <h1 class="title " data-type="h1" v-if="type=='1'">积分钱包</h1>
+                    <h1 class="title " data-type="h1" v-if="type!='1'">积分兑换</h1>
+					<div data-type="div" id="div_1" class="head-msg clearfix">
+					    <div data-type="div" id="div_3" class="head-child" v-if="type=='1'">
+					        <p class="child-title">我的碳积分</p>
+					        <p class="integral">{{chainsqlBalance_}}</p>
+					    </div>
+                        <div data-type="div" id="div_2" class="head-child" style="width:70%;" v-if="type=='1' && isShow == true">
+                            <p class="child-title">我的“{{tenantInfo.name_}}“商户积分</p>
+                            <p class="integral">{{originals.original_balance_}}</p>
+					    </div>
+                        <div data-type="div" id="div_2" class="head-child" style="width:100%;border-right: 0px solid #ffffff;" v-if="type!='1' && isShow == true">
+                            <p class="child-title">我的“{{tenantInfo.name_}}“商户积分</p>
+                            <p class="integral">{{originals.original_balance_}}</p>
+                        </div>
+                        <!-- 无商户 -->
+                        <div data-type="div" id="div_2" class="head-child" style="width:100%;border-right: 0px solid #ffffff;" v-if="type!='1' && isShow == false">
+                            <p class="integral">请选择商户</p>
+                            <p class="child-title">兑换碳积分</p>
+                        </div>
+                        
+                        
+                        <div data-type="div" id="div_2" class="head-child" style="width:70%;"  v-if="type=='1' && isShow == false">
+                            <p class="integral">请选择商户</p>
+                            <p class="child-title">兑换碳积分</p>
+                        </div>
+                        
+					</div>
+				</header>
+				<div class="content content-backcolor native-scroll noneTenant" data-type="content" v-if="!isShow"  class="">
+					<div class="list-block" data-type="div" id="div_4">
+						<ul data-type="list" id="list_1">
+							<li class="shop-item" data-type="itemContent" id="itemContent_1"><a href="#" class="item-content item-link" data-type="a" id="a_1">
+									<div class="item-media" data-type="div" id="div_5">
+										<span class="icon" data-type="icon" id="icon_blueicon"></span>
+									</div>
+									<div class="item-inner" data-type="div" id="div_6">
+										<div class="item-title" data-type="div" id="div_7">商户</div>
+										<div class="item-after" data-type="div" id="div_8"  v-on:click="add">绑定商户</div>
+									</div>
+							</a></li>
+						</ul>
+					</div>
+					<div data-type="div" id="div_9" class="first">
+					    <img src="imgs/big.svg" data-type="img" id="img_1" class="bg">
+					    <span data-type="span" id="span_1" class="span">暂时没有添加商户</span>
+					    <span data-type="span" id="span_2" class="">清先添加商户，才可以进行碳积分兑换</span>
+					</div>
+			   </div>
+				<!-- 这里是页面内容区 -->
+			   <div class="content content-backcolor" data-type="content" v-if="isShow">
+
+				<div class="list-block" data-type="div" id="div_2">
+					<ul data-type="list" id="list_1">
+						<li class="first-li" data-type="itemContent" id="itemContent_1">
+						    
+						<a href="#"	class="item-content item-link" data-type="a" id="a_1">
+								<div class="item-media" data-type="div" id="div_3">
+									<span class="icon" data-type="icon" id="icon_shopgray" ></span>
+								</div>
+								<div class="item-inner" data-type="div" id="div_4">
+									<div class="item-title font-32" data-type="div" id="div_5">商户</div>
+									<div class="item-after font-28 color-444" data-type="div" id="div_custom-resetShops" v-on:click="choice">更改商户</div>
+								</div>
+						</a>
+						<div class="item-container" v-on:click="loads">
+						    <img src="{{tenantInfo.image_}}" class="img-icn" data-type="img" id="img_usericon" class=""/>
+						    <div class="item-inner column" data-type="div" id="div_4">
+									<div class="item-title move font-34" data-type="div" id="div_5">{{tenantInfo.name_}}</div>
+								<div class="item-after color-999 font-28" data-type="div" id="div_6">{{tenantInfo.desc_}}</div>
+							</div>
+						</div>
+							
+						</li><li data-type="itemContent" id="itemContent_2" class="">
+						    
+						<a href="#" class="item-content" data-type="a" id="a_2">
+								<div class="item-inner" data-type="div" id="div_8">
+									<div class="item-title font-28 color-fb" data-type="div" id="div_9">最高可兑换{{tenantInfo.name_}}积分:{{rule.upperlimit_}}分</div>
+									<div class="item-after font-24 color-5f" data-type="div" id="div_10" v-on:click="allExchange">全部兑换</div>
+								</div>
+						</a>
+						<a href="#" class="item-content" data-type="a" id="a_2">
+								<div class="item-inner" data-type="div" id="div_8">
+									<div class="item-title color-444 font-28" data-type="div" id="div_9">兑换比例{{rule.original_points_}}:{{rule.green_points_}}</div>
+									<div class="item-after justify-content" data-type="div" id="div_10">
+										 <div class="cnt-minus">
+                                             <span >-</span>
+                                         </div>
+                                         <span class="cnt-num"><input type="number" class="num-input font-28" placeholder="输入需兑换的积分" data-type="input"  v-on:input="on_input" v-model="numbers" />
+										  </span>
+                                          <div class="cnt-add">
+                                              <span >+</span>
+                                          </div>
+									</div>
+								</div> 
+						</a>
+						    
+						</li>
+						    
+						<li data-type="itemContent" id="itemContent_3" class="">
+                            <a href="#" class="item-content conversion" data-type="a" id="a_3">
+								<div class="item-inner" data-type="div" id="div_11">
+									<div class="item-title font-28 color-32" data-type="div" id="div_12">可兑换成碳积分</div>
+									<div class="item-after color-888 font-28 align-items" data-type="div" id="div_13">
+									    <span class="font-32 color-ff6 integral-num">{{numbers_display}}</span>碳积分
+									</div>
+								</div>
+						    </a>
+                        </li>
+                        
+                        <li data-type="itemContent" id="itemContent_3" class="" v-if="type!='1'">
+                            <a href="#" class="item-content conversion" data-type="a" id="a_3">
+                                <div class="item-inner" data-type="div" id="div_11">
+                                    <div class="item-title font-28 color-32" data-type="div" id="div_12">我的碳积分</div>
+                                    <div class="item-after color-888 font-28 align-items" data-type="div" id="div_13">
+                                        <span class="font-32 color-ff6 integral-num">{{chainsqlBalance_}}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        
+					</ul>
+					<a href="JavaScript:0;" v-if="!show_exchange" class="button affirm-btn" data-type="button"  id="button_1" v-on:click="none">确认兑换</a>
+					<a href="JavaScript:0;" v-if="show_exchange" class="button registerbtn" data-type="button"  id="button_1" v-on:click="sure">确认兑换</a>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</body>
+	<!--sui框架js-->
+	<script src="../../js/libs/zepto.js"></script>
+	<!--打包时-->
+	<script src="../../js/libs/sm.js"></script>
+	<!--agreeSDK插件定义js-->
+	<script src="../../js/public/agreeSDK.js"></script>
+	<!--公有方法-->
+	<script src="../../js/public/appPublicAction.js"></script>
+	<script src="../../js/public/common.js"></script>
+	<script src="js/addShopsEventBinds.js"></script>
+</html>

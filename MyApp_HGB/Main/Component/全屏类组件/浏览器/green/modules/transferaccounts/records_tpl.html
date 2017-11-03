@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>交易记录</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/records.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-records_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav header" data-type="header" id="">
+	            <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+	                <span class="icon icon-left" data-type="icon"></span>
+	            </a>
+	            <h1 class="title" data-type="h1">交易详情</h1>
+	    </header>	
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content" >
+	   	    <div data-type="div" id="div_26" class="detail-msg mb-15"><div class="list-block"
+            data-type="div" id="div_2">
+            <ul data-type="list" id="list_2">
+<!--              <span class="span-custom-shopsNames" data-type="span"><span  id="icon_friend"><img src="{{recordList.}}" /></span>{{recordList.get_name_}}</span>-->
+<!--              <span class="span-custom-jia" data-type="span">-->
+<!--                 {{recordList.total_amount_}}-->
+<!--              </span>-->
+              <span class="span-custom-recordSucessy" data-type="span">
+                 <span class="icon" data-type="icon" id="icon_gou"></span>交易成功
+              </span>
+            </ul>
+          </div>
+        </div>
+        <div class="list-block item-container" data-type="div" id="div_1">
+          <div data-type="div" class="div-custom-shopDetails">
+                    <span data-type="span" class="span-custom-pays">详情</span>
+                  <div data-type="div" class="div-custom-mouthboxss">
+              <div data-type="div" class="div-custom-transationbox bckimg" style="border-bottom:none;">
+                  <span style="float: right;" >{{recordList.order_type_name}}</span>收款方式
+              </div>
+              <!--
+               <div data-type="div" class="div-custom-transationbox">
+                   <span>转账</span>转账说明
+              </div>
+                <div data-type="div" class="div-custom-transationbox">
+                   <span>张思 62516***09</span>对方账户
+              </div>
+              -->
+             </div>
+                </div>
+                <div data-type="div" class="div-custom-shopTpl">
+                  <div data-type="div" class="div-custom-shopBoxDetails">
+              <div data-type="div" class="div-custom-transationboxs specialy">
+                   <span>{{recordList.create_time_}}</span>创建时间
+              </div>
+               <div data-type="div" class="div-custom-transationboxs specialy">
+                   <span>{{recordList.order_no_}}</span>订单号
+              </div>
+             </div>
+            
+                </div>
+               
+        </div>
+
+
+
+
+
+
+
+
+		      <div data-type="div" class="div-custom-oboxlist"> 
+		        <div data-type="div" class="div-custom-obox list-container" > 
+		             <div data-type="div" class="div-custom-mouthboxs" style="border:none;">
+      						  <div data-type="div" class="div-custom-transationbox" >
+                                  <div class="div-custom-transboxs" data-type="div" v-for="li in list" v-on:click="on" >
+      						           <div class="div-custom-transtop" data-type="div">
+                                             <span data-type="span" class="span-custom-toptexts" v-if="id_ == li.pay_member_id_">向{{li.get_member_name_}}付款</span>
+                                             <span data-type="span" class="span-custom-toptexts" v-if="id_ != li.pay_member_id_">{{li.pay_member_name_}}向我支付</span>
+                                             
+
+                                             
+      						           </div>
+                                         
+                                         <span class="div-custom-transbottoms" data-type="span" style="font-size: 14px;color: #999999;display: block;margin-top:-1rem;" >{{li.trade_time_}}
+                                             
+                                             <span data-type="span" style="font-size:19px;color:#000000;"  v-if="li.trade_type_ == '101'" class="special">积分转账</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;"  v-if="li.trade_type_ == '102'" class="special">积分兑换</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;"  v-if="li.trade_type_ == '103'" class="special">积分赠送</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;"  v-if="li.trade_type_ == '104'" class="special">积分支付</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;"  v-if="li.trade_type_ == '201'" class="special">现金转账</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;"  v-if="li.trade_type_ == '202'" class="special">现金支付</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;" v-if="li.trade_type_ == '203'" class="special">现金充值</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;" v-if="li.trade_type_ == '204'" class="special">现金提现</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;" style="margin-right:100px;" v-if="li.trade_status_ == '0'">处理中</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;" style="margin-right:100px;" v-if="li.trade_status_ == '1'">成功</span>
+                                             <span data-type="span" style="font-size:19px;color:#000000;" style="margin-right:100px;" v-if="li.trade_status_ == '2'">失败</span>
+                                             <span data-type="span" style="font-size: 13px;color: #FC4E5A;" v-if="id_ == li.pay_member_id_">-{{li.amount_}}</span>
+                                             <span data-type="span" style="font-size: 13px;color: #FC4E5A;" v-if="id_ != li.pay_member_id_">+{{li.amount_}}</span>
+                                         </span>
+                                       
+                                       
+      						       </div>
+      						  </div>
+					       </div>
+			    </div>
+			</div>
+		 	 <!-- 加载提示符
+	     	 <div class="infinite-scroll-preloader" v-if="down_bool">
+	          <div class="preloader"></div>
+	     	 </div>
+              -->
+	   </div>
+  </div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+<script src="../../js/public/common.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/recordsEventBinds.js"></script>
+</html>

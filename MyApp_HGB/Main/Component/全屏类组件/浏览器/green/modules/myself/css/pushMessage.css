@@ -1,0 +1,59 @@
+#page-pushMessage_tpl  .div-custom-messagebox{
+	margin: auto;
+    padding-top: 22px;
+    text-align: center;
+}
+#page-pushMessage_tpl  .div-custom-contentMessage{
+    border: 1px solid #D0D0D0;
+    border-radius: 5px;
+    height: 347px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 16px 16px 0 14px;
+    margin-top: 18px;
+}
+#page-pushMessage_tpl .div-custom-days{
+	font-size: 13px;
+    padding: 1px 5px 0 5px;
+    color: #FFFFFF;
+    background: #D8D8D8;
+    border-radius: 4px;
+    height: 20px;
+    line-height: 20px;
+    display:inline-block;
+    text-align: center;
+    margin: auto;
+    
+}
+.span-custom-headline{
+	color: #000;
+	height: 19px;
+}
+.span-custom-times{
+	font-size: 14px;
+    color: #999;
+    display: block;
+    line-height: 1.5rem;
+}
+.span-custom-line{
+	font-size: 14px;
+    color: #838383;
+    height: 1.8rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    display: block;
+}
+.div-custom-readyall{
+	background: url(../imgs/55.svg) no-repeat 15.1rem .8rem;
+    background-size: 7px 12px;
+     line-height: 2rem;
+     font-size: 15px;
+     color: #000;
+}
+.span-custom-messageoneof img{
+	 width: 100%;
+     height: 178px;
+}
+}

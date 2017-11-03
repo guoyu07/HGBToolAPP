@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>添加银行卡验证密码</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/bindCard.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-bindCard" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+            <h1 class="title" data-type="h1">签约验证</h1>
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content"> 
+             <div data-type="div" class="div-custom-payment">
+               请输入短信验证码    
+             </div>
+             <div class="div-custom-paymentlist" data-type="div">
+                 <span><input type="password"  data-type="number" v-model="codeNumber"/></span>  
+             </div>
+             <div data-type="div" class="save-container">
+                      
+                         <input type="button" name="submit" value="确定" class="button button-big registerbtn" data-type="input" id="button-custom-addFinish" v-on:click="sure" >
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="js/bindCardEventBinds.js"></script>
+</html>

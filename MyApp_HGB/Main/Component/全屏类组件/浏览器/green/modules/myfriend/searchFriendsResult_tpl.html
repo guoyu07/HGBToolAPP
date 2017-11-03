@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>搜索朋友</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/searchFriendsResult.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-searchFriendsResult_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+		    <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+    		<h1 class="title" data-type="h1">搜索朋友</h1>
+		</header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content">
+    		<div class="searchbar row" data-type="row">
+			    <div class="search-input col-80" data-type="col">
+			        <input type="search" placeholder=''  id="result_input"  v-model="val_input"/>
+			        <span class="icon  icon-custom-searchicon" data-type="icon" id="icon_1"><img src="imgs/s.svg" class="searchIcon"></span>
+			       <!--  <span class="icon  icon-custom-cancelicon" data-type="icon" id="icon_1"><img src="imgs/cancels.svg" class="searchIcon"></span> -->
+			    </div>
+			    <a class="button col-20 cancel" data-type="button" v-on:click="search">搜索</a>
+			</div>
+            <!-- <div data-type="div" class="div-custom-shopslist">
+                  <div class="search-input col-80" data-type="col">
+                    <input type="search" placeholder='' id="result_input" v-model="valInput" style="border-bottom: 1px solid #ccc;border-radius: 0px;" />
+                    <span class="icon  icon-custom-searchicon" data-type="icon" id="icon_1"><img src="imgs/s.svg" class="searchIcon"></span>
+                </div>
+                  
+            </div> -->
+    	    <div data-type="div" class="div-custom-shopslist">
+                 <div data-type="div" class="div-custom-collectioncont" v-if="isShow" style="text-align: center;">
+                     暂无相关数据！
+                  </div>
+        	      <div data-type="div" class="div-custom-collectioncont" v-for="li in searchResult" v-on:click="list(li.id_)">
+        	          <div datatype="div" class="div-custom-leftcont">
+        	             <img src="{{li.image_}}"  data-type="img" /> 
+        	          </div>
+        	          <div datatype="div" class="div-custom-rightcont">
+        	              <div data-type="div" class="div-custom-collectiontext name_shops">{{li.nick_name_}}</div>
+        	               <div data-type="div" class="div-custom-collectiontext information">{{li.phone_}}</div>
+        	              <!-- <span data-type="span" class="span-custom-bd_normal">添加</span> -->
+        	          </div>
+        	      </div>
+        	    
+        	      
+        	</div>
+        </div>
+    </div>
+    
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+
+<!--公有方法-->
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="js/searchFriendsResultEventBinds.js"></script>
+</html>

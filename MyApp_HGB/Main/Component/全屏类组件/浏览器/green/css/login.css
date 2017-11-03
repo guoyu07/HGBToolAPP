@@ -1,0 +1,128 @@
+
+#page-index_tpl  .logo {
+	display: block;
+	margin: 3.3rem auto 3.525rem;
+	width: 80px;
+	height: 80px;
+}
+#loginpage .title{
+	text-align: center;
+    top: 6.8rem;
+    margin: 0px;
+    color: #fff;
+    font-size: 18px;
+}
+#username,
+#password{
+	color: #FFF;
+	font-size: 15px;
+}
+#loginpage{
+    
+	background: url(../imgs/123.png);
+	background-size:100% 100%;
+}
+#login ul li {
+    font-size: 0.7rem;
+    border-radius: 0;
+    width: 75%;
+    margin: 0 auto;
+	
+}
+#page-index_tpl .user-item-icon img{
+	width:23px ;
+	height:21px ;
+}
+#page-index_tpl .user-item-icon-pswd img{
+	width:23px ;
+	height:23px ;
+}
+#page-index_tpl .pword{
+	border-bottom: 1px solid #fff;
+}
+#login .loginList{
+    background: none;
+}
+#login{
+	width:88%;
+	margin:0 auto;
+}
+
+#page-index_tpl  .item-inner:after {
+	height: 0;
+}
+
+#page-index_tpl ul:before, .list-block ul:after {
+	height: 0;
+}
+
+#page-index_tpl .page-bck .item-content {
+	padding: 0;
+	margin: 0;
+}
+
+#page-index_tpl .page-bck .item-inner {
+	padding: 0;
+	margin: 0;
+}
+#page-index_tpl .page-bck .list-block .item-content:after,.page-bck  .list-block .item-thumb-content:after{
+	height:0;
+}
+#page-index_tpl .footers{
+	position:absolute;
+    bottom: 12px;
+    left:7%;
+    width: 88%;
+    margin: auto;
+}
+#page-index_tpl .promet{
+	color: #444;
+	font-size: 16px;
+}
+#page-index_tpl .login{	
+    height: 43px;
+    font-size: 18px;
+    color: #FB763D;
+    margin: 0 auto;
+    width: 72%;
+    line-height:43px;
+    background: #FBFFFB;
+    box-shadow: 0 1px 4px 0 #EB3323;
+    color: #;
+    color: #FA5E5D;
+} 
+#page-index_tpl .zhuce,
+#page-index_tpl .password{
+	font-size: 14px;
+    color: #999;
+}
+#page-index_tpl .zhuce img,.password img{
+	display: block;
+    width: 45px;
+    height: 45px;
+    margin-left: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+#page-index_tpl .zhuce{
+    float: right;
+}
+#page-index_tpl .password{
+	float: left;
+}
+#page-index_tpl .userName{
+	height: 39px;
+    border-bottom: 1px solid #fff;
+}
+#page-index_tpl .pword{
+	height: 49px;
+    padding-top: 10px;
+}
+#loginBtn{
+	margin:0 !important;
+}
+.loginList .item-input{
+	margin-top: -1rem;
+}
+.loginList li .item-content{
+	padding-left: 0rem;
+}

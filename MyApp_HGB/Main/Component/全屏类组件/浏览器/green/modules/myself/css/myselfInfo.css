@@ -1,0 +1,35 @@
+#page-myselfInfo_tpl form.txt-right .item-input input{
+	text-align: right;
+	font-size: 0.8rem !important;
+}
+#page-myselfInfo_tpl #btn_login{
+	font-size: 0.9rem !important;
+	border: none;
+	color: #fff;
+}
+#page-myselfInfo_tpl #btn_login.unaction{
+	background: #e6e6e6;
+	color: #bcbcbf;
+}
+#page-myselfInfo_tpl .myself_info .list-block {
+	margin: 0px;
+}
+#page-myselfInfo_tpl .special li span  img{
+	width: 33px;
+	height: 33px;
+    margin-top: 0.4rem;
+}
+#page-myselfInfo_tpl  #ul li:last-child{
+	border-bottom: none;
+}
+#page-myselfInfo_tpl #ul li span input,
+#page-myselfInfo_tpl #ul_types li span input{
+	text-align: right;
+	display: inline-block;
+}
+#save .span-custom-open_surebtn{
+	border: none;
+}
+#save .span-custom-open_surebtn.actives{
+	opacity: 0.5;
+}

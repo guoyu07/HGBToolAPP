@@ -1,0 +1,26 @@
+.div-custom-verification{
+	font-size: 14px;
+    color: #999999;
+    height:38px;
+    line-height:38px;
+    box-sizing:border-box;
+    padding: 0 0 0 15px;
+}
+.div-custom-verificationInput{
+	font-size: 16px;
+    color: #444;
+    height:48px;
+    background:#fff;
+    padding-left:15px;
+    line-height:48px;
+    border-bottom: 1px solid #F0F0F0;
+    border-top: 1px solid #F0F0F0;
+    
+}
+.div-custom-verificationInput input{
+	border: none;
+    background: none;    
+}
+.div-custom-agree{
+   margin-top: 11rem;	
+}

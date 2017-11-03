@@ -1,0 +1,56 @@
+
+#page-shopsResults_tpl .searchbar {
+	background: #eaeaea;
+	height: 45px;
+	margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+    padding-top: .36rem;
+    box-sizing: border-box;
+}
+#page-shopsResults_tpl .searchbar a{
+	border: 0;
+	line-height: 1.6rem;
+}
+#page-shopsResults_tpl .row .col-80{
+	margin-left: 3%;
+	width: 82%;
+}
+#page-shopsResults_tpl .row .col-20{
+	margin-left: 3%;
+	padding: 0;
+	width: 9%;
+}
+#page-shopsResults_tpl .search-input input{
+	border: 0;
+	background: #FFFFFF;
+    border-radius: 4px;
+	height:30px;
+	line-height: 30px;
+	text-indent: 1.2rem;
+	letter-spacing:0.015rem;
+}
+#page-shopsResults_tpl .icon-custom-searchicon img{
+	width: 14px;
+    height: 14px;
+   
+}
+#page-shopsResults_tpl .icon-custom-searchicon {
+    left: .6rem;
+}
+#page-shopsResults_tpl #result_input{
+	color: #000;
+	font-size: 15px;
+}
+#page-shopsResults_tpl .cancel{
+	font-size: 14px;
+    color: #FB5461;
+}
+.search-input  .icon-custom-cancelicon{
+	right: 0;
+    left: 14.3rem;
+}
+.icon-custom-cancelicon img{
+	width:14px ;
+	height:14px ;
+}
+.

@@ -1,0 +1,14 @@
+#div-custom-searchresult{
+	padding-top: 15px;
+}
+#content-custom-searchcont .list-block .item-thumb-content:after,#content-custom-searchcont .list-block .item-content:after,#content-custom-searchcont .list-block ul:after,#content-custom-searchcont .list-block.noline ul:before{
+	height: 0;
+}
+.list-block .searchHistory{
+	height: 2rem;
+	min-height: initial;
+}
+#page-search_tpl .bar-nav > a {
+    color: #000;
+    font-size: 15px;
+}

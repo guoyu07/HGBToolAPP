@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>消息列表</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/libs/sm.css">
+		<link rel="stylesheet" href="../../css/theme/theme.css">
+		<link rel="stylesheet" href="../../css/appPublicStyle.css">
+		<link rel="stylesheet" href="css/messagelist.css"/>
+	</head>
+	<body>
+		<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+		<div class="page-group">
+			<!-- 单个page ,默认被展示-->
+			<div id="page-messagelist_tpl" class="page page-current">
+				<!-- 标题栏 -->
+				<header class="bar bar-nav">
+					<a class="button button-link pull-left back" href="#" data-type="a" @click="back">
+			 			<span class="icon icon-left" data-type="icon"></span>
+			        </a>
+					<h1 class='title'>消息列表</h1>
+				</header>
+				   <!-- 这里是页面内容区 -->
+		         <div class="content pull-to-refresh-content infinite-scroll infinite-scroll-bottom" data-type="content" data-ptr-distance="55"  data-distance="100">			
+			   	<!-- 默认的下拉刷新层 -->
+					  <div class="pull-to-refresh-layer">
+							<div class="preloader"></div>
+							<div class="pull-to-refresh-arrow"></div>
+					  </div>
+				      <div class="selectMerchantlist list-containers">
+				           <div class="" style="text-align: center;" data-type="div" v-if="messagelist.list.length <=0">
+						      暂无消息！
+						   </div>
+						   <div class="div-custom-merchant" data-type="div" v-for="li in messagelist.list" v-on:click="onMessage(li)">
+						        <span data-type="span" class="span-custom-selectMerimg"><img src="{{li.icon_}}" data-type="img"/></span>
+						        <span data-type="span" class="span-custom-rightSelectbox">
+						           <div class="div-custom-selectTop" data-type="div">
+						               <span data-type="span" class="span-custom-number">{{li.creat_time_}}</span>{{li.title_}}
+						           </div>
+						           <div class="div-custom-selectBottom" data-type="div">{{li.content_}}</div>
+						        </span>
+						    </div>
+				      </div>
+				 	 <!-- 加载提示符 -->
+			     	 <div class="infinite-scroll-preloader" v-if="messagelist.down_bool">
+			          <div class="preloader"></div>
+			     	 </div>  
+			   </div>
+			</div>
+		</div>
+	</body>
+	<!--sui框架js-->
+	<script src="../../js/libs/zepto.js"></script>
+	<script src="../../js/libs/sm.js"></script>
+	<script src="../../js/libs/template.js"></script>
+	<script src="../../js/public/agreeSDK.js"></script>
+	<script src="../../js/public/appPublicAction.js"></script>
+	<script src="../../js/public/common.js"></script>
+	<script src="js/messagelistEventBinds.js"></script>
+</html>

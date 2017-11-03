@@ -1,0 +1,180 @@
+
+#page-activityCity_tpl .silider-search{
+	position: fixed;
+    top: 5.5rem;
+    right: 0rem;
+    font-size: .75rem; 
+}
+#page-activityCity_tpl #icon-custom-cancel{
+	line-height: 8px;
+    display: inline-block;
+    font-size: 14px;
+    padding-left:1.4rem;
+    color: #fff;
+}
+#page-activityCity_tpl .silider-search a{
+	font-size: 14px;
+    color: #444444  !important 
+}
+
+#page-activityCity_tpl .user-list{
+	background: #EFEFEF; 
+}
+#page-activityCity_tpl #activity_city{
+	color: #fff;
+}
+#page-activityCity_tpl .list-block ul:after, .list-block ul:before{
+   background: none;	
+}
+#page-activityCity_tpl .div-custom-bigbox .div-custom-gray{
+    padding-left: 0.8rem;
+	height: 30px;
+	line-height: 30px;
+	background: #fafafa;
+	font-size: 12px;
+     color: #999999;
+}
+#page-activityCity_tpl .div-custom-bigboxs .div-custom-gray{
+    padding-left: 0.8rem;
+	height: 30px;
+	line-height: 30px;
+	background: #fafafa;
+	font-size: 12px;
+     color: #999999;
+}
+#page-activityCity_tpl .div-custom-bigbox .div-custom-white{
+    padding-left: 0.8rem;
+	height: 44px;
+	line-height: 44px;
+	background: #fff;
+	font-size: 14px;
+    color: #FB4251;
+}
+#page-activityCity_tpl .div-custom-bigboxs.specialy .div-custom-gray{
+    padding-left: 0.8rem;
+	line-height: 30px;
+	background: #fafafa;
+	font-size: 12px;
+     color: #999999;
+}
+#page-activityCity_tpl .div-custom-fall{
+	background: #FFF;
+	height: 20px;
+}
+#page-activityCity_tpl .citylist{
+    padding-top: .5rem;
+	height: 44px;
+    line-height: 44px;
+    background: #fff;
+    font-size: 14px;
+    color: #FB4251;
+    margin-left: -2rem;
+}
+#page-activityCity_tpl .hot_citylist{
+    font-size: 14px;
+    color: #FB4251;
+    margin-left: -2rem;
+}
+#page-activityCity_tpl .citylist li {
+    list-style: none;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #444444;
+    border-right: 1px solid #f0f0f0;
+}
+#page-activityCity_tpl  .hot_citylist li a,.citylist li a{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    color: #444444;
+}
+#page-activityCity_tpl .hot_citylist li{
+	list-style: none;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid #f0f0f0;
+    margin-bottom: 1rem;
+}
+#special{
+	border-bottom: none;
+    height: 18px;
+}  
+#page-activityCity_tpl .div-custom-bigboxs.specialy{
+	background: #fff;
+    height: 20%;
+    width: 95%;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-activityCity_tpl .list-block{
+	margin: 0;
+}
+#page-activityCity_tpl .cityList li{
+	width: 95%;
+}
+#page-activityCity_tpl .cityList li div{
+	height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+    background: #fafafa;
+    text-indent: .7rem;
+}
+
+#page-activityCity_tpl .cityList li  span{
+	display: block;
+	height: 44px;
+	padding-left: .7rem;
+	line-height: 44px;
+	font-size: 14px;
+	color: #444444;
+	border-bottom: 1px solid #f0f0f0;
+}
+#page-activityCity_tpl .list-block .list-group-title {
+    height: 30px;
+}
+#page-activityCity_tpl .friendlist .sort_list {
+    border-bottom: 1px solid #f0f0f0;
+    margin-left: .9rem;
+}
+#page-activityCity_tpl .friendlist li {
+    height: 55px;
+}
+#page-activityCity_tpl .list-block.media-list .item-content {
+    padding: .5rem .75rem 0 0;
+}
+#page-activityCity_tpl .list-block .item-content:after,
+ .list-block .item-link.list-button:after, 
+ .list-block .item-thumb-content:after,
+ .list-block ul:after {
+    height: 0px;
+}
+#page-activityCity_tpl .friendlist li .list-custom-friends {
+    font-size: 12px;
+    color: #999;
+}
+#page-activityCity_tpl .list-custom-friends .box img {
+    width: 36px;
+    height: 36px;
+}
+#page-activityCity_tpl .homeLists_right {
+    float: right;
+}
+#page-activityCity_tpl #topspans {
+    font-size: 17px;
+    color: #000;
+    line-height:2rem;
+}
+#page-activityCity_tpl .list-block.media-list .item-title {
+    overflow: initial !important;
+    padding-right: 0px;
+    text-overflow: initial !important;
+}
+#page-activityCity_tpl #bottomspans {
+    font-size: 14px;
+    color: #999;
+    display: block;
+}
+

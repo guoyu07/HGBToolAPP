@@ -1,0 +1,173 @@
+
+#page-addShop_tpl .bar{
+	height: 7.85rem;
+}
+#page-addShop_tpl .bar+.content{
+	top: 7.85rem;
+}
+#page-addShop_tpl .list-block{
+	margin:0.5rem 0;
+}
+#page-addShop_tpl .list-block ul{
+	background: transparent;
+}
+#page-addShop_tpl .list-block li{
+	background: #ffffff;
+}
+#page-addShop_tpl  .grays{
+	background: #ccc !important;
+    border-radius: 0.25rem;
+    height: 2.15rem;
+    line-height: 2.15rem;
+    margin: 3rem 0.75rem 0;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    border: none;
+}
+#page-addShop_tpl .head-msg{
+	height: 5.65rem;
+	padding: 1.3rem 0;
+	    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.5rem;
+	color: #FDFDFE;
+}
+#page-addShop_tpl .head-msg p{
+	margin: 0;
+	padding: 0;
+}
+#page-addShop_tpl .head-msg .num{
+	font-size: 1.5rem;
+	color: #FFFFFF;
+}
+#page-addShop_tpl .head-msg .child-title{
+	font-size: 0.75rem;
+	color: #FFFFFF;
+}
+#page-addShop_tpl .item-container{
+	    height: 4.5rem;
+    background-color: #fafafa;
+    margin: 0 .75rem;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #D7D7D7;
+    border-radius: 10px;
+}
+#page-addShop_tpl .item-container .img-icn{
+	    width: 2.15rem;
+    height: 2.15rem;
+    margin-right: 0.5rem;
+}
+#page-addShop_tpl .item-container .item-after{
+	margin-left: 0;
+}
+#page-addShop_tpl .column{
+	flex-direction: column !important;
+    align-items: flex-start !important;
+}
+#page-addShop_tpl .first-li{
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.7rem;
+}
+#page-addShop_tpl .num-input::-webkit-input-placeholder {
+	color: #888888;
+}
+#page-addShop_tpl .color-32{
+	color: #323234 !important;
+}
+#page-addShop_tpl .color-444{
+	color: #444444 !important;
+}
+#page-addShop_tpl .color-888{
+	color: #888888 !important;
+}
+#page-addShop_tpl .color-5f{
+	color: #5F97DD !important;
+}
+#page-addShop_tpl .color-fb{
+	color: #FB4251 !important;
+}
+#page-addShop_tpl .color-999{
+	color: #999999 !important;
+}
+#page-addShop_tpl .color-ff6{
+	color: #FF6634 !important;
+}
+#page-addShop_tpl .font-24{
+	font-size: 0.6rem !important;
+}
+#page-addShop_tpl .font-28{
+	    white-space: initial;
+	font-size: 0.7rem !important;
+}
+#page-addShop_tpl .font-32{
+	font-size: 0.8rem !important;
+}
+#page-addShop_tpl .font-34{
+	font-size: 0.85rem !important;
+}
+#page-addShop_tpl .integral-num{
+	margin-right: 0.3rem;
+}
+#page-addShop_tpl .align-items{
+	align-items:center;
+}
+#page-addShop_tpl .justify-content{
+	justify-content: space-around;
+    align-items: center;
+    height: 1.25rem;
+    font-size: 1.25rem;
+}
+#page-addShop_tpl .conversion{
+	height: 2.5rem;
+}
+#page-addShop_tpl .affirm-btn{
+	background:#ccc;
+	border-radius: 0.25rem;
+	height: 2.15rem;
+	line-height: 2.15rem;
+	margin: 3rem 0.75rem 0;
+	font-size: 0.9rem;
+	color: #FFFFFF;
+	border: none;
+}
+
+
+
+#page-addShop_tpl .noneTenant .shop-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#page-addShop_tpl .noneTenant .item-title {
+    font-size: 0.8rem;
+    color: #000000;
+}
+#page-addShop_tpl .noneTenant  .first {
+    text-align: center;
+    margin-top: 2rem;
+}
+#page-addShop_tpl .noneTenant  .first  .bg {
+    width: 3.875rem;
+    height: 3.2rem;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+#page-addShop_tpl .noneTenant .first .span {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0.8rem;
+    color: #444444;
+}
+#page-addShop_tpl .noneTenant .first span {
+    display: block;
+    font-size: 0.7rem;
+    color: #999999;
+}
+#page-addShop_tpl .noneTenant  .item-after {
+    font-size: 0.7rem;
+    color: #444444;
+}

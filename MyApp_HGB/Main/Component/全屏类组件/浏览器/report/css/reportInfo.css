@@ -1,0 +1,333 @@
+body,div,span,ul,li,p{
+    margin: 0;
+    padding: 0;
+}
+.reportInfo-header{
+    width: 100%;
+    height: 40px;
+    background: #0078B4;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+}
+.reportInfo-content{
+    width: 93%;
+    height: 330px;
+    margin: auto;
+    background: white;
+    position: relative;
+}
+.reportInfo-title{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-indent: 20px;
+    font-size: 20px;
+    color:  #0078B4;
+    font-family: PingFangSC-Regular;
+}
+.reportInfo-contentItems{
+    width: 100%;
+    height: 50px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #444444;
+    font-weight: bold;
+    text-indent: 10px;
+    line-height: 50px;
+}
+.reportInfo-contentItems-details{
+    width: 94%;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #808080;
+    margin: auto;
+    letter-spacing: 1px;
+    height: 200px;
+    line-height: 20px;
+}
+.reportInfo-bsh{
+    width: 94%;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #808080;
+    margin: auto;
+    letter-spacing: 2px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 3%;
+
+}
+.reportInfo-body{
+    background-color: #f2f2f2;
+}
+.reportInfo-Mentaltable{
+    width: 93%;
+    height: 230px;
+    margin: auto;
+    background: white;
+    border-bottom: 3px solid #f2f2f2;
+}
+.reportInfo-Mentaltable img{
+    width: 95%;
+    height: 200px;
+    margin-left: 3%;
+}
+.reportInfo-recommendation{
+    width: 93%;
+    height: 570px;
+    margin: auto;
+    background: white;
+}
+.reportInfo-recommendationdetails p{
+    margin-top: 5px;
+    width: 100%;
+    height: 15px;
+    line-height: 12px;
+    text-indent: 20px;
+}
+.reportInfo-recommendationdetails{
+    width: 93%;
+    height: 200px;
+    margin: auto;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-family: PingFangSC-Regular;
+    color: #808080;
+}
+.reportInfo-space{
+    width: 100%;
+    height: 20px;
+}
+.reportInfo-spacewhite{
+    width: 94%;
+    height: 20px;
+    margin: auto;
+    background: white;
+}
+.reportInfo-space100white{
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    background: white;
+}
+.reportInfo-recommendationItems{
+    margin: auto;
+    width: 93%;
+    height: 50px;
+    line-height: 50px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #444444;
+    font-weight: bold;
+}
+.reportInfo-echarts{
+    width: 94%;
+    height: 400px;
+    background: white;
+    margin: auto;
+    position: relative
+}
+.reportInfo-echartstitle{
+    width: 94%;
+    height: 80px;
+    background: white;
+    margin: auto;
+}
+.reportInfo-titleItems{
+    width: 93%;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444444;
+}
+.reportInfo-titleItemsTwo{
+    width: 93%;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    font-family: PingFangSC-Regular;
+
+    position: relative;
+}
+.Items-one{
+    position: absolute;
+    left: 0;
+    color: #808080;
+    letter-spacing: 0;
+    font-size: 18px;
+}
+.Items-two{
+    position: absolute;
+    right: 0;
+    color: #00A7FF;
+    letter-spacing: 0;
+    font-size: 18px;
+}
+.reportInfo-characteristics{
+    width: 94%;
+    height: 190px;
+    background: white;
+    margin: auto;
+}
+.reportInfo-characteristicsItems{
+    width: 94%;
+    height: 40px;
+    margin: auto;
+}
+.reportInfo-exItems{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+}
+.reportInfo-characteristicsItemsleft{
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-family: PingFangSC-Light;
+    font-size: 16px;
+    color: #444444;
+    position: relative;
+}
+.reportInfo-characteristicsItemsleft img{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.reportInfo-characteristicsItemsleft span{
+     position: absolute;
+     display: block;
+     width: 80px;
+     height: 30px;
+     top: 0;
+     left: 35px;
+ }
+.reportInfo-characteristicsItemsright{
+    margin-left: 5px;
+    width: 60%;
+    height: 40px;
+    float: left;
+    font-family: PingFangSC-Light;
+    font-size: 16px;
+    color: #808080;
+    line-height: 40px;
+}
+.reportInfo-explain{
+    width: 94%;
+    background: white;
+    margin: auto;
+}
+.reportInfo-infomation{
+    padding-bottom: 20px;
+    width: 93%;
+    margin: auto;
+    background: white;
+}
+.reportInfo-explainTitle{
+    width: 100%;
+    display:block;word-break: break-all;word-wrap: break-word;
+    margin: auto;
+    font-family: PingFangSC-Light;
+    font-size: 16px;
+    color: #323232;
+    letter-spacing: 0.2px;
+}
+@media screen  and (max-width: 320px) {
+    .reportInfo-content{
+        width: 93%;
+        height: 350px;
+        margin: auto;
+        background: white;
+        position: relative;
+    }
+}
+@media screen  and (min-width: 960px) {
+    .reportInfo-contentItems{
+        width: 96%;
+        margin: auto;
+        height: 50px;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        color: #444444;
+        line-height: 50px;
+    }
+    .reportInfo-title{
+        width: 63%;
+        height: 60px;
+        line-height: 60px;
+        margin: auto;
+        font-size: 20px;
+        color:  #0078B4;
+        font-family: PingFangSC-Regular;
+    }
+    .reportInfo-content{
+        width: 60%;
+        height: 180px;
+        margin: auto;
+        background: white;
+        position: relative;
+    }
+    .reportInfo-Mentaltable{
+        width: 60%;
+        height: 330px;
+        margin: auto;
+        text-align: center;
+    }
+    .reportInfo-Mentaltable img{
+        width: 70%;
+        height: 300px;
+        margin: auto;
+    }
+    .reportInfo-recommendation{
+        width: 60%;
+        height: 400px;
+        margin: auto;
+        background: white;
+    }
+    .reportInfo-recommendation{
+        width: 60%;
+        height: 350px;
+        margin: auto;
+        background: white;
+    }
+    .reportInfo-echarts{
+        width: 60%;
+        height: 400px;
+        background: white;
+        margin: auto;
+        position: relative
+    }
+    .reportInfo-echartstitle{
+        width: 60%;
+        height: 100px;
+        background: white;
+        margin: auto;
+    }
+    .reportInfo-characteristics{
+        width: 60%;
+        height: 190px;
+        background: white;
+        margin: auto;
+    }
+    .reportInfo-explain{
+        width: 60%;
+        background: white;
+        margin: auto;
+    }
+    .reportInfo-spacewhite{
+        width: 60%;
+        height: 20px;
+        margin: auto;
+        background: white;
+    }
+}

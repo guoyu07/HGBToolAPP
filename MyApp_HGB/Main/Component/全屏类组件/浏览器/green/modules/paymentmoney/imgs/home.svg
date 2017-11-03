@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="B_首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="B_1.1首页-切图" transform="translate(-51.000000, -1244.000000)">
+            <g id="home" transform="translate(51.000000, 1244.000000)">
+                <circle id="Oval" fill="#FB4251" cx="24" cy="24" r="24"></circle>
+                <path d="M21.3363953,10.3675732 C22.8341828,8.73884105 25.2615869,8.7469633 26.7415866,10.3675732 L36.2543338,20.7840974 C37.3719607,22.0079066 36.9388497,23 35.2757038,23 L12.7218465,23 C11.0637371,23 10.6267753,22.0134862 11.7497328,20.7923536 L21.3363953,10.3675732 Z" id="Triangle" fill="#FFFFFF"></path>
+                <path d="M14,22 L34,22 L34,32.9999798 C34,35.2091299 32.2075324,37 30.00077,37 L17.99923,37 C15.7905162,37 14,35.2055487 14,32.9999798 L14,22 Z M20,30.9981014 L20,37 L28,37 L28,30.9981014 C28,29.8867064 27.1054196,29 26.0018986,29 L21.9981014,29 C20.8867064,29 20,29.8945804 20,30.9981014 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M30,12 L32.9906311,12 C33.5480902,12 34,12.4433532 34,13.0093689 L34,16 L30,12 Z" id="Rectangle-8" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

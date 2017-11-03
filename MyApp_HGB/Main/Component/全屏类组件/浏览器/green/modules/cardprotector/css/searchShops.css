@@ -1,0 +1,129 @@
+#page-searchShops_tpl .div-custom-merchant:first-child{
+
+}
+#page-searchShops_tpl .div-custom-merchant{
+    height:50px;
+    position: relative;
+    box-sizing:border-box;
+    margin-bottom: 5px;
+    padding-right: .7rem;
+    border-bottom: 1px solid #F0f0f0;
+    margin-left: .7rem;
+}
+#page-searchShops_tpl .div-custom-selectMerimg img{
+   /* background: url(../imgs/yonghu.svg) no-repeat 0rem 0;
+    background-size: 100% 100%;*/
+    width: 43px;
+    margin-top:0rem;
+    height: 43px;
+    float: left;
+}
+.div-custom-selectBottom.last{
+    font-size: 14px;
+    color: #999;
+}
+.div-custom-isBd.special{
+    color: #999;
+    font-size:14px ;
+    margin-left:2rem;
+}
+.pull-to-refresh-layer{
+	height: 1rem;
+}
+#page-searchShops_tpl .content{
+	background: #fff;
+    margin-top: 4.5rem;
+}
+#page-searchShops_tpl .div-custom-rightSelectbox{
+	float: right;
+    width: 85%;
+}
+#page-searchShops_tpl{
+	background: #eaeaea !important;
+}
+#page-searchShops_tpl .div-custom-selectTop{
+	font-size: 17px;
+    color: #000000;
+}
+#page-searchShops_tpl .div-custom-selectBottom{
+	font-size: 14px;
+    color: #999;
+}
+#page-searchShops_tpl .div-custom-selectBottom .div-custom-number{
+	font-size: 13px;
+    right: 1rem;
+    position: absolute;
+    color: #444;
+    display: inline-block;
+}
+#page-searchShops_tpl .search-inputs{
+	position: relative;
+}
+#page-searchShops_tpl .search-inputs input{
+    border-radius: 4px;
+    height:1.2rem;
+    line-height: 30px;
+    padding-left: 1rem;
+    box-shadow: 0;
+    border: none;
+    position: absolute;
+    top: 2.3rem;
+    width: 75%;
+    padding-left: 1.6rem;
+    left: .3rem;
+}
+#page-searchShops_tpl .pull-to-refresh-layer{
+	height: 0rem;
+}
+#page-searchShops_tpl .pull-to-refresh-content.refreshing  .preloader{
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    visibility: hidden;*/
+}
+#page-searchShops_tpl .pull-to-refresh-content {
+       padding-top: 0.3rem;
+       top:0;
+}
+#page-searchShops_tpl .pull-to-refresh-layer .pull-to-refresh-arrow{
+	margin-top: -1.5rem;
+}
+#page-searchShops_tpl .icon-custom-searchicon img{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 2.7rem;
+    left: -.7rem;
+}
+#page-searchShops_tpl .icon-custom-searchicon {
+     left: -.5rem;
+}
+#page-searchShops_tpl  .div-custom-footer_search{
+	font-size: 14px;
+	 padding-top: 2rem;
+    text-align: center;
+    color: #999999; 
+}
+#page-searchShops_tpl .div-custom-selectTop{
+    font-size: 17px;
+    color: #000000;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width:70%;
+    white-space: nowrap;
+   
+}
+#page-searchShops_tpl .bd {
+    background: #FB5461;
+    border-radius: 3px;
+    font-size:14px;
+    color: #fff;
+    border:none;
+    margin-left:1.2rem;
+    
+    text-align:center;
+
+}

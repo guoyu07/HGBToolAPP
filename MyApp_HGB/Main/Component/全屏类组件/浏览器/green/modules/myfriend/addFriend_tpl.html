@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>添加朋友</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/addFriend.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-addFriend_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left back" href="#" id="" data-type="button">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+            <h1 class="title" data-type="h1">添加朋友</h1>
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content">
+            <div class="searchbar row" data-type="row">
+					    <div class="search-input col-95" data-type="col">
+					        <input type="search" placeholder='搜索账号 / 手机号' id="result_input" />
+					        <span class="icon  icon-custom-searchicon" data-type="icon" id="icon_1"><img src="imgs/s.svg" class="searchIcon"></span>
+					    </div>
+		    </div>
+            <div data-type="div" class="div-custom-friendlist">
+				<div data-type="div" class="div-custom-friendLeft">我的二维码</div> 					       
+			 </div>
+				<div class="addlist">
+				    <div class="div-custom-friendcont" data-type="div" id="saoyisao">
+				        <div data-type="div" class="div-custom-Limg"></div>
+				        <div data-type="span" class="div-custom-r">
+				           <div class="div-custom-addtop" data-type="div">扫一扫</div>
+				           <div class="div-custom-addbottom" data-type="div">添加或邀请通讯录中的朋友</div>
+				        </div>
+				    </div>
+				     <div class="div-custom-friendcont special" data-type="div" id="phone_contact">
+				        <div data-type="div" class="div-custom-Limg"></div>
+				        <div data-type="span" class="div-custom-r">
+				           <div class="div-custom-addtop" data-type="div">手机联系人</div>
+				           <div class="div-custom-addbottom" data-type="div">添加或邀请通讯录中的朋友</div>
+				        </div>
+				    </div>
+				</div>
+        </div>
+    </div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+
+<script src="../../js/public/appPublicAction.js"></script>
+
+<script src="../../js/public/common.js"></script>
+<script src="js/addFriendEventBinds.js"></script>
+</html>

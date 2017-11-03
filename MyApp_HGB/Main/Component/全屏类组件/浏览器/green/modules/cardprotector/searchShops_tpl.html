@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>选择商户</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name = "format-detection" content = "telephone=no">
+		<link rel="stylesheet" href="../../css/libs/sm.css">
+		<link rel="stylesheet" href="../../css/theme/theme.css">
+		<link rel="stylesheet" href="../../css/appPublicStyle.css">
+		<link rel="stylesheet" href="css/searchShops.css"/>
+	</head>
+	<body>
+		<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+		<div class="page-group">
+			<!-- 单个page ,默认被展示-->
+			<div id="page-searchShops_tpl" class="page page-current">
+				<!-- 标题栏 -->
+				<header class="bar bar-nav">
+					<a class="button button-link pull-left back" href="#" data-type="a">
+			 			<span class="icon icon-left" data-type="icon"></span>
+			        </a>
+		 			<h1 class='title'>选择商户</h1>
+					  <div class="search-inputs" data-type="div">
+					        <input type="search" placeholder='输入商家名查询' id="result_input" v-model="shopName"/>
+					        <span class="searchSelect" v-on:click="getShopList" style="top:2.9rem;">搜索</span>
+					        <span class="icon  icon-custom-searchicon" data-type="icon" id="icon_1"><img src="../../imgs/s.svg" class="searchIcon" ></span>
+					 </div>
+				</header>
+				
+                 <!-- 这里是页面内容区 -->
+		         <div class="content pull-to-refresh-content infinite-scroll infinite-scroll-bottom" data-type="content" data-ptr-distance="55"  data-distance="100">			
+			   	<!-- 默认的下拉刷新层 -->
+					<div class="selectMerchantlist list-container" v-if="isShow" v-cloak>
+					    <div style="text-align:center;">暂无相关商户！</div>
+				    </div>
+				    <div class="selectMerchantlist list-container" v-else v-cloak>
+					    <div class="div-custom-merchant" data-type="div" v-for="li in tenantInfo.list" v-on:click="jumpShopInfo(li)">
+					        <div data-type="div" class="div-custom-selectMerimg"><img src={{li.image_}} /></div>
+					        <div data-type="span" class="div-custom-rightSelectbox">
+					        	<div class="div-custom-selectTop" data-type="div">{{li.name_}}</div>
+                                <div class="div-custom-selectBottom" data-type="div" style="display: inline-block;">
+                                    <span data-type="span" class="div-custom-isBd" v-if="!li.bind"><input type="button" value="绑定" v-on:click="bindCard(li)" class="bd" /></span>
+                                    <span data-type="span" class="div-custom-isBd special" v-if="li.bind">已绑定</span>
+                                </div>
+                                <div class="div-custom-selectBottom last" data-type="div">电话：{{li.mobile_phone_}}&nbsp;&nbsp;&nbsp;&nbsp;编号：{{li.code_}}</div>
+					        </div>
+					    </div>
+				    </div>
+				 	<!-- 加载提示符 -->
+			     	<div class="infinite-scroll-preloader" v-if="data.tenantInfo.down_bool">
+			        	<div class="preloader"></div>
+			     	</div>  
+			   </div>
+			</div>
+		</div>
+	</body>
+	<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<script src="../../js/libs/sm.js"></script>
+<script src="../../js/public/agreeSDK.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/searchShopsEventBinds.js"></script>
+	
+</html>

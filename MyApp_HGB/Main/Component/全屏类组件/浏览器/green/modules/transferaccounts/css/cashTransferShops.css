@@ -1,0 +1,32 @@
+
+#page-cashTransferShops_tpl .buttons-tab{
+    background: transparent;
+    position: relative;
+    height: 40px;
+    border-bottom: 2px solid #f8f8f8;
+    line-height: 50px;
+}
+
+#page-cashTransferShops_tpl .buttons-tab:after{
+     background: transparent;
+}
+
+#page-cashTransferShops_tpl .buttons-tab .button.active {
+    font-size: 16px;
+    color: #FB4251;
+    margin: 0 1rem 0 1rem;
+    border-color: #FB4251;
+    z-index: 100;
+    opacity: 1;
+    line-height: 30px !important;
+    height: 39px !important;
+}
+
+#page-cashTransferShops_tpl .buttons-tab .button{
+    color: #000;
+    margin: 0 1rem 0 1rem;
+    opacity: 0.7;
+    line-height: 30px !important;
+    height: 42px !important;
+    font-size: 16px;
+}

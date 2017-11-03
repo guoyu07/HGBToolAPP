@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>向商家付钱-付款-收/付钱</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+     <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/payment.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group" >
+    <!-- 单个page ,默认被展示-->
+    <div  id="page-payment_tpl" class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left back" href="#" id="pull_goback" data-type="button">
+                <span class="icon icon-left" data-type="icon"></span>
+            </a>
+            <h1 class="title" data-type="h1">向商家付钱</h1>
+        </header>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content" id="page-payment_tpl">
+            <div data-type="div" class="div-custom-collectionbox">
+                 <span class="span-custom-topcont">向商家当面付款</span>
+                 <span class="span-custom-toptm"><img src="{{obj.qcode_path}}" class=""/ data-type="img"></span>
+                 <span class="span-custom-toptext open-code">{{obj.display_code}}</span>
+                 <span class="span-custom-topcode"><img src="{{obj.code_path}}"  data-type="img" class="imgs_code"></span>
+                 <!--
+                 <span data-type="span" class="collection">
+	               <span data-type="span" class="span-custom-collect_jf open-about">{{obj.type}}<img src="imgs/55.svg"/ data-type="img" class="img-custom-moreThan"></span>
+                 </span>
+                 -->
+            </div>
+            <div data-type="div" class="div-custom-personalPayment">
+             <span class="span-custom-paymentbtn">个人二维码收款<img src="imgs/55.svg" data-type="img" class="img-custom-moreThanBtn"></span>
+            </div>
+            <div class="div-custom-footerText" data-type="div">
+                如果付款失败，将尝试其他付款方式    
+            </div>
+
+        </div>
+      <!--
+        <div id="popup" class="popup popup-about" data-type="popup">
+  		    <div class="content-block" data-type="div">
+  		        <header class="bar bar-nav" data-type="header">
+    				    <a class="button button-link button-nav pull-left" href="#" data-type="a" style="color:#9e9e9e;top:2px;">
+    				        <span class="icon icon-close close-popup" data-type="icon"></span>
+    				    </a>
+    				    <h1 class="title" data-type="h1">选择优先付款方式</h1>
+    				</header>
+    				<div class="list-block" data-type="div">
+    			    <ul data-type="list" class="ul_li_a" >
+    			        <li data-type="itemContent " class="one">
+    			            <a href="#" class="item-content" data-type="a">
+    			                <div class="item-inner bckimg" data-type="div">
+    			                    <div class="item-title selected" data-type="div">积分</div>
+    			                </div>
+    			            </a>
+    			        </li>
+    			        <li data-type="itemContent" class="two">
+    			            <a href="#" class="item-content" data-type="a">
+    			                <div class="item-inner" data-type="div">
+    			                    <div class="item-title"  data-type="div">现金账户</div>
+    			                </div>
+    			            </a>
+    			        </li>
+    			        <li data-type="itemContent" class="three">
+    			            <a href="#" class="item-content" data-type="a">
+    			                <div class="item-inner" data-type="div">
+    			                    <div class="item-title"  data-type="div">银行卡</div>
+    			                </div>
+    			            </a>
+    			        </li>
+    			    </ul>
+    			   </div>
+  		    </div>
+  		  </div>
+      -->
+
+
+    </div>
+    <!-- 弹出界面二维码code值 start-->
+    <div class="popup popup-about-code" data-type="popup">
+        <div class="content-block" data-type="div">
+            <p><a href="#" class="close-popup">关闭</a></p>
+            <p id="auth_code">{{obj.auth_code}}</p>
+        </div>
+    </div>
+    <!-- 弹出界面二维码code值 end-->
+</div>
+
+
+
+
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--模板引擎定义js-->
+<script src="../../js/libs/template.js"></script>
+<!--公有方法-->
+<script src="../../js/public/common.js"></script>
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="js/paymentEventBinds.js"></script>
+</html>

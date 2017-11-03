@@ -1,0 +1,120 @@
+
+.div-custom-footer_search{
+    font-size: 14px;
+     padding-top: 2rem;
+    text-align: center;
+    color: #999999; 
+}
+
+#page-friendslist_tpl .cityList li .list-custom-friends{
+    height: 55px;
+    width:90%;
+    font-size: 12px;
+    color: #999;
+    background: #fff;
+    margin-left: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+#page-friendslist_tpl{
+    background: #fff !important;
+}
+#page-friendslist_tpl  .list-block .list-group-title{
+    height:30px;
+}
+#page-friendslist_tpl .letters-nav{
+    top:8.1rem;
+}
+#page-friendslist_tpl  .list-custom-friends .box img{
+    width: 36px;
+    height: 36px;
+}
+#page-friendslist_tpl  .list-custom-friends .box img {
+    width: 36px;
+    height: 36px;
+}
+#page-friendslist_tpl .silider-search div a{
+    color: #333;
+}
+#page-friendslist_tpl .cityList li .homeList_right span{
+    display: block;
+    height: 1rem;
+    line-height: 1;
+    font-size: 14px;
+    color: #444444;
+}
+#page-friendslist_tpl .homeLists_right {
+    float: right;
+}
+#page-friendslist_tpl .letters-nav{
+    top:5.9rem;
+}
+#page-friendslist_tpl  #topspans {
+    font-size: 17px;
+    color: #000;
+    line-height: .6rem;
+}
+#page-friendslist_tpl .list-block.mobileContact  ul:before{
+    background-color: transparent !important;
+}
+#page-friendslist_tpl .list-block .item-content:after, 
+.list-block .item-link.list-button:after, 
+.list-block .item-thumb-content:after,
+.list-block ul:after{
+    height:0px;
+}
+#page-friendslist_tpl .list-block.media-list .item-title {
+    overflow: initial !important;
+    padding-right: 0px;
+    text-overflow: initial !important;
+}
+#page-friendslist_tpl .friendlist .sort_list {
+    border-bottom: 1px solid #f0f0f0;
+    margin-left: .9rem;
+}
+#page-friendslist_tpl  .friendlist li {
+    height: 55px;
+}
+#page-friendslist_tpl  #bottomspans {
+    font-size: 14px;
+    color: #999;
+    display: block;
+}
+#page-friendslist_tpl  .friendlist li .list-custom-friends {
+    font-size: 12px;
+    color: #999;
+}
+#page-friendslist_tpl  .list-block.media-list .item-content{
+    padding: .5rem .75rem .75rem 0;
+}
+#page-friendslist_tpl .list-block.media-list{
+    margin: 0;
+}
+#page-friendslist_tpl #topspan{
+    font-size: 17px;
+    color: #000;
+}
+#page-friendslist_tpl #bottomspan{
+    font-size: 14px;
+    color: #999;
+}
+#page-friendslist_tpl .cityName{
+    padding-top: 0.9rem;
+}
+#page-friendslist_tpl .cityList  .UP{
+    text-indent: .9rem;
+    height: 30px;
+    line-height:33px;
+    background: #fafafa;
+}
+#page-friendslist_tpl .silider-search{
+    position: fixed;
+    top: 5.5rem;
+    right: 0rem;
+    font-size: .75rem; 
+}
+#page-friendslist_tpl .homeList_right{
+    width: 88%;
+}
+#page-friendslist_tpl .icon-custom-searchicon{
+    margin-left:0;
+}

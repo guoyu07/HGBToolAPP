@@ -1,0 +1,33 @@
+
+#page-cashRechargeFail_tpl{
+	padding: 24px 0 0 0;
+    margin: 0;
+}
+#page-cashRechargeFail_tpl .span-custom-txs.cashimg{
+	display: block;
+
+}
+#page-cashRechargeFail_tpl .span-custom-txs.cashimg img{
+	width: 37px;
+	height:37px;
+}
+#page-cashRechargeFail_tpl .tops{
+    text-align: center;
+    height: 150px;
+    box-sizing:border-box;
+    padding-top:27px;
+    background: #fff;
+}
+#page-cashRechargeFail_tpl .bottoms span{
+	display: inline-block;
+	font-size: 14px;
+	color: #888888;
+}
+#page-cashRechargeFail_tpl .bottoms{
+	background: #fff;
+    border: 1px solid #f0f0f0;
+    height: 48px;
+    margin-top: 13px;
+    padding:0 1rem 0 1rem;
+    line-height: 48px;
+}

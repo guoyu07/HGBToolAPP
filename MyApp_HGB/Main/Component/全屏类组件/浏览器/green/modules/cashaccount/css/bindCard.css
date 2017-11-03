@@ -1,0 +1,23 @@
+#page-bindCard_tpl .div-custom-payment{
+	text-align: center;
+	padding-top: 5rem;
+	font-size: 17px;
+	color: #000000;
+}
+#page-bindCard_tpl .div-custom-paymentlist {
+	margin: 1rem auto;
+    width: 80%;
+    text-align: center;
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #29B8F1;
+}
+#page-bindCard_tpl .div-custom-paymentlist span input{
+   
+    height: 45px;
+    text-align: center;
+    border: none;
+    background: none;
+    display: inline-block;
+  
+}

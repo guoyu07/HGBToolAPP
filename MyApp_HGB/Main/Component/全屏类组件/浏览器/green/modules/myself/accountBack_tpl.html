@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>账户找回</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../../css/libs/sm.css">
+    <link rel="stylesheet" href="../../css/theme/theme.css">
+    <link rel="stylesheet" href="../../css/appPublicStyle.css">
+    <link href="css/accountBack.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page-group">
+    <!-- 单个page ,默认被展示-->
+    <div id="page-accountBack_tpl" class="page page-current" style="overflow-x: hidden;">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav" data-type="header">
+            <a class="button button-link pull-left header-white back" href="#" id="a-custom-lefttext" data-type="button">
+               取消
+            </a>
+            <h1 class="title" data-type="h1">账户找回</h1>
+           <!-- <div data-type="div" class="right-icon"><span></span><span></span><span></span></div>-->
+        </header>
+        <!-- 这里是页面内容区 -->
+        <div class="content" data-type="content">
+         <form id="form_1" data-type="form">
+           <div data-type="div" class="div-custom-normalaccount"> 
+            <div data-type="div" class="div-custom-headerAccount">账户找回请输入相关的信息 </div>
+            <div class="div-custom-topAccount" data-type="div">
+                <div class="content-item" data-type="div">
+                    <div class="item-left-org" data-type="div">手机号</div>
+                    <div class="item-center-org" data-type="div">
+                        <input type="text" data-type="input"  placeholder="请输入您旧账户的手机号信息" v-model="phone_" style="margin-left: 2.6rem;" class="">
+                    </div>
+                    <div class="item-right-org" data-type="div"></div>
+                </div>
+                <div class="content-item" data-type="div">
+                    <div class="item-left-org" data-type="div">账号信息</div>
+                    <div class="item-center-org" data-type="div">
+                        <textarea class="textarea" placeholder="请输入您旧账户的账户信息" data-type="textarea" id="" v-model="account_info_"></textarea>
+                    </div>
+                    <div class="item-right-org" data-type="div"><!--<img src="imgs/icon_you.jpg" data-type="img">--></div>
+                </div>
+                <div class="content-item" data-type="div">
+                    <div class="item-left-org" data-type="div">商户信息</div>
+                    <div class="item-center-org" data-type="div">
+                         <textarea class="textarea" placeholder="请输入您绑定过的商户的信息" data-type="textarea" id="textarea_1" v-model="merchant_info_"></textarea>
+                    </div>
+                    <div class="item-right-org" data-type="div"></div>
+                </div>
+             </div>
+          </div>
+           <div data-type="div" class="div-custom-specialaccount"> 
+            <div data-type="div" class="div-custom-headerAccount">交易记录1</div>
+            <div class="div-custom-bottomAccount" data-type="div">
+                <div class="content-item" data-type="div">
+                    <div class="item-left-org" data-type="div">时间</div>
+                    <div class="item-center-org" data-type="div">
+                       <input type="text" value="选择时间" data-type="calendar"
+					data-toggle='date' id="calendar_1" class="" v-model="trade_time1_" style="margin-left:1.6rem;" />
+                    </div>
+                    <div class="item-right-org" data-type="div"><img src="imgs/55.svg" data-type="img" class="img-custom-specialaccount"></div>
+                </div>
+                <div class="content-item" data-type="div">
+                    <div class="item-left-org" data-type="div">交易类型</div>
+                    <div class="item-center-org" data-type="div">
+                        <input type="text" value="交易类型" data-type="picker"
+                                               id="picker_1" class="picker-custom-2" v-model="trade_type1_"/>
+                    </div>
+                    <div class="item-right-org" data-type="div"><img src="imgs/55.svg" data-type="img"></div>
+                </div>
+                <div class="content-item" data-type="div">
+                    <div class="item-left-org" data-type="div">交易对象</div>
+                    <div class="item-center-org" data-type="div">
+                        <input type="text" data-type="input"  placeholder="请输入交易对象名称" v-model="trade_target1_" />
+                    </div>
+                    <div class="item-right-org" data-type="div"><img src="imgs/55.svg" data-type="img"></div>
+                </div>
+             </div>
+          </div>
+          
+          <div  data-type="div" class="accountbox"> 
+               <span data-type="span" class="span-custom-accounttext">*备注：信息越详尽越有助于您的账户找回哦！</span>
+               <div  data-type="div" class="accountboxs">
+                    <span data-type="span" class="span-custom-onetext">温馨提示：</span>
+                    <span data-type="span" class="span-custom-twotext">您还可以直接联系客服</span>
+                    <span data-type="span" class="span-custom-threetext">电话：15698687555  邮箱：15868755@qq.com</span>                 
+               </div>
+          </div>
+          <div data-type="div" class="div-custom-open_cash" id="save" v-on:click="submit">
+                <input type="button" data-type="button" class="span-custom-open_surebtn" value="确定">
+          </div>
+         </form>
+        </div>
+</div>
+</div>
+</body>
+<!--sui框架js-->
+<script src="../../js/libs/zepto.js"></script>
+<!--打包时-->
+<script src="../../js/libs/sm.js"></script>
+<!--agreeSDK插件定义js-->
+<script src="../../js/public/agreeSDK.js"></script>
+<!--公有方法-->
+<script src="../../js/public/appPublicAction.js"></script>
+<script src="../../js/public/common.js"></script>
+<script src="js/accountBackEventBinds.js"></script>
+</html>

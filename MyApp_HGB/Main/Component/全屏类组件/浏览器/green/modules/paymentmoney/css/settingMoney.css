@@ -1,0 +1,36 @@
+#content-custom-settingmoney{
+	padding: 15px 15px 0 15px;
+}
+.div-custom-settingmoney{
+    height: 260px;
+    display: block;
+    background: #fff;
+    background: #FBFBFB;
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+    box-sizing:border-box;
+    padding: 25px 25px 0 25px;
+    box-sizing: border-box;
+
+}
+.span-custom-settingmoney_je{
+	display: inline-block;
+	
+}
+#moneys{
+    width:15rem;
+	border: none;
+	height:3rem;
+    border-bottom: 1px solid #f0f0f0;
+    background: none;
+    display: block;
+}
+.span-custom-put_money{
+	position: absolute;
+    display: block;
+    top: 3.5rem;
+    left: 1.7rem;
+}
+#page-settingMoney_tpl{
+	background: #F5F5F9 !important;
+}

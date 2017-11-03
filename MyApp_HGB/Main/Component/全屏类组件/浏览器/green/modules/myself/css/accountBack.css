@@ -1,0 +1,144 @@
+/* ������Ϣҳ�� */
+#page-accountBack_tpl .list-block{
+  margin: 0;
+}
+.div-custom-normalaccount .div-custom-topAccount,
+.div-custom-specialaccount .div-custom-bottomAccount{
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    background: #fff;
+}
+.div-custom-normalaccount  .content-item,
+.div-custom-specialaccount .content-item {
+    padding: 0 0 0 .8rem;
+    height:48px;
+    line-height:48px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.content-itemTwo{
+    width: 90%;
+    margin: auto;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+#page-accountBack_tpl  .span-custom-open_surebtn{
+    border: none;
+}
+.div-custom-normalaccount .item-left-org,
+.div-custom-specialaccount .item-left-org{
+    max-width: 20%;
+    height:48px;
+    color:#444;
+    font-size: 16px;
+    line-height: 51px;
+    text-align: center;
+    float: left;
+}
+.div-custom-normalaccount  .item-center-org,
+.div-custom-specialaccount .item-center-org{
+    width: 75%;
+    height: 48px;
+    line-height:48px;
+    float: left;
+}
+ .textarea{
+    outline: none;
+    border: none;
+    width: 97%; 
+    line-height: 1rem;
+    padding-left: 1.9rem;
+    text-align: left;
+    background: none;
+}
+.div-custom-normalaccount .item-right-org,
+.div-custom-specialaccount .item-right-org{
+    height: 48px;
+    line-height:48px;
+    float: left;
+    position: relative;
+}
+.div-custom-specialaccount .item-right-org img{
+    position: absolute;
+    top: .8rem;
+    right: -.6rem;
+    height: .9rem;
+    width: 0.4rem;
+}
+.div-custom-specialaccount .item-right-org .img-custom-specialaccount{
+	position: absolute;
+    top: .8rem;
+    right: -2.2rem;
+    height: .9rem;
+    width: 0.4rem;
+}
+.div-custom-normalaccount .item-center-org input{
+    border: none;
+    height: 44px;
+    text-align: left;
+    margin-left: 2rem;
+}
+.div-custom-specialaccount .item-center-org input{
+    border: none;
+    font-size: 14px;
+    color: #999999;
+    width: 100%;
+    text-align: right;
+    margin-left:-1px;
+}
+.div-custom-normalaccount .item-center-org input::-webkit-input-placeholder,
+.div-custom-normalaccount .item-center-org textarea::-webkit-input-placeholder{
+	 color: #999999;
+     font-size: 15px;
+}
+#a-custom-lefttext,
+ #a-custom-righttext {
+    color: #FFF !important;
+    font-size: 15px !important;
+}
+.div-custom-normalaccount .item-center-org textarea::-webkit-input-placeholder{
+    line-height:45px;
+}
+.div-custom-specialaccount .item-center-org input::-webkit-input-placeholder{
+	font-size: 14px;
+    color: #999999;
+}
+.div-custom-headerAccount{
+	height:48px ;
+    text-indent: .8rem;
+	font-size: 14px;
+    color: #999999;
+	line-height:48px ;
+}
+.div-custom-normalaccount .content-item:last-child, 
+.div-custom-specialaccount .content-item:last-child{
+	border-bottom: none;
+}
+.span-custom-accounttext{
+	font-size: 14px;
+    color: #FF6868;
+}
+.accountboxs{
+     width: 94%;
+    background: #F4F4F4;
+    border: 1px solid #E4E4E4;
+    display: block;
+    margin: 2rem auto;
+    text-align: left;
+    padding: .4rem 0 0 .5rem;
+    font-size: 14px;
+    color: #999999;
+    height: 80px;
+}
+.accountbox{
+	text-align: center;
+    margin: auto;
+    padding-top: 2rem;
+}
+.accountbox span{
+	display:block;
+}
+#page-accountBack_tpl .span-custom-accounttext{
+    text-align: left;
+    text-indent: .6rem;
+}
+
