@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28EB0D3337CCDE553A9BEC4D /* libPods-MyApp_HGB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62290A92E780FAA87E241D8E /* libPods-MyApp_HGB.a */; };
+		430C1BFE1F74F38E00511706 /* AppDelegate+HGBPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 430C1BFD1F74F38E00511706 /* AppDelegate+HGBPush.m */; };
 		430D08C91F7DE3A90078AC73 /* UIVieW+HGBSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 430D08C81F7DE3A90078AC73 /* UIVieW+HGBSize.m */; };
 		430D08D41F7E13080078AC73 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 430D08D31F7E12FA0078AC73 /* test.png */; };
 		4314FE0C1F99DF57005CA96B /* green in Resources */ = {isa = PBXBuildFile; fileRef = 4314FE0B1F99DF40005CA96B /* green */; };
@@ -6531,7 +6532,7 @@
 				TargetAttributes = {
 					4345C7351F67B91500ABF35D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = H45RR4P7ZL;
+						DevelopmentTeam = 964DMKR46F;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -7269,7 +7270,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: ICBC-AXA Life Insurance Co., Ltd. (H45RR4P7ZL)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H45RR4P7ZL;
+				DEVELOPMENT_TEAM = 964DMKR46F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyApp_HGB/Main/Tool/文件相关工具/文件压缩解压工具/HGBCompressedFile/vendor/Unrar",
@@ -7359,7 +7360,7 @@
 					"\"WeexSDK\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.camelot.Club;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agree.123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -7375,7 +7376,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: ICBC-AXA Life Insurance Co., Ltd. (H45RR4P7ZL)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H45RR4P7ZL;
+				DEVELOPMENT_TEAM = 964DMKR46F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyApp_HGB/Main/Tool/文件相关工具/文件压缩解压工具/HGBCompressedFile/vendor/Unrar",
@@ -7465,7 +7466,7 @@
 					"\"WeexSDK\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.camelot.Club;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agree.123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
